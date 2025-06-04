@@ -1,0 +1,469 @@
+V (96) bootloader_flash: after mapping, starting from paddr=0x000, size=0x1bf80,ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048836
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403753b8[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xc7f4 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c020020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c7f4h ( 51188) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xc7f4, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (268) esp_image: loading segment header 1 at offset 0x1c814[0m
+D (268) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x2b1c data starts 0x1c81c[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1c81c load_addr 0x3fc94200[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001c81c vaddr=3fc94200 size=02b1ch ( 11036) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001c81c, size=0x2b1c, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (322) esp_image: loading segment header 2 at offset 0x1f338[0m
+D (325) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0xcd8 data starts 0x1f340[0m
+V (338) esp_image: segment 2 map_segment 0 segment_data_offs 0x1f340 load_addr 0x40374000[0m
+[0;32mI (347) esp_image: segment 2: paddr=0001f340 vaddr=40374000 size=00cd8h (  3288) load[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x0001f340, size=0xcd8, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (381) esp_image: loading segment header 3 at offset 0x20018[0m
+D (386) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (393) esp_image: segment data length 0x1bf80 data starts 0x20020[0m
+V (400) esp_image: segment 3 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (408) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1bf80h (114560) map[0m
+D (416) esp_image: free data page_count 0x00000200[0m
+D (421) bootloader_flash: rodata starts from paddr=0x00020020, size=0x1bf80, will be mapped to vaddr=0x3c000000[0m
+V (431) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (463) esp_image: loading segment header 4 at offset 0x3bfa0[0m
+D (463) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)[0m
+V (464) esp_image: segment data length 0xf4ac data starts 0x3bfa8[0m
+V (470) esp_image: segment 4 map_segment 0 segment_data_offs 0x3bfa8 load_addr 0x40374cd8[0m
+[0;32mI (478) esp_image: segment 4: paddr=0003bfa8 vaddr=40374cd8 size=0f4ach ( 62636) load[0m
+D (487) esp_image: free data page_count 0x00000200[0m
+D (492) bootloader_flash: rodata starts from paddr=0x0003bfa8, size=0xf4ac, will be mapped to vaddr=0x3c000000[0m
+V (502) bootloader_flash: after mapping, starting from paddr=0x00030000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (527) esp_image: image start 0x00010000 end of last section 0x0004b454[0m
+D (527) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+D (529) boot: Calculated hash: 680140a50bc864f87b0730e2cf5d53bb27ce91ac0b56de6eaac52e4321299cb9[0m
+[0;32mI (544) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (545) boot: Disabling RNG early entropy source...[0m
+D (550) boot: Mapping segment 0 as DROM[0m
+D (554) boot: Mapping segment 3 as IROM[0m
+D (557) boot: calling set_cache_and_start_app[0m
+D (562) boot: configure drom and irom and start[0m
+V (567) boot: rodata starts from paddr=0x00010020, vaddr=0x3c020020, size=0xc7f4[0m
+V (574) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c020000, 0x10000 bytes are mapped[0m
+V (584) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c020000, 0x10000 bytes are mapped[0m
+V (595) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x1bf80[0m
+V (602) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x20000 bytes are mapped[0m
+D (612) boot: start: 0x403753b8[0m
+[0;32mI (627) cpu_start: Multicore app[0m
+[0;32mI (636) cpu_start: Pro cpu start user code[0m
+[0;32mI (636) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (637) app_init: Application information:[0m
+[0;32mI (639) app_init: Project name:     hello_world[0m
+[0;32mI (644) app_init: App version:      1[0m
+[0;32mI (649) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (655) app_init: ELF file SHA256:  05c667f27...[0m
+[0;32mI (660) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (665) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (670) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (675) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (679) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (687) heap_init: At 3FC97608 len 00052108 (328 KiB): RAM[0m
+[0;32mI (693) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (699) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (705) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (712) spi_flash: detected chip: gd[0m
+[0;32mI (715) spi_flash: flash io: dio[0m
+[0;33mW (719) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (733) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (743) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (750) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (758) main_task: Started on CPU0[0m
+[0;32mI (768) main_task: Calling app_main()[0m
+[0;32mI (828) MCU.h: SPI Write (1 bytes):[0m
+[0;32mI (828) MCU.h: 0x68[0m
+[0;32mI (828) MCU.h: SPI Write (1 bytes):[0m
+[0;32mI (828) MCU.h: 0x00[0m
+[0;32mI (828) MCU.h: SPI Write (1 bytes):[0m
+[0;32mI (828) MCU.h: 0x00[0m
+[0;32mI (838) MCU.h: SPI Write (1 bytes):[0m
+[0;32mI (838) MCU.h: 0x00[0m
+[0;32mI (838) MCU.h: SPI Write (1 bytes):[0m
+[0;32mI (848) MCU.h: 0x00[0m
+[0;32mI (848) MCU.h: SPI Write (1 bytes):[0m
+[0;32mI (848) MCU.h: 0x00[0m
+[0;32mI (858) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (858) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (858) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (868) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (868) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (878) MCU.h: 0x00[0m
+[0;32mI (878) MCU.h: 0x00[0m
+[0;32mI (878) MCU.h: 0x20[0m
+[0;32mI (878) MCU.h: 0x30[0m
+[0;32mI (888) MCU.c: RESULT: 0[0m
+[0;32mI (888) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (888) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (898) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (898) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (908) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (908) MCU.h: 0x00[0m
+[0;32mI (908) MCU.h: 0x00[0m
+[0;32mI (918) MCU.h: 0x20[0m
+[0;32mI (918) MCU.h: 0x30[0m
+[0;32mI (918) MCU.c: RESULT: 0[0m
+[0;32mI (918) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (928) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (928) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (938) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (938) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (938) MCU.h: 0x00[0m
+[0;32mI (948) MCU.h: 0x00[0m
+[0;32mI (948) MCU.h: 0x20[0m
+[0;32mI (948) MCU.h: 0x30[0m
+[0;32mI (948) MCU.c: RESULT: 0[0m
+[0;32mI (958) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (958) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (968) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (968) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (968) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (978) MCU.h: 0x00[0m
+[0;32mI (978) MCU.h: 0x00[0m
+[0;32mI (978) MCU.h: 0x20[0m
+[0;32mI (988) MCU.h: 0x30[0m
+[0;32mI (988) MCU.c: RESULT: 0[0m
+[0;32mI (988) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (998) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (998) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (998) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1008) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1008) MCU.h: 0x00[0m
+[0;32mI (1008) MCU.h: 0x00[0m
+[0;32mI (1018) MCU.h: 0x20[0m
+[0;32mI (1018) MCU.h: 0x30[0m
+[0;32mI (1018) MCU.c: RESULT: 0[0m
+[0;32mI (1028) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1028) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1028) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1038) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1038) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1048) MCU.h: 0x00[0m
+[0;32mI (1048) MCU.h: 0x00[0m
+[0;32mI (1048) MCU.h: 0x20[0m
+[0;32mI (1048) MCU.h: 0x30[0m
+[0;32mI (1058) MCU.c: RESULT: 0[0m
+[0;32mI (1058) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1068) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1068) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1068) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1078) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1078) MCU.h: 0x00[0m
+[0;32mI (1078) MCU.h: 0x00[0m
+[0;32mI (1088) MCU.h: 0x20[0m
+[0;32mI (1088) MCU.h: 0x30[0m
+[0;32mI (1088) MCU.c: RESULT: 0[0m
+[0;32mI (1098) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1098) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1098) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1108) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1108) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1118) MCU.h: 0x00[0m
+[0;32mI (1118) MCU.h: 0x00[0m
+[0;32mI (1118) MCU.h: 0x20[0m
+[0;32mI (1118) MCU.h: 0x30[0m
+[0;32mI (1128) MCU.c: RESULT: 0[0m
+[0;32mI (1128) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1128) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1138) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1138) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1148) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1148) MCU.h: 0x00[0m
+[0;32mI (1148) MCU.h: 0x00[0m
+[0;32mI (1158) MCU.h: 0x20[0m
+[0;32mI (1158) MCU.h: 0x30[0m
+[0;32mI (1158) MCU.c: RESULT: 0[0m
+[0;32mI (1168) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1168) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1168) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1178) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1178) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1188) MCU.h: 0x00[0m
+[0;32mI (1188) MCU.h: 0x00[0m
+[0;32mI (1188) MCU.h: 0x20[0m
+[0;32mI (1188) MCU.h: 0x30[0m
+[0;32mI (1198) MCU.c: RESULT: 0[0m
+[0;32mI (1198) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1198) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1208) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1208) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1218) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1218) MCU.h: 0x00[0m
+[0;32mI (1218) MCU.h: 0x00[0m
+[0;32mI (1228) MCU.h: 0x20[0m
+[0;32mI (1228) MCU.h: 0x30[0m
+[0;32mI (1228) MCU.c: RESULT: 0[0m
+[0;32mI (1238) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1238) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1238) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1248) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1248) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1258) MCU.h: 0x00[0m
+[0;32mI (1258) MCU.h: 0x00[0m
+[0;32mI (1258) MCU.h: 0x20[0m
+[0;32mI (1258) MCU.h: 0x30[0m
+[0;32mI (1268) MCU.c: RESULT: 0[0m
+[0;32mI (1268) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1268) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1278) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1278) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1288) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1288) MCU.h: 0x00[0m
+[0;32mI (1288) MCU.h: 0x00[0m
+[0;32mI (1298) MCU.h: 0x20[0m
+[0;32mI (1298) MCU.h: 0x30[0m
+[0;32mI (1298) MCU.c: RESULT: 0[0m
+[0;32mI (1298) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1308) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1308) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1318) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1318) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1318) MCU.h: 0x00[0m
+[0;32mI (1328) MCU.h: 0x00[0m
+[0;32mI (1328) MCU.h: 0x20[0m
+[0;32mI (1328) MCU.h: 0x30[0m
+[0;32mI (1338) MCU.c: RESULT: 0[0m
+[0;32mI (1338) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1338) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1348) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1348) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1358) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1358) MCU.h: 0x00[0m
+[0;32mI (1358) MCU.h: 0x00[0m
+[0;32mI (1368) MCU.h: 0x20[0m
+[0;32mI (1368) MCU.h: 0x30[0m
+[0;32mI (1368) MCU.c: RESULT: 0[0m
+[0;32mI (1368) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1378) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1378) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1388) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1388) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1388) MCU.h: 0x00[0m
+[0;32mI (1398) MCU.h: 0x00[0m
+[0;32mI (1398) MCU.h: 0x20[0m
+[0;32mI (1398) MCU.h: 0x30[0m
+[0;32mI (1408) MCU.c: RESULT: 0[0m
+[0;32mI (1408) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1408) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1418) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1418) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1418) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1428) MCU.h: 0x00[0m
+[0;32mI (1428) MCU.h: 0x00[0m
+[0;32mI (1428) MCU.h: 0x20[0m
+[0;32mI (1438) MCU.h: 0x30[0m
+[0;32mI (1438) MCU.c: RESULT: 0[0m
+[0;32mI (1438) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1448) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1448) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1458) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1458) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1458) MCU.h: 0x00[0m
+[0;32mI (1468) MCU.h: 0x00[0m
+[0;32mI (1468) MCU.h: 0x20[0m
+[0;32mI (1468) MCU.h: 0x30[0m
+[0;32mI (1478) MCU.c: RESULT: 0[0m
+[0;32mI (1478) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1478) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1488) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1488) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1488) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1498) MCU.h: 0x00[0m
+[0;32mI (1498) MCU.h: 0x00[0m
+[0;32mI (1498) MCU.h: 0x20[0m
+[0;32mI (1508) MCU.h: 0x30[0m
+[0;32mI (1508) MCU.c: RESULT: 0[0m
+[0;32mI (1508) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1518) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1518) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1528) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1528) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1528) MCU.h: 0x00[0m
+[0;32mI (1538) MCU.h: 0x00[0m
+[0;32mI (1538) MCU.h: 0x20[0m
+[0;32mI (1538) MCU.h: 0x30[0m
+[0;32mI (1548) MCU.c: RESULT: 0[0m
+[0;32mI (1548) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1548) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1558) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1558) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1558) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1568) MCU.h: 0x00[0m
+[0;32mI (1568) MCU.h: 0x00[0m
+[0;32mI (1568) MCU.h: 0x20[0m
+[0;32mI (1578) MCU.h: 0x30[0m
+[0;32mI (1578) MCU.c: RESULT: 0[0m
+[0;32mI (1578) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1588) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1588) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1588) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1598) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1598) MCU.h: 0x00[0m
+[0;32mI (1608) MCU.h: 0x00[0m
+[0;32mI (1608) MCU.h: 0x20[0m
+[0;32mI (1608) MCU.h: 0x30[0m
+[0;32mI (1608) MCU.c: RESULT: 0[0m
+[0;32mI (1618) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1618) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1628) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1628) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1628) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1638) MCU.h: 0x00[0m
+[0;32mI (1638) MCU.h: 0x00[0m
+[0;32mI (1638) MCU.h: 0x20[0m
+[0;32mI (1648) MCU.h: 0x30[0m
+[0;32mI (1648) MCU.c: RESULT: 0[0m
+[0;32mI (1648) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1658) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1658) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1658) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1668) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1668) MCU.h: 0x00[0m
+[0;32mI (1678) MCU.h: 0x00[0m
+[0;32mI (1678) MCU.h: 0x20[0m
+[0;32mI (1678) MCU.h: 0x30[0m
+[0;32mI (1678) MCU.c: RESULT: 0[0m
+[0;32mI (1688) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1688) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1698) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1698) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1698) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1708) MCU.h: 0x00[0m
+[0;32mI (1708) MCU.h: 0x00[0m
+[0;32mI (1708) MCU.h: 0x20[0m
+[0;32mI (1718) MCU.h: 0x30[0m
+[0;32mI (1718) MCU.c: RESULT: 0[0m
+[0;32mI (1718) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1728) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1728) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1728) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1738) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1738) MCU.h: 0x00[0m
+[0;32mI (1748) MCU.h: 0x00[0m
+[0;32mI (1748) MCU.h: 0x20[0m
+[0;32mI (1748) MCU.h: 0x30[0m
+[0;32mI (1748) MCU.c: RESULT: 0[0m
+[0;32mI (1758) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1758) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1758) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1768) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1768) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1778) MCU.h: 0x00[0m
+[0;32mI (1778) MCU.h: 0x00[0m
+[0;32mI (1778) MCU.h: 0x20[0m
+[0;32mI (1788) MCU.h: 0x30[0m
+[0;32mI (1788) MCU.c: RESULT: 0[0m
+[0;32mI (1788) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1798) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1798) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1798) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1808) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1808) MCU.h: 0x00[0m
+[0;32mI (1808) MCU.h: 0x00[0m
+[0;32mI (1818) MCU.h: 0x20[0m
+[0;32mI (1818) MCU.h: 0x30[0m
+[0;32mI (1818) MCU.c: RESULT: 0[0m
+[0;32mI (1828) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1828) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1828) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1838) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1838) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1848) MCU.h: 0x00[0m
+[0;32mI (1848) MCU.h: 0x00[0m
+[0;32mI (1848) MCU.h: 0x20[0m
+[0;32mI (1858) MCU.h: 0x30[0m
+[0;32mI (1858) MCU.c: RESULT: 0[0m
+[0;32mI (1858) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1868) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1868) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1868) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1878) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1878) MCU.h: 0x00[0m
+[0;32mI (1878) MCU.h: 0x00[0m
+[0;32mI (1888) MCU.h: 0x20[0m
+[0;32mI (1888) MCU.h: 0x30[0m
+[0;32mI (1888) MCU.c: RESULT: 0[0m
+[0;32mI (1898) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1898) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1898) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1908) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1908) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1918) MCU.h: 0x00[0m
+[0;32mI (1918) MCU.h: 0x00[0m
+[0;32mI (1918) MCU.h: 0x20[0m
+[0;32mI (1918) MCU.h: 0x30[0m
+[0;32mI (1928) MCU.c: RESULT: 0[0m
+[0;32mI (1928) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1938) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1938) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1938) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1948) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1948) MCU.h: 0x00[0m
+[0;32mI (1948) MCU.h: 0x00[0m
+[0;32mI (1958) MCU.h: 0x20[0m
+[0;32mI (1958) MCU.h: 0x30[0m
+[0;32mI (1958) MCU.c: RESULT: 0[0m
+[0;32mI (1968) MCU.c: HtoBE IN: 30200000[0m
+[0;32mI (1968) MCU.c: HtoBE OUT: 2030[0m
+[0;32mI (1968) MCU.c: HtoBE IN: 2030[0m
+[0;32mI (1978) MCU.c: HtoBE OUT: 30200000[0m
+[0;32mI (1978) MCU.h: SPI Write (4 bytes):[0m
+[0;32mI (1988) MCU.h: 0x00[0m
+[0;32mI (1988) MCU.h: 0x00[0m
+[0;32mI (1988) MCU.h: 0x20[0m
+[0;32mI (1988) MCU.h: 0x30[0m
+[0;32mI (1998) MCU.c: RESULT: 0[0m
+[0;32mI (1998) MCU.c: HtoBE IN: 30200000[0m

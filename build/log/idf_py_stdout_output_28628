@@ -1,0 +1,496 @@
+V (96) bootloader_flash: after mapping, starting from paddr=0x00h 0xf5cc data staESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403753b8[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xc914 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c020020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c914h ( 51476) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xc914, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+(248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (268) esp_image: loading segment header 1 at offset 0x1c934[0V (528) esp_image: image start 0x00010000 end of last section 0x0004c47c[0m
+D (529) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+D (531) boot: Calculated hash: 21e27ab21b4d8ab7adbd24c4d52fbcd5b707475bd44dba5d4ed314fb39c3382c[0m
+[0;32mI (546) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (546) boot: Disabling RNG early entropy source...[0m
+D (551) boot: Mapping segment 0 as DROM[0m
+D (555) boot: Mapping segment 3 as IROM[0m
+D (559) boot: calling set_cache_and_start_app[0m
+D (563) boot: configure drom and irom and start[0m
+V (568) boot: rodata starts from paddr=0x00010020, vaddr=0x3c020020, size=0xc914[0m
+V (575) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c020000, 0x10000 bytes are mapped[0m
+V (586) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c020000, 0x10000 bytes are mapped[0m
+V (596) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x1ce88[0m
+V (603) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x20000 bytes are mapped[0m
+D (613) boot: start: 0x403753b8[0m
+[0;32mI (628) cpu_start: Multicore app[0m
+[0;32mI (638) cpu_start: Pro cpu start user code[0m
+[0;32mI (638) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (638) app_init: Application information:[0m
+[0;32mI (641) app_init: Project name:     hello_world[0m
+[0;32mI (646) app_init: App version:      1[0m
+[0;32mI (650) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (656) app_init: ELF file SHA256:  e8fbe7c1e...[0m
+[0;32mI (661) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (666) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (671) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (676) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (681) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (688) heap_init: At 3FC97670 len 000520A0 (328 KiB): RAM[0m
+[0;32mI (694) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (700) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (706) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (714) spi_flash: detected chip: gd[0m
+[0;32mI (717) spi_flash: flash io: dio[0m
+[0;33mW (721) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (734) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (745) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (752) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (759) main_task: Started on CPU0[0m
+[0;32mI (769) main_task: Calling app_main()[0m
+[0;32mI (769) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (779) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (779) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (789) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (799) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (799) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (809) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (819) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (819) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (829) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (839) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (839) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (849) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (859) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (859) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (869) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (879) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (879) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (889) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (899) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (899) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (909) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (919) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (929) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (929) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 24 bits
+[0m
+[0;32mI (939) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (939) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (949) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (959) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (969) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (969) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (979) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (979) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (989) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (999) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1009) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1009) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1019) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1029) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1029) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1039) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1049) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1049) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 24 bits
+[0m
+[0;32mI (1059) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1069) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1079) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1079) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1089) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1089) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1099) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1109) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1119) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1119) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1129) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1139) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1139) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1149) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1159) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1159) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1169) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1179) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 24 bits
+[0m
+[0;32mI (1179) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1189) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1199) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1199) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1209) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1219) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1229) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1229) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1239) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1249) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1249) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1259) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1269) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1269) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1279) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1289) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1289) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1299) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 24 bits
+[0m
+[0;32mI (1309) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1309) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1319) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1329) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1339) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1339) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1349) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1349) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1359) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1369) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (1379) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1379) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1389) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1399) ACC: X: 35	Y: 150	Z: -977[0m
+[0;32mI (1439) SPI_MANAGER: Received SPI Task:
+  device: 0x0x0
+  length: 0 bits
+[0m
+[0;32mI (1439) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;31mE (1439) spi_master: check_trans_valid(1024): invalid dev handle[0m
+[0;32mI (1899) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (1899) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1899) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (1909) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (1919) ACC: X: 34	Y: 150	Z: -977[0m
+[0;32mI (2419) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (2419) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (2419) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (2429) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (2439) ACC: X: 34	Y: 149	Z: -977[0m
+[0;32mI (2939) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (2939) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (2939) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (2949) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (2959) ACC: X: 34	Y: 146	Z: -978[0m
+[0;32mI (3459) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (3459) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (3459) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (3469) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (3479) ACC: X: 35	Y: 149	Z: -977[0m
+[0;32mI (3979) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (3979) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (3979) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (3989) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (3999) ACC: X: 35	Y: 148	Z: -977[0m
+[0;32mI (4499) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (4499) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (4499) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (4509) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (4519) ACC: X: 34	Y: 148	Z: -977[0m
+[0;32mI (5019) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (5019) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (5019) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (5029) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (5039) ACC: X: 34	Y: 149	Z: -977[0m
+[0;32mI (5539) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (5539) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (5539) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (5549) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (5559) ACC: X: 35	Y: 148	Z: -978[0m
+[0;32mI (6059) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 56 bits
+[0m
+[0;32mI (6059) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (6059) SPI_MANAGER: Received SPI Task:
+  device: 0x0x3fc9b980
+  length: 16 bits
+[0m
+[0;32mI (6069) SPI_MANAGER: IMU_device 0x0x3fc9b980
+[0m
+[0;32mI (6079) ACC: X: 35	Y: 149	Z: -976[0m

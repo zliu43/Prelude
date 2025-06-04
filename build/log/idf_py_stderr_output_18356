@@ -1,0 +1,99 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40375aa6: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037ab79: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4037b9d2: vApplicationStackOverflowHook at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+[0m
+[0;33m--- 0x42001fa5: uart_ll_get_txfifo_len at C:/Users/mikel/esp-adf/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:390
+---  (inlined by) panic_print_char_uart at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:88
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403753b8: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x40375aa6: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037ab79: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4037b9d2: vApplicationStackOverflowHook at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+--- 0x4037cbdb: vTaskSwitchContext at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037ba98: _frxt_dispatch at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037ba8e: _frxt_int_exit at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403753b8: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x40375aa6: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037ab79: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4037b9d2: vApplicationStackOverflowHook at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+--- 0x4037cbdb: vTaskSwitchContext at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037ba98: _frxt_dispatch at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037ba8e: _frxt_int_exit at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403753b8: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x40375aa6: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037ab79: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4037b9d2: vApplicationStackOverflowHook at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+--- 0x4037cbdb: vTaskSwitchContext at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037ba98: _frxt_dispatch at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037ba8e: _frxt_int_exit at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403753b8: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x40375aa6: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037ab79: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4037b9d2: vApplicationStackOverflowHook at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+--- 0x4037cbdb: vTaskSwitchContext at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037ba98: _frxt_dispatch at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037ba8e: _frxt_int_exit at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403753b8: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x40375aa6: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037ab79: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4037b9d2: vApplicationStackOverflowHook at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:554
+--- 0x4037cbdb: vTaskSwitchContext at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037ba98: _frxt_dispatch at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037ba8e: _frxt_int_exit at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0m

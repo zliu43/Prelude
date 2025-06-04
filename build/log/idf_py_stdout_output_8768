@@ -1,0 +1,22 @@
+-- Component directory C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/components/lsm6dso does not contain a CMakeLists.txt file. No component will be added
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "hello_world" version: 1
+-- Adding linker script C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+-- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/CMakeFiles/CMakeOutput.log".
+[0/1] Re-running CMake...
+FAILED: build.ninja 
+C:\Users\mikel\.espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\mikel\OneDrive\Desktop\Prelude\Code\hello_world -BC:\Users\mikel\OneDrive\Desktop\Prelude\Code\hello_world\build

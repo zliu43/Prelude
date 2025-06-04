@@ -1,0 +1,255 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x42001f71: uart_ll_get_txfifo_len at C:/Users/mikel/esp-adf/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:390
+---  (inlined by) panic_print_char_uart at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:88
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x403784ce: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1025
+[0m
+[0;33m--- 0x400570e8: memset in ROM
+--- 0x400570f3: memset in ROM
+[0m
+[0;33m--- 0x403784cb: check_trans_valid at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1024
+--- 0x4200da5a: spi_device_queue_trans at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1173
+--- 0x4200db91: spi_device_transmit at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:1256
+--- 0x42009015: spi_manager_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/spi_task_manager.h:58
+--- 0x4037b5e1: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x403759e0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

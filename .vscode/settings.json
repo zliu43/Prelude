@@ -1,0 +1,33 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPathWin": "c:\\Users\\mikel\\esp-adf\\esp-idf",
+  "idf.toolsPathWin": "C:\\Users\\mikel\\.espressif",
+  "idf.pythonInstallPath": "C:\\Users\\mikel\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+  "files.associations": {
+    "esp_chip_info.h": "c",
+    "esp_system.h": "c",
+    "freertos.h": "c",
+    "bitset": "c",
+    "string_view": "c",
+    "regex": "c",
+    "chrono": "c",
+    "task.h": "c",
+    "hardware_config.h": "c",
+    "format": "cpp",
+    "lsm6dso.h": "c",
+    "imu_test.h": "c",
+    "queue.h": "c",
+    "lsm6dso_reg.h": "c",
+    "semphr.h": "c",
+    "esp_flash.h": "c",
+    "esp_mac.h": "c",
+    "i2c_task_manager.h": "c",
+    "esp32_init.h": "c",
+    "ft8xx.h": "c",
+    "array": "c",
+    "string": "c",
+    "span": "c",
+    "functional": "c"
+  },
+  "C_Cpp.errorSquiggles": "enabled"
+}
