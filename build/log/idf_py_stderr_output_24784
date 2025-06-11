@@ -1,0 +1,68 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40048839: uart_tx_one_char_uart in ROM
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754f4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x4201e2bf: feature_mean at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:232
+[0m
+[0;33m--- 0x42009798: feature_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:254
+[0m
+[0;33m--- 0x4201e2bc: feature_mean at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:232
+--- 0x42009719: calculate_features at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:240
+--- 0x4200979d: feature_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:256
+--- 0x4037cc4d: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40379bb2: esp_cpu_wait_for_intr at C:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754f4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x4201e2bf: feature_mean at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:232
+[0m
+[0;33m--- 0x42009798: feature_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:254
+[0m
+[0;33m--- 0x4201e2bc: feature_mean at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:232
+--- 0x42009719: calculate_features at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:240
+--- 0x4200979d: feature_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:256
+--- 0x4037cc4d: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40379bb2: esp_cpu_wait_for_intr at C:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754f4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x4201e2bf: feature_mean at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:232
+[0m
+[0;33m--- 0x42009798: feature_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:254
+[0m
+[0;33m--- 0x4201e2bc: feature_mean at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:232
+--- 0x42009719: calculate_features at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:240
+--- 0x4200979d: feature_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:256
+--- 0x4037cc4d: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40379bb2: esp_cpu_wait_for_intr at C:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0m

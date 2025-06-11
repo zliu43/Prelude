@@ -1,0 +1,76 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40048839: uart_tx_one_char_uart in ROM
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754c8: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x42011143: check_legacy_timer_driver_conflict at C:/Users/mikel/esp-adf/esp-idf/components/driver/deprecated/timer_legacy.c:479
+[0m
+[0;33m--- 0x40375bb6: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037bfe1: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4038377d: abort at C:/Users/mikel/esp-adf/esp-idf/components/newlib/abort.c:38
+--- 0x42011143: check_legacy_timer_driver_conflict at C:/Users/mikel/esp-adf/esp-idf/components/driver/deprecated/timer_legacy.c:479
+--- 0x420026ab: do_global_ctors at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/startup.c:101
+--- 0x42002792: start_cpu0_default at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/startup.c:201
+--- 0x403757a6: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:829 (discriminator 1)
+--- 0x40045c01: ets_run_flash_bootloader in ROM
+--- 0x40043ab6: main in ROM
+--- 0x40034c45: .stack_ok in ROM
+[0m
+[0;33m--- 0x40375af0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754c8: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x42011143: check_legacy_timer_driver_conflict at C:/Users/mikel/esp-adf/esp-idf/components/driver/deprecated/timer_legacy.c:479
+[0m
+[0;33m--- 0x40375bb6: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037bfe1: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4038377d: abort at C:/Users/mikel/esp-adf/esp-idf/components/newlib/abort.c:38
+--- 0x42011143: check_legacy_timer_driver_conflict at C:/Users/mikel/esp-adf/esp-idf/components/driver/deprecated/timer_legacy.c:479
+--- 0x420026ab: do_global_ctors at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/startup.c:101
+--- 0x42002792: start_cpu0_default at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/startup.c:201
+--- 0x403757a6: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:829 (discriminator 1)
+--- 0x40045c01: ets_run_flash_bootloader in ROM
+--- 0x40043ab6: main in ROM
+--- 0x40034c45: .stack_ok in ROM
+[0m
+[0;33m--- 0x40375af0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754c8: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x42011143: check_legacy_timer_driver_conflict at C:/Users/mikel/esp-adf/esp-idf/components/driver/deprecated/timer_legacy.c:479
+[0m
+[0;33m--- 0x40375bb6: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037bfe1: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4038377d: abort at C:/Users/mikel/esp-adf/esp-idf/components/newlib/abort.c:38
+--- 0x42011143: check_legacy_timer_driver_conflict at C:/Users/mikel/esp-adf/esp-idf/components/driver/deprecated/timer_legacy.c:479
+--- 0x420026ab: do_global_ctors at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/startup.c:101
+--- 0x42002792: start_cpu0_default at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/startup.c:201
+--- 0x403757a6: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:829 (discriminator 1)
+--- 0x40045c01: ets_run_flash_bootloader in ROM
+--- 0x40043ab6: main in ROM
+--- 0x40034c45: .stack_ok in ROM
+[0m
+[0;33m--- 0x40375af0: esp_restart_noos at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m

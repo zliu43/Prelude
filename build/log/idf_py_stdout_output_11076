@@ -1,0 +1,205 @@
+V (96) bootloader_flash: after mapping, starting from paddr=0x0040d3c, size=0xESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754b0[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xddf4 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ddf4h ( 56820) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xddf4, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1de14[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x21fc data starts 0x1de1c[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1de1c load_addr 0x3fc95700[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001de1c vaddr=3fc95700 size=021fch (  8700) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001de1c, size=0x21fc, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (321) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x20d14 data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=20d14h (134420) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x20d14, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (405) esp_image: loading segment header 3 at offset 0x40d34[0m
+D (405) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (407) esp_image: segment data length 0x960 data starts 0x40d3c[0m
+V (413) esp_image: segment 3 map_segment 0 segment_data_offs 0x40d3c load_addr 0x3fc978fc[0m
+[0;32mI (421) esp_image: segment 3: paddr=00040d3c vaddr=3fc978fc size=00960h (  2400) load[0m
+D (429) esp_image: free data page_count 0x00000200[0m
+D (434) bootloader_flash: rodata starts from paddr=0x00040d3c, size=0x960, will be mapped to vaddr=0x3c000000[0m
+V (444) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (456) esp_image: loading segment header 4 at offset 0x4169c[0m
+D (461) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (468) esp_image: segment data length 0x116ac data starts 0x416a4[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x416a4 load_addr 0x40374000[0m
+[0;32mI (482) esp_image: segment 4: paddr=000416a4 vaddr=40374000 size=116ach ( 71340) load[0m
+D (491) esp_image: free data page_count 0x00000200[0m
+D (496) bootloader_flash: rodata starts from paddr=0x000416a4, size=0x116ac, will be mapped to vaddr=0x3c000000[0m
+V (506) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (533) esp_image: image start 0x00010000 end of last section 0x00052d50[0m
+D (533) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (535) boot: Calculated hash: 443c9fab3a9ab8ba0bd748e17d04dd5f93a16f070c9bcf655fa04b1feaa49234[0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+D (555) boot: Mapping segment 0 as DROM[0m
+D (559) boot: Mapping segment 2 as IROM[0m
+D (563) boot: calling set_cache_and_start_app[0m
+D (568) boot: configure drom and irom and start[0m
+V (572) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xddf4[0m
+V (580) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (590) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (600) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x20d14[0m
+V (608) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (618) boot: start: 0x403754b0[0m
+[0;32mI (633) cpu_start: Multicore app[0m
+[0;32mI (642) cpu_start: Pro cpu start user code[0m
+[0;32mI (642) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (642) app_init: Application information:[0m
+[0;32mI (645) app_init: Project name:     hello_world[0m
+[0;32mI (650) app_init: App version:      1[0m
+[0;32mI (655) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (661) app_init: ELF file SHA256:  512a60d1c...[0m
+[0;32mI (666) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (671) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (675) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (680) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (693) heap_init: At 3FC9BBF0 len 0004DB20 (310 KiB): RAM[0m
+[0;32mI (699) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (705) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (711) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (718) spi_flash: detected chip: gd[0m
+[0;32mI (721) spi_flash: flash io: dio[0m
+[0;33mW (725) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (738) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (749) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (756) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (763) main_task: Started on CPU0[0m
+[0;32mI (773) main_task: Calling app_main()[0m
+[0;32mI (793) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (793) ACC: X: 103	Y: -372	Z: 932[0m
+[0;32mI (793) RTC: Time: 00:26:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (793) main_task: Returned from app_main()[0m
+[0;32mI (893) IMU: Accel mean: x=1777 (108), y=-6131 (-375), z=15258 (931) | Gyro mean: x=-10438 (-638), y=-10240 (-625), z=11798 (720)[0m
+[0;32mI (893) IMU: sample_idx 256[0m
+[0;32mI (993) IMU: sample_idx 512[0m
+[0;32mI (1093) IMU: sample_idx 768[0m
+[0;32mI (1193) IMU: Accel mean: x=1432 (87), y=-5600 (-342), z=13902 (848) | Gyro mean: x=967 (59), y=-14 (-1), z=-29 (-2)[0m
+[0;32mI (1193) IMU: sample_idx 1024[0m
+[0;32mI (1293) ACC: X: 106	Y: -376	Z: 930[0m
+[0;32mI (1293) IMU: Accel mean: x=1768 (107), y=-6092 (-372), z=15221 (929) | Gyro mean: x=13 (0), y=0 (0), z=-1 (-1)[0m
+[0;32mI (1293) IMU: sample_idx 256[0m
+[0;32mI (1393) IMU: sample_idx 512[0m
+[0;32mI (1493) IMU: sample_idx 768[0m
+[0;32mI (1593) IMU: Accel mean: x=1440 (87), y=-5493 (-336), z=13975 (852) | Gyro mean: x=985 (60), y=13 (0), z=-15 (-1)[0m
+[0;32mI (1593) IMU: sample_idx 1024[0m
+[0;32mI (1693) IMU: Accel mean: x=1758 (107), y=-5994 (-366), z=15260 (931) | Gyro mean: x=15 (0), y=9 (0), z=-17 (-2)[0m
+[0;32mI (1693) IMU: sample_idx 256[0m
+[0;32mI (1793) ACC: X: 129	Y: -368	Z: 938[0m
+[0;32mI (1793) IMU: sample_idx 512[0m
+[0;32mI (1803) RTC: Time: 00:26:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1893) IMU: sample_idx 768[0m
+[0;32mI (1993) IMU: Accel mean: x=1525 (93), y=-5501 (-336), z=13885 (847) | Gyro mean: x=970 (59), y=-11 (-1), z=-1 (-1)[0m
+[0;32mI (1993) IMU: sample_idx 1024[0m
+[0;32mI (2093) IMU: Accel mean: x=1889 (115), y=-5989 (-366), z=15236 (929) | Gyro mean: x=6 (0), y=-7 (-1), z=-3 (-1)[0m
+[0;32mI (2093) IMU: sample_idx 256[0m
+[0;32mI (2193) IMU: sample_idx 512[0m
+[0;32mI (2293) ACC: X: 112	Y: -369	Z: 924[0m
+[0;32mI (2293) IMU: sample_idx 768[0m
+[0;32mI (2393) IMU: Accel mean: x=1548 (94), y=-5498 (-336), z=13903 (848) | Gyro mean: x=959 (58), y=1 (0), z=2 (0)[0m
+[0;32mI (2393) IMU: sample_idx 1024[0m
+[0;32mI (2493) IMU: Accel mean: x=1870 (114), y=-5986 (-366), z=15253 (930) | Gyro mean: x=14 (0), y=5 (0), z=2 (0)[0m
+[0;32mI (2493) IMU: sample_idx 256[0m
+[0;32mI (2593) IMU: sample_idx 512[0m
+[0;32mI (2693) IMU: sample_idx 768[0m
+[0;32mI (2783) IMU: Accel mean: x=1554 (94), y=-5523 (-338), z=13908 (848) | Gyro mean: x=952 (58), y=-3 (-1), z=-2 (-1)[0m
+[0;32mI (2783) IMU: sample_idx 1024[0m
+[0;32mI (2793) ACC: X: 116	Y: -369	Z: 931[0m
+[0;32mI (2803) RTC: Time: 00:26:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2893) IMU: Accel mean: x=1899 (115), y=-6034 (-369), z=15213 (928) | Gyro mean: x=-3 (-1), y=-3 (-1), z=-3 (-1)[0m
+[0;32mI (2893) IMU: sample_idx 256[0m
+[0;32mI (2993) IMU: sample_idx 512[0m
+[0;32mI (3093) IMU: sample_idx 768[0m
+[0;32mI (3183) IMU: Accel mean: x=1558 (95), y=-5590 (-342), z=13882 (847) | Gyro mean: x=954 (58), y=-1 (-1), z=0 (0)[0m
+[0;32mI (3183) IMU: sample_idx 1024[0m
+[0;32mI (3283) IMU: Accel mean: x=1923 (117), y=-6061 (-370), z=15198 (927) | Gyro mean: x=2 (0), y=6 (0), z=4 (0)[0m
+[0;32mI (3293) IMU: sample_idx 256[0m
+[0;32mI (3293) ACC: X: 113	Y: -372	Z: 930[0m
+[0;32mI (3393) IMU: sample_idx 512[0m
+[0;32mI (3483) IMU: sample_idx 768[0m
+[0;32mI (3583) IMU: Accel mean: x=1567 (95), y=-5617 (-343), z=13861 (846) | Gyro mean: x=945 (57), y=-4 (-1), z=6 (0)[0m
+[0;32mI (3583) IMU: sample_idx 1024[0m
+[0;32mI (3683) IMU: Accel mean: x=1890 (115), y=-6119 (-374), z=15191 (927) | Gyro mean: x=6 (0), y=-1 (-1), z=6 (0)[0m
+[0;32mI (3683) IMU: sample_idx 256[0m
+[0;32mI (3783) IMU: sample_idx 512[0m
+[0;32mI (3793) ACC: X: 115	Y: -376	Z: 924[0m
+[0;32mI (3803) RTC: Time: 00:26:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3883) IMU: sample_idx 768[0m
+[0;32mI (3983) IMU: Accel mean: x=1551 (94), y=-5649 (-345), z=13852 (845) | Gyro mean: x=957 (58), y=1 (0), z=7 (0)[0m
+[0;32mI (3983) IMU: sample_idx 1024[0m
+[0;32mI (4083) IMU: Accel mean: x=1871 (114), y=-6198 (-379), z=15153 (924) | Gyro mean: x=-18 (-2), y=-5 (-1), z=10 (0)[0m
+[0;32mI (4083) IMU: sample_idx 256[0m
+[0;32mI (4183) IMU: sample_idx 512[0m
+[0;32mI (4283) IMU: sample_idx 768[0m
+[0;32mI (4293) ACC: X: 111	Y: -384	Z: 922[0m
+[0;32mI (4383) IMU: Accel mean: x=1555 (94), y=-5725 (-350), z=13814 (843) | Gyro mean: x=957 (58), y=0 (0), z=0 (0)[0m
+[0;32mI (4383) IMU: sample_idx 1024[0m
+[0;32mI (4483) IMU: Accel mean: x=1891 (115), y=-6227 (-381), z=15142 (924) | Gyro mean: x=12 (0), y=3 (0), z=0 (0)[0m
+[0;32mI (4483) IMU: sample_idx 256[0m
+[0;32mI (4583) IMU: sample_idx 512[0m
+[0;32mI (4683) IMU: sample_idx 768[0m
+[0;32mI (4783) IMU: Accel mean: x=1549 (94), y=-5706 (-349), z=13812 (843) | Gyro mean: x=956 (58), y=2 (0), z=0 (0)[0m
+[0;32mI (4783) IMU: sample_idx 1024[0m
+[0;32mI (4793) ACC: X: 112	Y: -377	Z: 925[0m
+[0;32mI (4803) RTC: Time: 00:26:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5293) ACC: X: 121	Y: -379	Z: 934[0m
+[0;32mI (5793) ACC: X: 117	Y: -379	Z: 926[0m
+[0;32mI (5803) RTC: Time: 00:26:41 Date: 2000-01-01 (Weekday: 0)[0m

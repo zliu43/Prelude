@@ -15,18 +15,31 @@ static char* TAG_i2c_manager = "i2c_task_manager";
 
 #define I2C_QUEUE_LENGTH 16
 
+/**
+ * @brief Structure representing a single I2C message transaction.
+ */
 typedef struct {
     uint8_t     *payload;  
     SemaphoreHandle_t done; 
     uint32_t    length;    
     esp_err_t   result;     
     uint16_t    address;    
-    //uint8_t     priority; 
     bool        write;      
 } i2c_message_t;
 
+/**
+ * @brief Handle to the I2C message queue.
+ * 
+ * @note this should be static and part of a .c file to avoid multiple definitions.
+ */
 QueueHandle_t i2c_queue;
 
+/**
+ * @brief Initializes the I2C message queue.
+ * 
+ * This function creates the queue used to store I2C transactions.
+ * If creation fails, the system will restart.
+ */
 
 void i2c_queue_manager_init() {
     i2c_queue = xQueueCreate(I2C_QUEUE_LENGTH, sizeof(i2c_message_t));
@@ -36,6 +49,15 @@ void i2c_queue_manager_init() {
     }
 }
 
+/**
+ * @brief I2C manager task that processes queued I2C transactions.
+ * 
+ * @param arg Unused parameter.
+ * 
+ * This FreeRTOS task runs in an infinite loop and processes I2C read/write
+ * requests received via the `i2c_queue`. After each transaction, it
+ * optionally signals completion using a semaphore.
+ */
 static void i2c_manager_task(void *arg) {
     i2c_message_t trans;
     while (1) {
@@ -55,6 +77,13 @@ static void i2c_manager_task(void *arg) {
     }
 }
 
+
+/**
+ * @brief Initializes the I2C peripheral and starts the I2C manager task.
+ * 
+ * This sets up the I2C bus as a master, installs the driver, initializes
+ * the I2C transaction queue, and creates the I2C manager task.
+ */
 void i2c_init() {
     i2c_config_t conf = {
         .mode = I2C_MODE_MASTER,

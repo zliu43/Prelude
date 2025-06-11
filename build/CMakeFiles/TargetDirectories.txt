@@ -821,6 +821,13 @@ C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/wifi_prov
 C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/espressif__esp-dsp/CMakeFiles/edit_cache.dir
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/espressif__esp-dsp/CMakeFiles/rebuild_cache.dir
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/espressif__esp-dsp/CMakeFiles/list_install_components.dir
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/espressif__esp-dsp/CMakeFiles/install.dir
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/espressif__esp-dsp/CMakeFiles/install/local.dir
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/espressif__esp-dsp/CMakeFiles/install/strip.dir
 C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/main/CMakeFiles/__idf_main.dir
 C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/main/CMakeFiles/edit_cache.dir
 C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

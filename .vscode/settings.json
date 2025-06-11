@@ -27,7 +27,15 @@
     "array": "c",
     "string": "c",
     "span": "c",
-    "functional": "c"
+    "functional": "c",
+    "compare": "c",
+    "cstdint": "c",
+    "spi_task_manager.h": "c",
+    "dsps_mul.h": "c",
+    "timer_types_legacy.h": "c",
+    "timer_types.h": "c",
+    "timer.h": "c",
+    "gpio.h": "c"
   },
   "C_Cpp.errorSquiggles": "enabled"
 }

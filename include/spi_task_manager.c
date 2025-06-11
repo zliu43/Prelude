@@ -2,33 +2,58 @@
 #include "esp_log.h"
 #include "freertos/task.h"
 #include <assert.h>
-
-// Static variables
+ 
 static const char *TAG_SPI = "SPI_MANAGER";
 
 static QueueHandle_t spi_queue;
 static spi_device_handle_t FT813Q_handle;
 static spi_device_handle_t IMU_handle;
 static spi_device_handle_t DIS_handle;
-
-// Getter functions
+ 
+/**
+ * @brief Returns the handle to the SPI task queue.
+ * 
+ * @return QueueHandle_t Handle to the SPI queue.
+ */
 QueueHandle_t get_spi_queue(void) {
     return spi_queue;
 }
 
+/**
+ * @brief Returns the SPI device handle for the FT813Q.
+ * 
+ * @return spi_device_handle_t SPI handle for FT813Q.
+ */
 spi_device_handle_t get_ft813q_handle(void) {
     return FT813Q_handle;
 }
 
+/**
+ * @brief Returns the SPI device handle for the IMU.
+ * 
+ * @return spi_device_handle_t SPI handle for IMU.
+ */
 spi_device_handle_t get_imu_handle(void) {
     return IMU_handle;
 }
 
+/**
+ * @brief Returns the SPI device handle for the DIS.
+ * 
+ * @return spi_device_handle_t SPI handle for DIS.
+ */
 spi_device_handle_t get_dis_handle(void) {
     return DIS_handle;
 }
 
-// SPI manager task
+/**
+ * @brief SPI manager task that processes messages from the SPI queue.
+ * 
+ * @param arg Unused parameter.
+ * 
+ * This task receives `spi_task_t*` messages from the SPI queue, executes the SPI transaction,
+ * and signals the result using a semaphore if provided.
+ */
 static void spi_manager_task(void *arg) {
     spi_task_t *msg;
 
@@ -58,13 +83,22 @@ static void spi_manager_task(void *arg) {
     }
 }
 
-// SPI queue initialization
+/**
+ * @brief Initializes the SPI queue used to communicate SPI tasks.
+ * 
+ * @note This must be called before any SPI task management occurs.
+ */
 void spi_queue_manager_init(void) {
     spi_queue = xQueueCreate(SPI_QUEUE_LENGTH, sizeof(spi_task_t *));
     assert(spi_queue != NULL);
 }
-
-// SPI bus and device initialization
+/** 
+ * @brief Initializes the SPI bus and devices, and starts the SPI manager task.
+ * 
+ * This function sets up the SPI bus with the given pin configuration and adds
+ * devices (FT813Q, IMU, and DIS) to the SPI bus. It also creates the SPI
+ * transaction queue and starts the task that processes SPI transactions.
+ */
 void spi_init(void) {
     spi_bus_config_t buscfg = {
         .mosi_io_num = SPI_MOSI_PIN,

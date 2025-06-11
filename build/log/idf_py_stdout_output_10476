@@ -1,0 +1,418 @@
+D (429ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004883b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754b0[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xdd34 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0dd34h ( 56628) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xdd34, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1dd54[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x22bc data starts 0x1dd5c[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1dd5c load_addr 0x3fc95700[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001dd5c vaddr=3fc95700 size=022bch (  8892) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001dd5c, size=0x22bc, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (321) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x20d78 data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=20d78h (134520) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x20d78, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (405) esp_image: loading segment header 3 at offset 0x40d98[0m
+D (405) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (407) esp_image: segment data length 0x8a0 data starts 0x40da0[0m
+V (413) esp_image: segment 3 map_segment 0 segment_data_offs 0x40da0 load_addr 0x3fc979bc[0m
+[0;32mI (421) esp_image: segment 3: paddr=00040da0 vaddr=3fc979bc size=008a0h (  2208) load[0m
+D (429) esp_image: free data page_count 0x00000200[0m
+D (434) bootloader_flash: rodata starts from paddr=0x00040da0, size=0x8a0, will be mapped to vaddr=0x3c000000[0m
+V (444) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (456) esp_image: loading segment header 4 at offset 0x41640[0m
+D (461) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (468) esp_image: segment data length 0x116ac data starts 0x41648[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x41648 load_addr 0x40374000[0m
+[0;32mI (482) esp_image: segment 4: paddr=00041648 vaddr=40374000 size=116ach ( 71340) load[0m
+D (491) esp_image: free data page_count 0x00000200[0m
+D (496) bootloader_flash: rodata starts from paddr=0x00041648, size=0x116ac, will be mapped to vaddr=0x3c000000[0m
+V (506) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (533) esp_image: image start 0x00010000 end of last section 0x00052cf4[0m
+D (533) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (535) boot: Calculated hash: 3c1bfa6ea505b028f1353fa6b4ff87e49fb87a60e77a505a36904a1cb97c77d4[0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+D (555) boot: Mapping segment 0 as DROM[0m
+D (559) boot: Mapping segment 2 as IROM[0m
+D (563) boot: calling set_cache_and_start_app[0m
+D (568) boot: configure drom and irom and start[0m
+V (572) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xdd34[0m
+V (580) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (590) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (600) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x20d78[0m
+V (608) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (618) boot: start: 0x403754b0[0m
+[0;32mI (633) cpu_start: Multicore app[0m
+[0;32mI (642) cpu_start: Pro cpu start user code[0m
+[0;32mI (642) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (642) app_init: Application information:[0m
+[0;32mI (645) app_init: Project name:     hello_world[0m
+[0;32mI (650) app_init: App version:      1[0m
+[0;32mI (655) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (661) app_init: ELF file SHA256:  84110ceff...[0m
+[0;32mI (666) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (671) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (675) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (680) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (693) heap_init: At 3FC9BBF0 len 0004DB20 (310 KiB): RAM[0m
+[0;32mI (699) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (705) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (711) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (718) spi_flash: detected chip: gd[0m
+[0;32mI (721) spi_flash: flash io: dio[0m
+[0;33mW (725) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (738) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (749) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (756) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (763) main_task: Started on CPU0[0m
+[0;32mI (773) main_task: Calling app_main()[0m
+[0;32mI (793) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (793) main_task: Returned from app_main()[0m
+[0;32mI (863) IMU: SAMPLE_IDX 1[0m
+[0;32mI (943) IMU: SAMPLE_IDX 2[0m
+[0;32mI (1023) IMU: SAMPLE_IDX 3[0m
+[0;32mI (1093) IMU: SAMPLE_IDX 4[0m
+[0;32mI (1173) IMU: SAMPLE_IDX 5[0m
+[0;32mI (1253) IMU: SAMPLE_IDX 6[0m
+[0;32mI (1333) IMU: SAMPLE_IDX 7[0m
+[0;32mI (1403) IMU: SAMPLE_IDX 8[0m
+[0;32mI (1483) IMU: SAMPLE_IDX 9[0m
+[0;32mI (1563) IMU: SAMPLE_IDX 10[0m
+[0;32mI (1643) IMU: SAMPLE_IDX 11[0m
+[0;32mI (1713) IMU: SAMPLE_IDX 12[0m
+[0;32mI (1793) IMU: SAMPLE_IDX 13[0m
+[0;32mI (1873) IMU: SAMPLE_IDX 14[0m
+[0;32mI (1953) IMU: SAMPLE_IDX 15[0m
+[0;32mI (2023) IMU: SAMPLE_IDX 16[0m
+[0;32mI (2103) IMU: SAMPLE_IDX 17[0m
+[0;32mI (2183) IMU: SAMPLE_IDX 18[0m
+[0;32mI (2263) IMU: SAMPLE_IDX 19[0m
+[0;32mI (2333) IMU: SAMPLE_IDX 20[0m
+[0;32mI (2413) IMU: SAMPLE_IDX 21[0m
+[0;32mI (2493) IMU: SAMPLE_IDX 22[0m
+[0;32mI (2573) IMU: SAMPLE_IDX 23[0m
+[0;32mI (2643) IMU: SAMPLE_IDX 24[0m
+[0;32mI (2723) IMU: SAMPLE_IDX 25[0m
+[0;32mI (2803) IMU: SAMPLE_IDX 26[0m
+[0;32mI (2883) IMU: SAMPLE_IDX 27[0m
+[0;32mI (2953) IMU: SAMPLE_IDX 28[0m
+[0;32mI (3033) IMU: SAMPLE_IDX 29[0m
+[0;32mI (3113) IMU: SAMPLE_IDX 30[0m
+[0;32mI (3193) IMU: SAMPLE_IDX 31[0m
+[0;32mI (3263) IMU: SAMPLE_IDX 32[0m
+[0;32mI (3343) IMU: SAMPLE_IDX 33[0m
+[0;32mI (3423) IMU: SAMPLE_IDX 34[0m
+[0;32mI (3503) IMU: SAMPLE_IDX 35[0m
+[0;32mI (3573) IMU: SAMPLE_IDX 36[0m
+[0;32mI (3653) IMU: SAMPLE_IDX 37[0m
+[0;32mI (3733) IMU: SAMPLE_IDX 38[0m
+[0;32mI (3813) IMU: SAMPLE_IDX 39[0m
+[0;32mI (3883) IMU: SAMPLE_IDX 40[0m
+[0;32mI (3963) IMU: SAMPLE_IDX 41[0m
+[0;32mI (4043) IMU: SAMPLE_IDX 42[0m
+[0;32mI (4123) IMU: SAMPLE_IDX 43[0m
+[0;32mI (4193) IMU: SAMPLE_IDX 44[0m
+[0;32mI (4273) IMU: SAMPLE_IDX 45[0m
+[0;32mI (4353) IMU: SAMPLE_IDX 46[0m
+[0;32mI (4433) IMU: SAMPLE_IDX 47[0m
+[0;32mI (4503) IMU: SAMPLE_IDX 48[0m
+[0;32mI (4583) IMU: SAMPLE_IDX 49[0m
+[0;32mI (4663) IMU: SAMPLE_IDX 50[0m
+[0;32mI (4743) IMU: SAMPLE_IDX 51[0m
+[0;32mI (4813) IMU: SAMPLE_IDX 52[0m
+[0;32mI (4893) IMU: SAMPLE_IDX 53[0m
+[0;32mI (4973) IMU: SAMPLE_IDX 54[0m
+[0;32mI (5053) IMU: SAMPLE_IDX 55[0m
+[0;32mI (5123) IMU: SAMPLE_IDX 56[0m
+[0;32mI (5203) IMU: SAMPLE_IDX 57[0m
+[0;32mI (5283) IMU: SAMPLE_IDX 58[0m
+[0;32mI (5363) IMU: SAMPLE_IDX 59[0m
+[0;32mI (5433) IMU: SAMPLE_IDX 60[0m
+[0;32mI (5513) IMU: SAMPLE_IDX 61[0m
+[0;32mI (5593) IMU: SAMPLE_IDX 62[0m
+[0;32mI (5673) IMU: SAMPLE_IDX 63[0m
+[0;32mI (5743) IMU: SAMPLE_IDX 64[0m
+[0;32mI (5823) IMU: SAMPLE_IDX 65[0m
+[0;32mI (5903) IMU: SAMPLE_IDX 66[0m
+[0;32mI (5983) IMU: SAMPLE_IDX 67[0m
+[0;32mI (6053) IMU: SAMPLE_IDX 68[0m
+[0;32mI (6133) IMU: SAMPLE_IDX 69[0m
+[0;32mI (6213) IMU: SAMPLE_IDX 70[0m
+[0;32mI (6293) IMU: SAMPLE_IDX 71[0m
+[0;32mI (6363) IMU: SAMPLE_IDX 72[0m
+[0;32mI (6443) IMU: SAMPLE_IDX 73[0m
+[0;32mI (6523) IMU: SAMPLE_IDX 74[0m
+[0;32mI (6603) IMU: SAMPLE_IDX 75[0m
+[0;32mI (6673) IMU: SAMPLE_IDX 76[0m
+[0;32mI (6753) IMU: SAMPLE_IDX 77[0m
+[0;32mI (6833) IMU: SAMPLE_IDX 78[0m
+[0;32mI (6913) IMU: SAMPLE_IDX 79[0m
+[0;32mI (6983) IMU: SAMPLE_IDX 80[0m
+[0;32mI (7063) IMU: SAMPLE_IDX 81[0m
+[0;32mI (7143) IMU: SAMPLE_IDX 82[0m
+[0;32mI (7223) IMU: SAMPLE_IDX 83[0m
+[0;32mI (7303) IMU: SAMPLE_IDX 84[0m
+[0;32mI (7373) IMU: SAMPLE_IDX 85[0m
+[0;32mI (7453) IMU: SAMPLE_IDX 86[0m
+[0;32mI (7533) IMU: SAMPLE_IDX 87[0m
+[0;32mI (7613) IMU: SAMPLE_IDX 88[0m
+[0;32mI (7683) IMU: SAMPLE_IDX 89[0m
+[0;32mI (7763) IMU: SAMPLE_IDX 90[0m
+[0;32mI (7843) IMU: SAMPLE_IDX 91[0m
+[0;32mI (7923) IMU: SAMPLE_IDX 92[0m
+[0;32mI (7993) IMU: SAMPLE_IDX 93[0m
+[0;32mI (8073) IMU: SAMPLE_IDX 94[0m
+[0;32mI (8153) IMU: SAMPLE_IDX 95[0m
+[0;32mI (8233) IMU: SAMPLE_IDX 96[0m
+[0;32mI (8303) IMU: SAMPLE_IDX 97[0m
+[0;32mI (8383) IMU: SAMPLE_IDX 98[0m
+[0;32mI (8463) IMU: SAMPLE_IDX 99[0m
+[0;32mI (8543) IMU: SAMPLE_IDX 100[0m
+[0;32mI (8613) IMU: SAMPLE_IDX 101[0m
+[0;32mI (8693) IMU: SAMPLE_IDX 102[0m
+[0;32mI (8773) IMU: SAMPLE_IDX 103[0m
+[0;32mI (8853) IMU: SAMPLE_IDX 104[0m
+[0;32mI (8923) IMU: SAMPLE_IDX 105[0m
+[0;32mI (9003) IMU: SAMPLE_IDX 106[0m
+[0;32mI (9083) IMU: SAMPLE_IDX 107[0m
+[0;32mI (9163) IMU: SAMPLE_IDX 108[0m
+[0;32mI (9233) IMU: SAMPLE_IDX 109[0m
+[0;32mI (9313) IMU: SAMPLE_IDX 110[0m
+[0;32mI (9393) IMU: SAMPLE_IDX 111[0m
+[0;32mI (9473) IMU: SAMPLE_IDX 112[0m
+[0;32mI (9543) IMU: SAMPLE_IDX 113[0m
+[0;32mI (9623) IMU: SAMPLE_IDX 114[0m
+[0;32mI (9703) IMU: SAMPLE_IDX 115[0m
+[0;32mI (9783) IMU: SAMPLE_IDX 116[0m
+[0;32mI (9853) IMU: SAMPLE_IDX 117[0m
+[0;32mI (9933) IMU: SAMPLE_IDX 118[0m
+[0;32mI (10013) IMU: SAMPLE_IDX 119[0m
+[0;32mI (10093) IMU: SAMPLE_IDX 120[0m
+[0;32mI (10163) IMU: SAMPLE_IDX 121[0m
+[0;32mI (10243) IMU: SAMPLE_IDX 122[0m
+[0;32mI (10323) IMU: SAMPLE_IDX 123[0m
+[0;32mI (10403) IMU: SAMPLE_IDX 124[0m
+[0;32mI (10473) IMU: SAMPLE_IDX 125[0m
+[0;32mI (10553) IMU: SAMPLE_IDX 126[0m
+[0;32mI (10633) IMU: SAMPLE_IDX 127[0m
+[0;32mI (10713) IMU: SAMPLE_IDX 128[0m
+[0;32mI (10783) IMU: SAMPLE_IDX 129[0m
+[0;32mI (10863) IMU: SAMPLE_IDX 130[0m
+[0;32mI (10943) IMU: SAMPLE_IDX 131[0m
+[0;32mI (11023) IMU: SAMPLE_IDX 132[0m
+[0;32mI (11093) IMU: SAMPLE_IDX 133[0m
+[0;32mI (11173) IMU: SAMPLE_IDX 134[0m
+[0;32mI (11253) IMU: SAMPLE_IDX 135[0m
+[0;32mI (11333) IMU: SAMPLE_IDX 136[0m
+[0;32mI (11403) IMU: SAMPLE_IDX 137[0m
+[0;32mI (11483) IMU: SAMPLE_IDX 138[0m
+[0;32mI (11563) IMU: SAMPLE_IDX 139[0m
+[0;32mI (11643) IMU: SAMPLE_IDX 140[0m
+[0;32mI (11713) IMU: SAMPLE_IDX 141[0m
+[0;32mI (11793) IMU: SAMPLE_IDX 142[0m
+[0;32mI (11873) IMU: SAMPLE_IDX 143[0m
+[0;32mI (11953) IMU: SAMPLE_IDX 144[0m
+[0;32mI (12023) IMU: SAMPLE_IDX 145[0m
+[0;32mI (12103) IMU: SAMPLE_IDX 146[0m
+[0;32mI (12183) IMU: SAMPLE_IDX 147[0m
+[0;32mI (12263) IMU: SAMPLE_IDX 148[0m
+[0;32mI (12333) IMU: SAMPLE_IDX 149[0m
+[0;32mI (12413) IMU: SAMPLE_IDX 150[0m
+[0;32mI (12493) IMU: SAMPLE_IDX 151[0m
+[0;32mI (12573) IMU: SAMPLE_IDX 152[0m
+[0;32mI (12643) IMU: SAMPLE_IDX 153[0m
+[0;32mI (12723) IMU: SAMPLE_IDX 154[0m
+[0;32mI (12803) IMU: SAMPLE_IDX 155[0m
+[0;32mI (12883) IMU: SAMPLE_IDX 156[0m
+[0;32mI (12953) IMU: SAMPLE_IDX 157[0m
+[0;32mI (13033) IMU: SAMPLE_IDX 158[0m
+[0;32mI (13113) IMU: SAMPLE_IDX 159[0m
+[0;32mI (13193) IMU: SAMPLE_IDX 160[0m
+[0;32mI (13263) IMU: SAMPLE_IDX 161[0m
+[0;32mI (13343) IMU: SAMPLE_IDX 162[0m
+[0;32mI (13423) IMU: SAMPLE_IDX 163[0m
+[0;32mI (13503) IMU: SAMPLE_IDX 164[0m
+[0;32mI (13573) IMU: SAMPLE_IDX 165[0m
+[0;32mI (13653) IMU: SAMPLE_IDX 166[0m
+[0;32mI (13733) IMU: SAMPLE_IDX 167[0m
+[0;32mI (13813) IMU: SAMPLE_IDX 168[0m
+[0;32mI (13883) IMU: SAMPLE_IDX 169[0m
+[0;32mI (13963) IMU: SAMPLE_IDX 170[0m
+[0;32mI (14043) IMU: SAMPLE_IDX 171[0m
+[0;32mI (14123) IMU: SAMPLE_IDX 172[0m
+[0;32mI (14193) IMU: SAMPLE_IDX 173[0m
+[0;32mI (14273) IMU: SAMPLE_IDX 174[0m
+[0;32mI (14353) IMU: SAMPLE_IDX 175[0m
+[0;32mI (14433) IMU: SAMPLE_IDX 176[0m
+[0;32mI (14503) IMU: SAMPLE_IDX 177[0m
+[0;32mI (14583) IMU: SAMPLE_IDX 178[0m
+[0;32mI (14663) IMU: SAMPLE_IDX 179[0m
+[0;32mI (14743) IMU: SAMPLE_IDX 180[0m
+[0;32mI (14823) IMU: SAMPLE_IDX 181[0m
+[0;32mI (14893) IMU: SAMPLE_IDX 182[0m
+[0;32mI (14973) IMU: SAMPLE_IDX 183[0m
+[0;32mI (15053) IMU: SAMPLE_IDX 184[0m
+[0;32mI (15133) IMU: SAMPLE_IDX 185[0m
+[0;32mI (15203) IMU: SAMPLE_IDX 186[0m
+[0;32mI (15283) IMU: SAMPLE_IDX 187[0m
+[0;32mI (15363) IMU: SAMPLE_IDX 188[0m
+[0;32mI (15443) IMU: SAMPLE_IDX 189[0m
+[0;32mI (15513) IMU: SAMPLE_IDX 190[0m
+[0;32mI (15593) IMU: SAMPLE_IDX 191[0m
+[0;32mI (15673) IMU: SAMPLE_IDX 192[0m
+[0;32mI (15753) IMU: SAMPLE_IDX 193[0m
+[0;32mI (15823) IMU: SAMPLE_IDX 194[0m
+[0;32mI (15903) IMU: SAMPLE_IDX 195[0m
+[0;32mI (15983) IMU: SAMPLE_IDX 196[0m
+[0;32mI (16063) IMU: SAMPLE_IDX 197[0m
+[0;32mI (16133) IMU: SAMPLE_IDX 198[0m
+[0;32mI (16213) IMU: SAMPLE_IDX 199[0m
+[0;32mI (16293) IMU: SAMPLE_IDX 200[0m
+[0;32mI (16373) IMU: SAMPLE_IDX 201[0m
+[0;32mI (16443) IMU: SAMPLE_IDX 202[0m
+[0;32mI (16523) IMU: SAMPLE_IDX 203[0m
+[0;32mI (16603) IMU: SAMPLE_IDX 204[0m
+[0;32mI (16683) IMU: SAMPLE_IDX 205[0m
+[0;32mI (16753) IMU: SAMPLE_IDX 206[0m
+[0;32mI (16833) IMU: SAMPLE_IDX 207[0m
+[0;32mI (16913) IMU: SAMPLE_IDX 208[0m
+[0;32mI (16993) IMU: SAMPLE_IDX 209[0m
+[0;32mI (17063) IMU: SAMPLE_IDX 210[0m
+[0;32mI (17143) IMU: SAMPLE_IDX 211[0m
+[0;32mI (17223) IMU: SAMPLE_IDX 212[0m
+[0;32mI (17303) IMU: SAMPLE_IDX 213[0m
+[0;32mI (17373) IMU: SAMPLE_IDX 214[0m
+[0;32mI (17453) IMU: SAMPLE_IDX 215[0m
+[0;32mI (17533) IMU: SAMPLE_IDX 216[0m
+[0;32mI (17613) IMU: SAMPLE_IDX 217[0m
+[0;32mI (17683) IMU: SAMPLE_IDX 218[0m
+[0;32mI (17763) IMU: SAMPLE_IDX 219[0m
+[0;32mI (17843) IMU: SAMPLE_IDX 220[0m
+[0;32mI (17923) IMU: SAMPLE_IDX 221[0m
+[0;32mI (17993) IMU: SAMPLE_IDX 222[0m
+[0;32mI (18073) IMU: SAMPLE_IDX 223[0m
+[0;32mI (18153) IMU: SAMPLE_IDX 224[0m
+[0;32mI (18233) IMU: SAMPLE_IDX 225[0m
+[0;32mI (18303) IMU: SAMPLE_IDX 226[0m
+[0;32mI (18383) IMU: SAMPLE_IDX 227[0m
+[0;32mI (18463) IMU: SAMPLE_IDX 228[0m
+[0;32mI (18543) IMU: SAMPLE_IDX 229[0m
+[0;32mI (18613) IMU: SAMPLE_IDX 230[0m
+[0;32mI (18693) IMU: SAMPLE_IDX 231[0m
+[0;32mI (18773) IMU: SAMPLE_IDX 232[0m
+[0;32mI (18853) IMU: SAMPLE_IDX 233[0m
+[0;32mI (18923) IMU: SAMPLE_IDX 234[0m
+[0;32mI (19003) IMU: SAMPLE_IDX 235[0m
+[0;32mI (19083) IMU: SAMPLE_IDX 236[0m
+[0;32mI (19163) IMU: SAMPLE_IDX 237[0m
+[0;32mI (19233) IMU: SAMPLE_IDX 238[0m
+[0;32mI (19313) IMU: SAMPLE_IDX 239[0m
+[0;32mI (19393) IMU: SAMPLE_IDX 240[0m
+[0;32mI (19473) IMU: SAMPLE_IDX 241[0m
+[0;32mI (19543) IMU: SAMPLE_IDX 242[0m
+[0;32mI (19623) IMU: SAMPLE_IDX 243[0m
+[0;32mI (19703) IMU: SAMPLE_IDX 244[0m
+[0;32mI (19783) IMU: SAMPLE_IDX 245[0m
+[0;32mI (19853) IMU: SAMPLE_IDX 246[0m
+[0;32mI (19933) IMU: SAMPLE_IDX 247[0m
+[0;32mI (20013) IMU: SAMPLE_IDX 248[0m
+[0;32mI (20093) IMU: SAMPLE_IDX 249[0m
+[0;32mI (20163) IMU: SAMPLE_IDX 250[0m
+[0;32mI (20243) IMU: SAMPLE_IDX 251[0m
+[0;32mI (20323) IMU: SAMPLE_IDX 252[0m
+[0;32mI (20403) IMU: SAMPLE_IDX 253[0m
+[0;32mI (20473) IMU: SAMPLE_IDX 254[0m
+[0;32mI (20553) IMU: SAMPLE_IDX 255[0m
+[0;32mI (20633) IMU: Accel (mean): x=-81, y=-95, z=80 | Gyro (mean): x=-1635, y=1249, z=15713[0m
+[0;32mI (20633) IMU: SAMPLE_IDX 256[0m
+[0;32mI (20713) IMU: SAMPLE_IDX 257[0m
+[0;32mI (20783) IMU: SAMPLE_IDX 258[0m
+[0;32mI (20863) IMU: SAMPLE_IDX 259[0m
+[0;32mI (20943) IMU: SAMPLE_IDX 260[0m
+[0;32mI (21023) IMU: SAMPLE_IDX 261[0m
+[0;32mI (21093) IMU: SAMPLE_IDX 262[0m
+[0;32mI (21173) IMU: SAMPLE_IDX 263[0m
+[0;32mI (21253) IMU: SAMPLE_IDX 264[0m
+[0;32mI (21333) IMU: SAMPLE_IDX 265[0m
+[0;32mI (21403) IMU: SAMPLE_IDX 266[0m
+[0;32mI (21483) IMU: SAMPLE_IDX 267[0m
+[0;32mI (21563) IMU: SAMPLE_IDX 268[0m
+[0;32mI (21643) IMU: SAMPLE_IDX 269[0m
+[0;32mI (21713) IMU: SAMPLE_IDX 270[0m
+[0;32mI (21793) IMU: SAMPLE_IDX 271[0m
+[0;32mI (21873) IMU: SAMPLE_IDX 272[0m
+[0;32mI (21953) IMU: SAMPLE_IDX 273[0m
+[0;32mI (22033) IMU: SAMPLE_IDX 274[0m
+[0;32mI (22103) IMU: SAMPLE_IDX 275[0m
+[0;32mI (22183) IMU: SAMPLE_IDX 276[0m
+[0;32mI (22263) IMU: SAMPLE_IDX 277[0m
+[0;32mI (22343) IMU: SAMPLE_IDX 278[0m
+[0;32mI (22413) IMU: SAMPLE_IDX 279[0m
+[0;32mI (22493) IMU: SAMPLE_IDX 280[0m
+[0;32mI (22573) IMU: SAMPLE_IDX 281[0m
+[0;32mI (22653) IMU: SAMPLE_IDX 282[0m
+[0;32mI (22723) IMU: SAMPLE_IDX 283[0m
+[0;32mI (22803) IMU: SAMPLE_IDX 284[0m
+[0;32mI (22883) IMU: SAMPLE_IDX 285[0m
+[0;32mI (22963) IMU: SAMPLE_IDX 286[0m
+[0;32mI (23033) IMU: SAMPLE_IDX 287[0m
+[0;32mI (23113) IMU: SAMPLE_IDX 288[0m
+[0;32mI (23193) IMU: SAMPLE_IDX 289[0m

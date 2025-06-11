@@ -1,25 +1,464 @@
--- ccache will be used for faster recompilation
--- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
--- Could not use 'git describe' to determine PROJECT_VER.
--- Building ESP-IDF components for target esp32s3
--- Project sdkconfig file C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/sdkconfig
--- Compiler supported targets: xtensa-esp-elf
--- App "hello_world" version: 1
--- Adding linker script C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/esp_system/ld/memory.ld
--- Adding linker script C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/esp_system/ld/sections.ld.in
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
--- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
--- Component paths: C:/Users/mikel/esp-adf/esp-idf/components/app_trace C:/Users/mikel/esp-adf/esp-idf/components/app_update C:/Users/mikel/esp-adf/esp-idf/components/bootloader C:/Users/mikel/esp-adf/esp-idf/components/bootloader_support C:/Users/mikel/esp-adf/esp-idf/components/bt C:/Users/mikel/esp-adf/esp-idf/components/cmock C:/Users/mikel/esp-adf/esp-idf/components/console C:/Users/mikel/esp-adf/esp-idf/components/cxx C:/Users/mikel/esp-adf/esp-idf/components/driver C:/Users/mikel/esp-adf/esp-idf/components/efuse C:/Users/mikel/esp-adf/esp-idf/components/esp-tls C:/Users/mikel/esp-adf/esp-idf/components/esp_adc C:/Users/mikel/esp-adf/esp-idf/components/esp_app_format C:/Users/mikel/esp-adf/esp-idf/components/esp_bootloader_format C:/Users/mikel/esp-adf/esp-idf/components/esp_coex C:/Users/mikel/esp-adf/esp-idf/components/esp_common C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_ana_cmpr C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_cam C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_dac C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_gpio C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_gptimer C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_i2c C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_i2s C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_isp C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_jpeg C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_ledc C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_mcpwm C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_parlio C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_pcnt C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_ppa C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_rmt C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_sdio C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_sdm C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_sdmmc C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_sdspi C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_touch_sens C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_tsens C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_uart C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_usb_serial_jtag C:/Users/mikel/esp-adf/esp-idf/components/esp_eth C:/Users/mikel/esp-adf/esp-idf/components/esp_event C:/Users/mikel/esp-adf/esp-idf/components/esp_gdbstub C:/Users/mikel/esp-adf/esp-idf/components/esp_hid C:/Users/mikel/esp-adf/esp-idf/components/esp_http_client C:/Users/mikel/esp-adf/esp-idf/components/esp_http_server C:/Users/mikel/esp-adf/esp-idf/components/esp_https_ota C:/Users/mikel/esp-adf/esp-idf/components/esp_https_server C:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support C:/Users/mikel/esp-adf/esp-idf/components/esp_lcd C:/Users/mikel/esp-adf/esp-idf/components/esp_local_ctrl C:/Users/mikel/esp-adf/esp-idf/components/esp_mm C:/Users/mikel/esp-adf/esp-idf/components/esp_netif C:/Users/mikel/esp-adf/esp-idf/components/esp_netif_stack C:/Users/mikel/esp-adf/esp-idf/components/esp_partition C:/Users/mikel/esp-adf/esp-idf/components/esp_phy C:/Users/mikel/esp-adf/esp-idf/components/esp_pm C:/Users/mikel/esp-adf/esp-idf/components/esp_psram C:/Users/mikel/esp-adf/esp-idf/components/esp_ringbuf C:/Users/mikel/esp-adf/esp-idf/components/esp_rom C:/Users/mikel/esp-adf/esp-idf/components/esp_system C:/Users/mikel/esp-adf/esp-idf/components/esp_timer C:/Users/mikel/esp-adf/esp-idf/components/esp_vfs_console C:/Users/mikel/esp-adf/esp-idf/components/esp_wifi C:/Users/mikel/esp-adf/esp-idf/components/espcoredump C:/Users/mikel/esp-adf/esp-idf/components/esptool_py C:/Users/mikel/esp-adf/esp-idf/components/fatfs C:/Users/mikel/esp-adf/esp-idf/components/freertos C:/Users/mikel/esp-adf/esp-idf/components/hal C:/Users/mikel/esp-adf/esp-idf/components/heap C:/Users/mikel/esp-adf/esp-idf/components/http_parser C:/Users/mikel/esp-adf/esp-idf/components/idf_test C:/Users/mikel/esp-adf/esp-idf/components/ieee802154 C:/Users/mikel/esp-adf/esp-idf/components/json C:/Users/mikel/esp-adf/esp-idf/components/log C:/Users/mikel/esp-adf/esp-idf/components/lwip C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main C:/Users/mikel/esp-adf/esp-idf/components/mbedtls C:/Users/mikel/esp-adf/esp-idf/components/mqtt C:/Users/mikel/esp-adf/esp-idf/components/newlib C:/Users/mikel/esp-adf/esp-idf/components/nvs_flash C:/Users/mikel/esp-adf/esp-idf/components/nvs_sec_provider C:/Users/mikel/esp-adf/esp-idf/components/openthread C:/Users/mikel/esp-adf/esp-idf/components/partition_table C:/Users/mikel/esp-adf/esp-idf/components/perfmon C:/Users/mikel/esp-adf/esp-idf/components/protobuf-c C:/Users/mikel/esp-adf/esp-idf/components/protocomm C:/Users/mikel/esp-adf/esp-idf/components/pthread C:/Users/mikel/esp-adf/esp-idf/components/sdmmc C:/Users/mikel/esp-adf/esp-idf/components/soc C:/Users/mikel/esp-adf/esp-idf/components/spi_flash C:/Users/mikel/esp-adf/esp-idf/components/spiffs C:/Users/mikel/esp-adf/esp-idf/components/tcp_transport C:/Users/mikel/esp-adf/esp-idf/components/touch_element C:/Users/mikel/esp-adf/esp-idf/components/ulp C:/Users/mikel/esp-adf/esp-idf/components/unity C:/Users/mikel/esp-adf/esp-idf/components/usb C:/Users/mikel/esp-adf/esp-idf/components/vfs C:/Users/mikel/esp-adf/esp-idf/components/wear_levelling C:/Users/mikel/esp-adf/esp-idf/components/wifi_provisioning C:/Users/mikel/esp-adf/esp-idf/components/wpa_supplicant C:/Users/mikel/esp-adf/esp-idf/components/xtensa
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build
-[0/1] Re-running CMake...
-[1/2] Cleaning additional files...
-[2/2] Cleaning all built files...
-Cleaning... 1001 files.
+V (96) bootloader_flash: after mapping, starting from paddr=0x00ddr=0x3c000000[0mESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048c46
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754b0[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xe164 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e164h ( 57700) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xe164, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1e184[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x1e8c data starts 0x1e18c[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1e18c load_addr 0x3fc95700[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001e18c vaddr=3fc95700 size=01e8ch (  7820) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001e18c, size=0x1e8c, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (321) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x21c48 data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=21c48h (138312) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x21c48, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (406) esp_image: loading segment header 3 at offset 0x41c68[0m
+D (406) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (407) esp_image: segment data length 0xcd0 data starts 0x41c70[0m
+V (413) esp_image: segment 3 map_segment 0 segment_data_offs 0x41c70 load_addr 0x3fc9758c[0m
+[0;32mI (422) esp_image: segment 3: paddr=00041c70 vaddr=3fc9758c size=00cd0h (  3280) load[0m
+D (430) esp_image: free data page_count 0x00000200[0m
+D (435) bootloader_flash: rodata starts from paddr=0x00041c70, size=0xcd0, will be mapped to vaddr=0x3c000000[0m
+V (445) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (456) esp_image: loading segment header 4 at offset 0x42940[0m
+D (461) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (468) esp_image: segment data length 0x116ac data starts 0x42948[0m
+V (475) esp_image: segment 4 map_segment 0 segment_data_offs 0x42948 load_addr 0x40374000[0m
+[0;32mI (483) esp_image: segment 4: paddr=00042948 vaddr=40374000 size=116ach ( 71340) load[0m
+D (491) esp_image: free data page_count 0x00000200[0m
+D (496) bootloader_flash: rodata starts from paddr=0x00042948, size=0x116ac, will be mapped to vaddr=0x3c000000[0m
+V (506) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (533) esp_image: image start 0x00010000 end of last section 0x00053ff4[0m
+D (534) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (536) boot: Calculated hash: 0c92871610a143a1d4b8b48a55bc7962d611053f6a73bfb5a79b30fd81d13182[0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (552) boot: Disabling RNG early entropy source...[0m
+D (556) boot: Mapping segment 0 as DROM[0m
+D (560) boot: Mapping segment 2 as IROM[0m
+D (564) boot: calling set_cache_and_start_app[0m
+D (568) boot: configure drom and irom and start[0m
+V (573) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xe164[0m
+V (580) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (591) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (601) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x21c48[0m
+V (608) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (619) boot: start: 0x403754b0[0m
+[0;32mI (633) cpu_start: Multicore app[0m
+[0;32mI (643) cpu_start: Pro cpu start user code[0m
+[0;32mI (643) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (643) app_init: Application information:[0m
+[0;32mI (646) app_init: Project name:     hello_world[0m
+[0;32mI (651) app_init: App version:      1[0m
+[0;32mI (655) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (661) app_init: ELF file SHA256:  2f7b1ffe0...[0m
+[0;32mI (667) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (671) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (676) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (681) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (686) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (693) heap_init: At 3FC98BE0 len 00050B30 (322 KiB): RAM[0m
+[0;32mI (699) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (705) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (711) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (719) spi_flash: detected chip: gd[0m
+[0;32mI (722) spi_flash: flash io: dio[0m
+[0;33mW (726) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (739) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (750) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (757) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (764) main_task: Started on CPU0[0m
+[0;32mI (774) main_task: Calling app_main()[0m
+[0;32mI (794) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (794) TRACKING: X_POS: 0.000000, Y_POS: 0.000000, Z_POS 0.000000[0m
+[0;32mI (794) ACC: X: -179	Y: 82	Z: 966[0m
+TRACKING: X_POS: 0.000000, Y_POS: 0.000000, Z_POS: -0.000226
+TRACKING: X_POS: -0.000157, Y_POS: -0.000203, Z_POS: -0.000421
+TRACKING: X_POS: -0.000313, Y_POS: -0.000412, Z_POS: -0.000842
+[0;32mI (1304) ACC: X: -13	Y: 143	Z: 1033[0m
+TRACKING: X_POS: -0.000471, Y_POS: -0.000623, Z_POS: -0.001490
+TRACKING: X_POS: -0.000628, Y_POS: -0.000836, Z_POS: -0.002364
+[0;32mI (1804) ACC: X: -7	Y: 126	Z: 1008[0m
+TRACKING: X_POS: -0.000787, Y_POS: -0.001051, Z_POS: -0.003464
+TRACKING: X_POS: -0.000948, Y_POS: -0.001267, Z_POS: -0.004790
+TRACKING: X_POS: -0.001113, Y_POS: -0.001486, Z_POS: -0.006341
+[0;32mI (2304) ACC: X: -21	Y: 44	Z: 1000[0m
+TRACKING: X_POS: -0.001279, Y_POS: -0.001706, Z_POS: -0.008118
+TRACKING: X_POS: -0.001448, Y_POS: -0.001929, Z_POS: -0.010121
+[0;32mI (2804) ACC: X: -26	Y: -8	Z: 1015[0m
+TRACKING: X_POS: -0.001618, Y_POS: -0.002154, Z_POS: -0.012349
+TRACKING: X_POS: -0.001789, Y_POS: -0.002381, Z_POS: -0.014804
+TRACKING: X_POS: -0.001962, Y_POS: -0.002611, Z_POS: -0.017484
+[0;32mI (3304) ACC: X: -34	Y: -37	Z: 1003[0m
+TRACKING: X_POS: -0.002137, Y_POS: -0.002843, Z_POS: -0.020391
+TRACKING: X_POS: -0.002314, Y_POS: -0.003076, Z_POS: -0.023523
+[0;32mI (3804) ACC: X: -35	Y: -54	Z: 1006[0m
+TRACKING: X_POS: -0.002492, Y_POS: -0.003312, Z_POS: -0.026882
+TRACKING: X_POS: -0.002672, Y_POS: -0.003549, Z_POS: -0.030466
+TRACKING: X_POS: -0.002854, Y_POS: -0.003787, Z_POS: -0.034276
+[0;32mI (4304) ACC: X: -46	Y: -54	Z: 997[0m
+TRACKING: X_POS: -0.003037, Y_POS: -0.004027, Z_POS: -0.038313
+TRACKING: X_POS: -0.003222, Y_POS: -0.004268, Z_POS: -0.042575
+[0;32mI (4804) ACC: X: -40	Y: -63	Z: 1005[0m
+TRACKING: X_POS: -0.003409, Y_POS: -0.004511, Z_POS: -0.047064
+TRACKING: X_POS: -0.003599, Y_POS: -0.004754, Z_POS: -0.051778
+TRACKING: X_POS: -0.003791, Y_POS: -0.004999, Z_POS: -0.056719
+[0;32mI (5304) ACC: X: -35	Y: -73	Z: 1013[0m
+TRACKING: X_POS: -0.003986, Y_POS: -0.005244, Z_POS: -0.061886
+TRACKING: X_POS: -0.004183, Y_POS: -0.005489, Z_POS: -0.067279
+[0;32mI (5804) ACC: X: -35	Y: -72	Z: 1005[0m
+TRACKING: X_POS: -0.004383, Y_POS: -0.005735, Z_POS: -0.072898
+TRACKING: X_POS: -0.004585, Y_POS: -0.005981, Z_POS: -0.078743
+TRACKING: X_POS: -0.004791, Y_POS: -0.006227, Z_POS: -0.084814
+[0;32mI (6304) ACC: X: -10	Y: -95	Z: 1008[0m
+TRACKING: X_POS: -0.004999, Y_POS: -0.006473, Z_POS: -0.091112
+TRACKING: X_POS: -0.005211, Y_POS: -0.006718, Z_POS: -0.097636
+[0;32mI (6804) ACC: X: 80	Y: -41	Z: 1048[0m
+TRACKING: X_POS: -0.005424, Y_POS: -0.006963, Z_POS: -0.104387
+TRACKING: X_POS: -0.005638, Y_POS: -0.007207, Z_POS: -0.111371
+TRACKING: X_POS: -0.005852, Y_POS: -0.007449, Z_POS: -0.118594
+[0;32mI (7304) ACC: X: 23	Y: -16	Z: 970[0m
+TRACKING: X_POS: -0.006067, Y_POS: -0.007689, Z_POS: -0.126055
+TRACKING: X_POS: -0.006287, Y_POS: -0.007925, Z_POS: -0.133754
+[0;32mI (7804) ACC: X: 43	Y: -51	Z: 997[0m
+TRACKING: X_POS: -0.006507, Y_POS: -0.008161, Z_POS: -0.141693
+TRACKING: X_POS: -0.006728, Y_POS: -0.008395, Z_POS: -0.149870
+TRACKING: X_POS: -0.006950, Y_POS: -0.008629, Z_POS: -0.158283
+[0;32mI (8304) ACC: X: 75	Y: -24	Z: 1023[0m
+TRACKING: X_POS: -0.007174, Y_POS: -0.008862, Z_POS: -0.166930
+TRACKING: X_POS: -0.007405, Y_POS: -0.009093, Z_POS: -0.175810
+[0;32mI (8804) ACC: X: 17	Y: -93	Z: 1005[0m
+TRACKING: X_POS: -0.007635, Y_POS: -0.009321, Z_POS: -0.184920
+TRACKING: X_POS: -0.007865, Y_POS: -0.009546, Z_POS: -0.194259
+TRACKING: X_POS: -0.008096, Y_POS: -0.009769, Z_POS: -0.203825
+[0;32mI (9304) ACC: X: 74	Y: -37	Z: 993[0m
+TRACKING: X_POS: -0.008329, Y_POS: -0.009989, Z_POS: -0.213619
+TRACKING: X_POS: -0.008560, Y_POS: -0.010206, Z_POS: -0.223640
+[0;32mI (9804) ACC: X: 83	Y: -23	Z: 996[0m
+TRACKING: X_POS: -0.008792, Y_POS: -0.010420, Z_POS: -0.233890
+TRACKING: X_POS: -0.009023, Y_POS: -0.010632, Z_POS: -0.244366
+TRACKING: X_POS: -0.009251, Y_POS: -0.010840, Z_POS: -0.255070
+[0;32mI (10304) ACC: X: 86	Y: 99	Z: 978[0m
+TRACKING: X_POS: -0.009480, Y_POS: -0.011047, Z_POS: -0.266003
+TRACKING: X_POS: -0.009712, Y_POS: -0.011252, Z_POS: -0.277163
+[0;32mI (10794) TRACKING: X_POS: -0.009712, Y_POS: -0.011252, Z_POS -0.277163[0m
+[0;32mI (10804) ACC: X: 93	Y: -43	Z: 1024[0m
+TRACKING: X_POS: -0.009943, Y_POS: -0.011453, Z_POS: -0.288548
+TRACKING: X_POS: -0.010173, Y_POS: -0.011652, Z_POS: -0.300158
+TRACKING: X_POS: -0.010403, Y_POS: -0.011847, Z_POS: -0.311994
+[0;32mI (11304) ACC: X: 97	Y: -33	Z: 1013[0m
+TRACKING: X_POS: -0.010630, Y_POS: -0.012038, Z_POS: -0.324055
+TRACKING: X_POS: -0.010855, Y_POS: -0.012226, Z_POS: -0.336342
+[0;32mI (11804) ACC: X: 81	Y: -47	Z: 1000[0m
+TRACKING: X_POS: -0.011078, Y_POS: -0.012411, Z_POS: -0.348856
+TRACKING: X_POS: -0.011299, Y_POS: -0.012591, Z_POS: -0.361595
+TRACKING: X_POS: -0.011517, Y_POS: -0.012768, Z_POS: -0.374560
+[0;32mI (12304) ACC: X: 79	Y: -48	Z: 986[0m
+TRACKING: X_POS: -0.011732, Y_POS: -0.012941, Z_POS: -0.387752
+TRACKING: X_POS: -0.011944, Y_POS: -0.013110, Z_POS: -0.401169
+[0;32mI (12804) ACC: X: 67	Y: -84	Z: 984[0m
+TRACKING: X_POS: -0.012154, Y_POS: -0.013274, Z_POS: -0.414812
+TRACKING: X_POS: -0.012360, Y_POS: -0.013434, Z_POS: -0.428682
+TRACKING: X_POS: -0.012563, Y_POS: -0.013589, Z_POS: -0.442778
+[0;32mI (13304) ACC: X: 74	Y: -91	Z: 1000[0m
+TRACKING: X_POS: -0.012761, Y_POS: -0.013739, Z_POS: -0.457100
+TRACKING: X_POS: -0.012953, Y_POS: -0.013884, Z_POS: -0.471646
+[0;32mI (13804) ACC: X: -14	Y: -361	Z: 985[0m
+TRACKING: X_POS: -0.013140, Y_POS: -0.014020, Z_POS: -0.486413
+TRACKING: X_POS: -0.013318, Y_POS: -0.014148, Z_POS: -0.501386
+TRACKING: X_POS: -0.013489, Y_POS: -0.014269, Z_POS: -0.516549
+[0;32mI (14304) ACC: X: 422	Y: 75	Z: 924[0m
+TRACKING: X_POS: -0.013665, Y_POS: -0.014388, Z_POS: -0.531910
+TRACKING: X_POS: -0.013834, Y_POS: -0.014504, Z_POS: -0.547482
+[0;32mI (14804) ACC: X: 215	Y: -232	Z: 977[0m
+TRACKING: X_POS: -0.013996, Y_POS: -0.014611, Z_POS: -0.563274
+TRACKING: X_POS: -0.014148, Y_POS: -0.014708, Z_POS: -0.579292
+TRACKING: X_POS: -0.014291, Y_POS: -0.014796, Z_POS: -0.595534
+[0;32mI (15304) ACC: X: 114	Y: -238	Z: 961[0m
+TRACKING: X_POS: -0.014423, Y_POS: -0.014873, Z_POS: -0.612002
+TRACKING: X_POS: -0.014545, Y_POS: -0.014939, Z_POS: -0.628695
+[0;32mI (15804) ACC: X: 121	Y: -221	Z: 967[0m
+TRACKING: X_POS: -0.014655, Y_POS: -0.014993, Z_POS: -0.645613
+TRACKING: X_POS: -0.014755, Y_POS: -0.015035, Z_POS: -0.662757
+TRACKING: X_POS: -0.014844, Y_POS: -0.015066, Z_POS: -0.680126
+[0;32mI (16304) ACC: X: 152	Y: -226	Z: 955[0m
+TRACKING: X_POS: -0.014921, Y_POS: -0.015083, Z_POS: -0.697719
+TRACKING: X_POS: -0.014986, Y_POS: -0.015089, Z_POS: -0.715537
+[0;32mI (16804) ACC: X: 378	Y: -40	Z: 1003[0m
+TRACKING: X_POS: -0.015036, Y_POS: -0.015079, Z_POS: -0.733580
+TRACKING: X_POS: -0.015073, Y_POS: -0.015053, Z_POS: -0.751861
+TRACKING: X_POS: -0.015094, Y_POS: -0.015006, Z_POS: -0.770402
+[0;32mI (17304) ACC: X: 435	Y: -666	Z: 763[0m
+TRACKING: X_POS: -0.015113, Y_POS: -0.014923, Z_POS: -0.789216
+TRACKING: X_POS: -0.015116, Y_POS: -0.014814, Z_POS: -0.808271
+[0;32mI (17804) ACC: X: -146	Y: -353	Z: 933[0m
+TRACKING: X_POS: -0.015095, Y_POS: -0.014687, Z_POS: -0.827550
+TRACKING: X_POS: -0.015058, Y_POS: -0.014539, Z_POS: -0.847053
+TRACKING: X_POS: -0.015005, Y_POS: -0.014372, Z_POS: -0.866780
+[0;32mI (18304) ACC: X: -117	Y: -262	Z: 979[0m
+TRACKING: X_POS: -0.014935, Y_POS: -0.014184, Z_POS: -0.886732
+TRACKING: X_POS: -0.014850, Y_POS: -0.013973, Z_POS: -0.906909
+[0;32mI (18804) ACC: X: -115	Y: -261	Z: 942[0m
+TRACKING: X_POS: -0.014750, Y_POS: -0.013740, Z_POS: -0.927309
+TRACKING: X_POS: -0.014635, Y_POS: -0.013485, Z_POS: -0.947933
+TRACKING: X_POS: -0.014507, Y_POS: -0.013206, Z_POS: -0.968781
+[0;32mI (19304) ACC: X: -99	Y: -258	Z: 960[0m
+TRACKING: X_POS: -0.014366, Y_POS: -0.012902, Z_POS: -0.989853
+TRACKING: X_POS: -0.014212, Y_POS: -0.012573, Z_POS: -1.011148
+[0;32mI (19804) ACC: X: -102	Y: -301	Z: 970[0m
+TRACKING: X_POS: -0.014045, Y_POS: -0.012219, Z_POS: -1.032664
+TRACKING: X_POS: -0.013864, Y_POS: -0.011840, Z_POS: -1.054400
+TRACKING: X_POS: -0.013669, Y_POS: -0.011435, Z_POS: -1.076356
+[0;32mI (20304) ACC: X: -46	Y: -186	Z: 979[0m
+TRACKING: X_POS: -0.013462, Y_POS: -0.011002, Z_POS: -1.098535
+TRACKING: X_POS: -0.013241, Y_POS: -0.010540, Z_POS: -1.120937
+[0;32mI (20794) TRACKING: X_POS: -0.013241, Y_POS: -0.010540, Z_POS -1.120937[0m
+[0;32mI (20804) ACC: X: -69	Y: -216	Z: 983[0m
+TRACKING: X_POS: -0.013007, Y_POS: -0.010049, Z_POS: -1.143564
+TRACKING: X_POS: -0.012761, Y_POS: -0.009527, Z_POS: -1.166413
+TRACKING: X_POS: -0.012505, Y_POS: -0.008977, Z_POS: -1.189480
+[0;32mI (21304) ACC: X: -49	Y: -319	Z: 944[0m
+TRACKING: X_POS: -0.012236, Y_POS: -0.008399, Z_POS: -1.212759
+TRACKING: X_POS: -0.011952, Y_POS: -0.007793, Z_POS: -1.236252
+[0;32mI (21804) ACC: X: 39	Y: -189	Z: 985[0m
+TRACKING: X_POS: -0.011656, Y_POS: -0.007156, Z_POS: -1.259959
+TRACKING: X_POS: -0.011348, Y_POS: -0.006487, Z_POS: -1.283880
+TRACKING: X_POS: -0.011027, Y_POS: -0.005784, Z_POS: -1.308019
+[0;32mI (22304) ACC: X: -29	Y: -204	Z: 951[0m
+TRACKING: X_POS: -0.010693, Y_POS: -0.005050, Z_POS: -1.332374
+TRACKING: X_POS: -0.010345, Y_POS: -0.004282, Z_POS: -1.356945
+[0;32mI (22804) ACC: X: -3	Y: -165	Z: 1016[0m
+TRACKING: X_POS: -0.009986, Y_POS: -0.003479, Z_POS: -1.381733
+TRACKING: X_POS: -0.009615, Y_POS: -0.002642, Z_POS: -1.406739
+TRACKING: X_POS: -0.009232, Y_POS: -0.001770, Z_POS: -1.431962
+[0;32mI (23304) ACC: X: -17	Y: -148	Z: 1006[0m
+TRACKING: X_POS: -0.008837, Y_POS: -0.000862, Z_POS: -1.457403
+TRACKING: X_POS: -0.008429, Y_POS: 0.000081, Z_POS: -1.483062
+[0;32mI (23804) ACC: X: -19	Y: -129	Z: 980[0m
+TRACKING: X_POS: -0.008011, Y_POS: 0.001059, Z_POS: -1.508940
+TRACKING: X_POS: -0.007582, Y_POS: 0.002074, Z_POS: -1.535038
+TRACKING: X_POS: -0.007142, Y_POS: 0.003126, Z_POS: -1.561357
+[0;32mI (24304) ACC: X: -20	Y: -183	Z: 979[0m
+TRACKING: X_POS: -0.006691, Y_POS: 0.004215, Z_POS: -1.587895
+TRACKING: X_POS: -0.006230, Y_POS: 0.005343, Z_POS: -1.614654
+[0;32mI (24804) ACC: X: -23	Y: -238	Z: 977[0m
+TRACKING: X_POS: -0.005758, Y_POS: 0.006510, Z_POS: -1.641634
+TRACKING: X_POS: -0.005273, Y_POS: 0.007716, Z_POS: -1.668835
+TRACKING: X_POS: -0.004779, Y_POS: 0.008967, Z_POS: -1.696258
+[0;32mI (25304) ACC: X: -141	Y: -198	Z: 917[0m
+TRACKING: X_POS: -0.004270, Y_POS: 0.010257, Z_POS: -1.723899
+TRACKING: X_POS: -0.003744, Y_POS: 0.011586, Z_POS: -1.751758
+[0;32mI (25804) ACC: X: -169	Y: 15	Z: 966[0m
+TRACKING: X_POS: -0.003205, Y_POS: 0.012964, Z_POS: -1.779838
+TRACKING: X_POS: -0.002646, Y_POS: 0.014386, Z_POS: -1.808143
+TRACKING: X_POS: -0.002078, Y_POS: 0.015848, Z_POS: -1.836672
+[0;32mI (26304) ACC: X: -234	Y: 2	Z: 911[0m
+TRACKING: X_POS: -0.001506, Y_POS: 0.017349, Z_POS: -1.865425
+TRACKING: X_POS: -0.000926, Y_POS: 0.018888, Z_POS: -1.894401
+[0;32mI (26804) ACC: X: -271	Y: 108	Z: 968[0m
+TRACKING: X_POS: -0.000337, Y_POS: 0.020468, Z_POS: -1.923604
+TRACKING: X_POS: 0.000257, Y_POS: 0.022084, Z_POS: -1.953032
+TRACKING: X_POS: 0.000860, Y_POS: 0.023736, Z_POS: -1.982683
+[0;32mI (27304) ACC: X: -186	Y: 6	Z: 975[0m
+TRACKING: X_POS: 0.001460, Y_POS: 0.025426, Z_POS: -2.012552
+TRACKING: X_POS: 0.002061, Y_POS: 0.027154, Z_POS: -2.042643
+[0;32mI (27804) ACC: X: -163	Y: -143	Z: 1009[0m
+TRACKING: X_POS: 0.002662, Y_POS: 0.028918, Z_POS: -2.072956
+TRACKING: X_POS: 0.003261, Y_POS: 0.030722, Z_POS: -2.103492
+TRACKING: X_POS: 0.003864, Y_POS: 0.032568, Z_POS: -2.134249
+[0;32mI (28304) ACC: X: -157	Y: -302	Z: 948[0m
+TRACKING: X_POS: 0.004469, Y_POS: 0.034455, Z_POS: -2.165229
+TRACKING: X_POS: 0.005076, Y_POS: 0.036385, Z_POS: -2.196430
+[0;32mI (28804) ACC: X: -105	Y: -280	Z: 975[0m
+TRACKING: X_POS: 0.005685, Y_POS: 0.038356, Z_POS: -2.227854
+TRACKING: X_POS: 0.006299, Y_POS: 0.040373, Z_POS: -2.259501
+TRACKING: X_POS: 0.006912, Y_POS: 0.042434, Z_POS: -2.291370
+[0;32mI (29304) ACC: X: -179	Y: -287	Z: 924[0m
+TRACKING: X_POS: 0.007525, Y_POS: 0.044540, Z_POS: -2.323461
+TRACKING: X_POS: 0.008141, Y_POS: 0.046689, Z_POS: -2.355773
+[0;32mI (29804) ACC: X: -116	Y: -244	Z: 986[0m
+TRACKING: X_POS: 0.008757, Y_POS: 0.048884, Z_POS: -2.388306
+TRACKING: X_POS: 0.009372, Y_POS: 0.051125, Z_POS: -2.421060
+TRACKING: X_POS: 0.009983, Y_POS: 0.053411, Z_POS: -2.454036
+[0;32mI (30304) ACC: X: -41	Y: -320	Z: 950[0m
+TRACKING: X_POS: 0.010594, Y_POS: 0.055743, Z_POS: -2.487232
+TRACKING: X_POS: 0.011204, Y_POS: 0.058125, Z_POS: -2.520648
+[0;32mI (30794) TRACKING: X_POS: 0.011204, Y_POS: 0.058125, Z_POS -2.520648[0m
+[0;32mI (30804) ACC: X: -12	Y: -341	Z: 932[0m
+TRACKING: X_POS: 0.011812, Y_POS: 0.060556, Z_POS: -2.554284
+TRACKING: X_POS: 0.012419, Y_POS: 0.063036, Z_POS: -2.588138
+TRACKING: X_POS: 0.013030, Y_POS: 0.065569, Z_POS: -2.622209
+[0;32mI (31304) ACC: X: -11	Y: -235	Z: 1019[0m
+TRACKING: X_POS: 0.013642, Y_POS: 0.068156, Z_POS: -2.656499
+TRACKING: X_POS: 0.014254, Y_POS: 0.070798, Z_POS: -2.691010
+[0;32mI (31804) ACC: X: -72	Y: -189	Z: 980[0m
+TRACKING: X_POS: 0.014864, Y_POS: 0.073491, Z_POS: -2.725740
+TRACKING: X_POS: 0.015473, Y_POS: 0.076238, Z_POS: -2.760689
+TRACKING: X_POS: 0.016080, Y_POS: 0.079039, Z_POS: -2.795859
+[0;32mI (32304) ACC: X: -38	Y: -228	Z: 1063[0m
+TRACKING: X_POS: 0.016684, Y_POS: 0.081895, Z_POS: -2.831252
+TRACKING: X_POS: 0.017285, Y_POS: 0.084808, Z_POS: -2.866869
+[0;32mI (32804) ACC: X: -39	Y: -301	Z: 981[0m
+TRACKING: X_POS: 0.017882, Y_POS: 0.087780, Z_POS: -2.902714
+TRACKING: X_POS: 0.018479, Y_POS: 0.090812, Z_POS: -2.938786
+TRACKING: X_POS: 0.019077, Y_POS: 0.093904, Z_POS: -2.975086
+[0;32mI (33304) ACC: X: -60	Y: -223	Z: 983[0m
+TRACKING: X_POS: 0.019673, Y_POS: 0.097057, Z_POS: -3.011615
+TRACKING: X_POS: 0.020270, Y_POS: 0.100270, Z_POS: -3.048372
+[0;32mI (33804) ACC: X: -25	Y: -137	Z: 979[0m
+TRACKING: X_POS: 0.020866, Y_POS: 0.103543, Z_POS: -3.085357
+TRACKING: X_POS: 0.021461, Y_POS: 0.106877, Z_POS: -3.122567
+TRACKING: X_POS: 0.022054, Y_POS: 0.110273, Z_POS: -3.160002
+[0;32mI (34304) ACC: X: -79	Y: -89	Z: 977[0m
+TRACKING: X_POS: 0.022643, Y_POS: 0.113730, Z_POS: -3.197661
+TRACKING: X_POS: 0.023231, Y_POS: 0.117248, Z_POS: -3.235545
+[0;32mI (34804) ACC: X: -51	Y: -123	Z: 1011[0m
+TRACKING: X_POS: 0.023815, Y_POS: 0.120827, Z_POS: -3.273652
+TRACKING: X_POS: 0.024398, Y_POS: 0.124466, Z_POS: -3.311981
+TRACKING: X_POS: 0.024978, Y_POS: 0.128166, Z_POS: -3.350532
+[0;32mI (35304) ACC: X: -57	Y: -97	Z: 986[0m
+TRACKING: X_POS: 0.025554, Y_POS: 0.131927, Z_POS: -3.389303
+TRACKING: X_POS: 0.026127, Y_POS: 0.135749, Z_POS: -3.428296
+[0;32mI (35804) ACC: X: -12	Y: -41	Z: 979[0m
+TRACKING: X_POS: 0.026698, Y_POS: 0.139632, Z_POS: -3.467509
+TRACKING: X_POS: 0.027265, Y_POS: 0.143575, Z_POS: -3.506943
+TRACKING: X_POS: 0.027829, Y_POS: 0.147578, Z_POS: -3.546597
+[0;32mI (36304) ACC: X: 59	Y: -26	Z: 995[0m
+TRACKING: X_POS: 0.028390, Y_POS: 0.151641, Z_POS: -3.586469
+TRACKING: X_POS: 0.028950, Y_POS: 0.155766, Z_POS: -3.626558
+[0;32mI (36804) ACC: X: 92	Y: 25	Z: 1013[0m
+TRACKING: X_POS: 0.029507, Y_POS: 0.159952, Z_POS: -3.666865
+TRACKING: X_POS: 0.030061, Y_POS: 0.164200, Z_POS: -3.707389
+TRACKING: X_POS: 0.030614, Y_POS: 0.168510, Z_POS: -3.748131
+[0;32mI (37304) ACC: X: 92	Y: 15	Z: 994[0m
+TRACKING: X_POS: 0.031164, Y_POS: 0.172881, Z_POS: -3.789091
+TRACKING: X_POS: 0.031712, Y_POS: 0.177314, Z_POS: -3.830267
+[0;32mI (37804) ACC: X: 92	Y: 21	Z: 1006[0m
+TRACKING: X_POS: 0.032259, Y_POS: 0.181809, Z_POS: -3.871662
+TRACKING: X_POS: 0.032804, Y_POS: 0.186365, Z_POS: -3.913273
+TRACKING: X_POS: 0.033347, Y_POS: 0.190982, Z_POS: -3.955102
+[0;32mI (38304) ACC: X: 89	Y: 16	Z: 997[0m
+TRACKING: X_POS: 0.033890, Y_POS: 0.195660, Z_POS: -3.997149
+TRACKING: X_POS: 0.034433, Y_POS: 0.200401, Z_POS: -4.039413
+[0;32mI (38804) ACC: X: 80	Y: 24	Z: 1002[0m
+TRACKING: X_POS: 0.034975, Y_POS: 0.205202, Z_POS: -4.081895
+TRACKING: X_POS: 0.035517, Y_POS: 0.210065, Z_POS: -4.124595
+TRACKING: X_POS: 0.036058, Y_POS: 0.214989, Z_POS: -4.167511
+[0;32mI (39304) ACC: X: 77	Y: 20	Z: 1009[0m
+TRACKING: X_POS: 0.036601, Y_POS: 0.219973, Z_POS: -4.210646
+TRACKING: X_POS: 0.037143, Y_POS: 0.225019, Z_POS: -4.253998
+[0;32mI (39804) ACC: X: 83	Y: 22	Z: 1009[0m
+TRACKING: X_POS: 0.037686, Y_POS: 0.230126, Z_POS: -4.297568
+TRACKING: X_POS: 0.038231, Y_POS: 0.235293, Z_POS: -4.341356
+TRACKING: X_POS: 0.038777, Y_POS: 0.240521, Z_POS: -4.385363
+[0;32mI (40304) ACC: X: 80	Y: 55	Z: 991[0m
+TRACKING: X_POS: 0.039325, Y_POS: 0.245809, Z_POS: -4.429587
+TRACKING: X_POS: 0.039873, Y_POS: 0.251159, Z_POS: -4.474028
+[0;32mI (40794) TRACKING: X_POS: 0.039873, Y_POS: 0.251159, Z_POS -4.474028[0m
+[0;32mI (40804) ACC: X: 49	Y: 0	Z: 1001[0m
+TRACKING: X_POS: 0.040421, Y_POS: 0.256570, Z_POS: -4.518687
+TRACKING: X_POS: 0.040970, Y_POS: 0.262043, Z_POS: -4.563563
+TRACKING: X_POS: 0.041521, Y_POS: 0.267577, Z_POS: -4.608656
+[0;32mI (41304) ACC: X: 22	Y: -17	Z: 1018[0m
+TRACKING: X_POS: 0.042073, Y_POS: 0.273172, Z_POS: -4.653968
+TRACKING: X_POS: 0.042628, Y_POS: 0.278827, Z_POS: -4.699497
+[0;32mI (41804) ACC: X: -8	Y: -35	Z: 1005[0m
+TRACKING: X_POS: 0.043183, Y_POS: 0.284544, Z_POS: -4.745242
+TRACKING: X_POS: 0.043740, Y_POS: 0.290324, Z_POS: -4.791204
+TRACKING: X_POS: 0.044299, Y_POS: 0.296164, Z_POS: -4.837384
+[0;32mI (42304) ACC: X: -30	Y: -37	Z: 1006[0m
+TRACKING: X_POS: 0.044860, Y_POS: 0.302065, Z_POS: -4.883782
+TRACKING: X_POS: 0.045423, Y_POS: 0.308027, Z_POS: -4.930397
+[0;32mI (42804) ACC: X: -24	Y: -28	Z: 1004[0m
+TRACKING: X_POS: 0.045987, Y_POS: 0.314050, Z_POS: -4.977230
+TRACKING: X_POS: 0.046553, Y_POS: 0.320135, Z_POS: -5.024280
+TRACKING: X_POS: 0.047121, Y_POS: 0.326281, Z_POS: -5.071548
+[0;32mI (43304) ACC: X: -29	Y: -24	Z: 1008[0m
+TRACKING: X_POS: 0.047690, Y_POS: 0.332489, Z_POS: -5.119033
+TRACKING: X_POS: 0.048261, Y_POS: 0.338758, Z_POS: -5.166736
+[0;32mI (43804) ACC: X: -30	Y: -19	Z: 1007[0m
+TRACKING: X_POS: 0.048833, Y_POS: 0.345089, Z_POS: -5.214656
+TRACKING: X_POS: 0.049406, Y_POS: 0.351481, Z_POS: -5.262794
+TRACKING: X_POS: 0.049980, Y_POS: 0.357935, Z_POS: -5.311149
+[0;32mI (44304) ACC: X: -24	Y: -21	Z: 1004[0m
+TRACKING: X_POS: 0.050555, Y_POS: 0.364450, Z_POS: -5.359722
+TRACKING: X_POS: 0.051131, Y_POS: 0.371028, Z_POS: -5.408511
+[0;32mI (44804) ACC: X: -24	Y: -19	Z: 1009[0m
+TRACKING: X_POS: 0.051708, Y_POS: 0.377667, Z_POS: -5.457518
+TRACKING: X_POS: 0.052286, Y_POS: 0.384368, Z_POS: -5.506742
+TRACKING: X_POS: 0.052864, Y_POS: 0.391131, Z_POS: -5.556184
+[0;32mI (45304) ACC: X: -36	Y: -31	Z: 996[0m
+TRACKING: X_POS: 0.053443, Y_POS: 0.397957, Z_POS: -5.605842
+TRACKING: X_POS: 0.054021, Y_POS: 0.404845, Z_POS: -5.655716
+[0;32mI (45804) ACC: X: -93	Y: -101	Z: 963[0m
+TRACKING: X_POS: 0.054597, Y_POS: 0.411798, Z_POS: -5.705802
+TRACKING: X_POS: 0.055170, Y_POS: 0.418815, Z_POS: -5.756097
+TRACKING: X_POS: 0.055739, Y_POS: 0.425894, Z_POS: -5.806597
+[0;32mI (46304) ACC: X: -182	Y: -238	Z: 986[0m
+TRACKING: X_POS: 0.056297, Y_POS: 0.433040, Z_POS: -5.857307
+TRACKING: X_POS: 0.056851, Y_POS: 0.440252, Z_POS: -5.908232
+[0;32mI (46804) ACC: X: -284	Y: -315	Z: 930[0m
+TRACKING: X_POS: 0.057404, Y_POS: 0.447531, Z_POS: -5.959373
+TRACKING: X_POS: 0.057954, Y_POS: 0.454880, Z_POS: -6.010728
+TRACKING: X_POS: 0.058501, Y_POS: 0.462297, Z_POS: -6.062297
+[0;32mI (47304) ACC: X: -406	Y: -296	Z: 896[0m
+TRACKING: X_POS: 0.059043, Y_POS: 0.469782, Z_POS: -6.114081
+TRACKING: X_POS: 0.059579, Y_POS: 0.477338, Z_POS: -6.166079
+[0;32mI (47804) ACC: X: -428	Y: -233	Z: 838[0m
+TRACKING: X_POS: 0.060106, Y_POS: 0.484963, Z_POS: -6.218290
+TRACKING: X_POS: 0.060624, Y_POS: 0.492657, Z_POS: -6.270716

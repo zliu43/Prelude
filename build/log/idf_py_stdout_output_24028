@@ -1,0 +1,1165 @@
+V (96) bootloader_flash: after mapping, starting from paddr=0x00ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40379b9e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754f0[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xe06c data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e06ch ( 57452) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xe06c, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1e08c[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x1f84 data starts 0x1e094[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1e094 load_addr 0x3fc95b00[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001e094 vaddr=3fc95b00 size=01f84h (  8068) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001e094, size=0x1f84, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (321) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x2104c data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2104ch (135244) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x2104c, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (405) esp_image: loading segment header 3 at offset 0x4106c[0m
+D (406) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (407) esp_image: segment data length 0xbf8 data starts 0x41074[0m
+V (413) esp_image: segment 3 map_segment 0 segment_data_offs 0x41074 load_addr 0x3fc97a84[0m
+[0;32mI (421) esp_image: segment 3: paddr=00041074 vaddr=3fc97a84 size=00bf8h (  3064) load[0m
+D (430) esp_image: free data page_count 0x00000200[0m
+D (434) bootloader_flash: rodata starts from paddr=0x00041074, size=0xbf8, will be mapped to vaddr=0x3c000000[0m
+V (444) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (456) esp_image: loading segment header 4 at offset 0x41c6c[0m
+D (461) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (468) esp_image: segment data length 0x11a4c data starts 0x41c74[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x41c74 load_addr 0x40374000[0m
+[0;32mI (482) esp_image: segment 4: paddr=00041c74 vaddr=40374000 size=11a4ch ( 72268) load[0m
+D (491) esp_image: free data page_count 0x00000200[0m
+D (496) bootloader_flash: rodata starts from paddr=0x00041c74, size=0x11a4c, will be mapped to vaddr=0x3c000000[0m
+V (506) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (533) esp_image: image start 0x00010000 end of last section 0x000536c0[0m
+D (533) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (535) boot: Calculated hash: 9ad928e1af985da187ed639e3994d86004bc0894d0e3ddec636b9e351dd9cd9b[0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+D (556) boot: Mapping segment 0 as DROM[0m
+D (560) boot: Mapping segment 2 as IROM[0m
+D (563) boot: calling set_cache_and_start_app[0m
+D (568) boot: configure drom and irom and start[0m
+V (573) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xe06c[0m
+V (580) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (590) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (601) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x2104c[0m
+V (608) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (618) boot: start: 0x403754f0[0m
+[0;32mI (633) cpu_start: Multicore app[0m
+[0;32mI (642) cpu_start: Pro cpu start user code[0m
+[0;32mI (642) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (643) app_init: Application information:[0m
+V (269) esp_image: loading segment header 1 at offset 0x1e08c[0V (533) esp_image: image start 0x00010000 end of last section 0x000536c0[0m
+D (534) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (536) boot: Calculated hash: 9ad928e1af985da187ed639e3994d86004bc0894d0e3ddec636b9e351dd9cd9b[0m
+[0;32mI (552) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (552) boot: Disabling RNG early entropy source...[0m
+D (556) boot: Mapping segment 0 as DROM[0m
+D (560) boot: Mapping segment 2 as IROM[0m
+D (564) boot: calling set_cache_and_start_app[0m
+D (568) boot: configure drom and irom and start[0m
+V (573) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xe06c[0m
+V (581) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (591) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (601) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x2104c[0m
+V (609) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (619) boot: start: 0x403754f0[0m
+[0;32mI (634) cpu_start: Multicore app[0m
+[0;32mI (643) cpu_start: Pro cpu start user code[0m
+[0;32mI (643) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (643) app_init: Application information:[0m
+[0;32mI (646) app_init: Project name:     hello_world[0m
+[0;32mI (651) app_init: App version:      1[0m
+[0;32mI (656) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (662) app_init: ELF file SHA256:  5fb3d52c3...[0m
+[0;32mI (667) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (672) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (676) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (681) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (686) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (693) heap_init: At 3FC9C018 len 0004D6F8 (309 KiB): RAM[0m
+[0;32mI (699) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (706) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (712) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (719) spi_flash: detected chip: gd[0m
+[0;32mI (722) spi_flash: flash io: dio[0m
+[0;33mW (726) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (739) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (750) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (757) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (764) main_task: Started on CPU0[0m
+[0;32mI (774) main_task: Calling app_main()[0m
+[0;32mI (794) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (794) main_task: Returned from app_main()[0m
+[0;32mI (814) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (834) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (854) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (874) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (894) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (914) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (934) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (954) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (974) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (994) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1014) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1034) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1054) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1074) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1094) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1114) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1134) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1154) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1174) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1194) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1214) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1234) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1254) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1274) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1294) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1314) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1334) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1354) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1374) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1394) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1414) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1434) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1454) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1474) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1494) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1514) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1534) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1554) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1574) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1594) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1614) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1634) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1654) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1674) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1694) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1714) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1734) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1754) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1774) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1794) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1814) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1834) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1854) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1874) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1894) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1914) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1934) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1954) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1974) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1994) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2014) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2034) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2054) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2074) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2094) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2114) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2134) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2154) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2174) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2194) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2214) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2234) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2254) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2274) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2294) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2314) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2334) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2354) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2374) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2394) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2414) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2434) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2454) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2474) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2494) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2514) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2534) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2554) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2574) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2594) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2614) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2634) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2654) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2674) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2694) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2714) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2734) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2754) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2774) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2794) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2814) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2834) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2854) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2874) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2894) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2914) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2934) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2954) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2974) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2994) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3014) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3034) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3054) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3074) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3094) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3114) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3134) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3154) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3174) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3194) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3214) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3234) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3254) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3274) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3294) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3314) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3334) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3354) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3374) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3394) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3414) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3434) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3454) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3474) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3494) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3514) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3534) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3554) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3574) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3594) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3614) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3634) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3654) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3674) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3694) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3714) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3734) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3754) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3774) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3794) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3814) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3834) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3854) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3874) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3894) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3914) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3934) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3954) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3974) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3994) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4014) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4034) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4054) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4074) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4094) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4114) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4134) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4154) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4174) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4194) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4214) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4234) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4254) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4274) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4294) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4314) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4334) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4354) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4374) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4394) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4414) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4434) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4454) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4474) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4494) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4514) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4534) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4554) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4574) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4594) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4614) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4634) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4654) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4674) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4694) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4714) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4734) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4754) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4774) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4794) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4814) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4834) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4854) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4874) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4894) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4914) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4934) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4954) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4974) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4994) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5014) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5034) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5054) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5074) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5094) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5114) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5134) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5154) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5174) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5194) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5214) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5234) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5254) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5274) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5294) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5314) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5334) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5354) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5374) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5394) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5414) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5434) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5454) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5474) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5494) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5514) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5534) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5554) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5574) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5594) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5614) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5634) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5654) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5674) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5694) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5714) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5734) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5754) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5774) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5794) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5814) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5834) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5854) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5874) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5894) IMU: Accel mean: x=-272 , y=-14 , z=987 | Gyro mean: x=-3582 , y=-4302 , z=2970 [0m
+[0;32mI (5894) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5914) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5934) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5954) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5974) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5994) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6014) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6034) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6054) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6074) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6094) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6114) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6134) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6154) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6174) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6194) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6214) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6234) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6254) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6274) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6294) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6314) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6334) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6354) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6374) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6394) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6414) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6434) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6454) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6474) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6494) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6514) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6534) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6554) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6574) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6594) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6614) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6634) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6654) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6674) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6694) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6714) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6734) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6754) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6774) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6794) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6814) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6834) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6854) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6874) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6894) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6914) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6934) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6954) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6974) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6994) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7014) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7034) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7054) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7074) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7094) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7114) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7134) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7154) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7174) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7194) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7214) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7234) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7254) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7274) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7294) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7314) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7334) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7354) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7374) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7394) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7414) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7434) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7454) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7474) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7494) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7514) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7534) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7554) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7574) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7594) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7614) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7634) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7654) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7674) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7694) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7714) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7734) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7754) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7774) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7794) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7814) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7834) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7854) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7874) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7894) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7914) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7934) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7954) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7974) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7994) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8014) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8034) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8054) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8074) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8094) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8114) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8134) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8154) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8174) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8194) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8214) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8234) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8254) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8274) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8294) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8314) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8334) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8354) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8374) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8394) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8414) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8434) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8454) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8474) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8494) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8514) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8534) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8554) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8574) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8594) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8614) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8634) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8654) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8674) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8694) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8714) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8734) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8754) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8774) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8794) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8814) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8834) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8854) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8874) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8894) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (8894) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8914) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8934) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8954) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8974) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8994) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9014) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9034) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9054) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9074) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9094) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (9094) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9114) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9134) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9154) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9174) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9194) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9214) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9234) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9254) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9274) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9294) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9314) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9334) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9354) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9374) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9394) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9414) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9434) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9454) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9474) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9494) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9514) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9534) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9554) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9574) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9594) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9614) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9634) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9644) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (9654) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9674) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9694) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9714) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9734) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9754) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9774) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9794) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9814) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9834) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9844) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (9854) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9874) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9894) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9914) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9934) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9954) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9974) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9994) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10014) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10034) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10054) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10074) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10094) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10114) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10134) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10154) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10174) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10194) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10214) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10234) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10254) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10274) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10294) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10314) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10334) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10354) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10374) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10394) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10414) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10434) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10454) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10474) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10494) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10514) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10534) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10554) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10574) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10594) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10614) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10634) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10654) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10674) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10694) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10714) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10734) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10744) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (10754) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10774) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10794) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10814) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10834) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10854) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10874) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10894) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10914) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10934) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10954) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10974) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10994) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11014) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11034) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11054) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11074) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11094) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11114) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11134) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11154) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11174) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11194) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11214) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11234) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11254) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11274) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11294) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11314) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11334) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11354) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11374) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11394) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11414) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11434) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11454) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11474) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11494) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11514) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11534) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11554) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11574) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11594) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11614) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11634) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11654) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11674) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11694) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11714) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11734) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11754) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11774) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11794) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11814) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11834) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11854) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11874) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11894) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11914) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11934) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11954) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11974) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11994) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12014) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12034) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12054) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12074) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12094) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12114) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12134) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12154) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12174) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12194) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12214) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12234) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12254) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12274) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12294) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12314) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12334) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12354) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12374) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12394) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12414) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12434) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12454) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12474) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12494) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12514) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12534) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12554) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12574) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12594) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12614) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12634) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12654) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12674) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12694) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (12694) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12714) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12734) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12754) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12774) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12794) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12814) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12834) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12854) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12874) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12894) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12914) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12934) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12954) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12974) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12994) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13014) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13034) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13054) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13074) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13094) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13114) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13134) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13154) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13174) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13194) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13214) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13234) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13254) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13274) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13294) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13314) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13334) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13354) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13374) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13394) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13414) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13434) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13454) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13474) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13494) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13514) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13534) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13554) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13574) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13594) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13614) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13634) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13654) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13674) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13694) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13714) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13734) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13754) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13774) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13794) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13814) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13834) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13854) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13874) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13894) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13914) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13934) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13954) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13974) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13994) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14014) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14034) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14054) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14074) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14094) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14114) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14134) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14154) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14174) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14194) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14214) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14234) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14254) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14274) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14294) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14314) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14334) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14354) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14374) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14394) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14414) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14434) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14454) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14474) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14494) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14514) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14534) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14554) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14574) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14594) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14614) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14634) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14654) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14674) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14694) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14714) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14734) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14754) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14774) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14794) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14814) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14834) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14854) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14874) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14894) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14914) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14934) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14954) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14974) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14994) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15014) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15034) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15054) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15074) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15094) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15114) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15134) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15154) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15174) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15194) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15214) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15234) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15254) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15274) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15294) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15314) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15334) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15354) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15374) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15394) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15414) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15434) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15454) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15474) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15494) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15514) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15534) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15554) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15574) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15594) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15614) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15634) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15654) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15674) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15694) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15714) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15734) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15754) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15774) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15794) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15814) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15834) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15854) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15874) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15894) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15914) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15934) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15954) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15974) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15994) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16014) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16034) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16054) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16074) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16094) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16114) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16134) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16154) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16174) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16194) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16214) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16234) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16254) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16274) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16294) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16314) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16334) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16354) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16374) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16394) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16414) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16434) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16454) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16474) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16494) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16514) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16534) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16554) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16574) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16594) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16614) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16634) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16654) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16674) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16694) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16714) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16734) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16754) RTC: Time: 00:00:49 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16774) RTC: Time: 00:00:49 Date: 2000-01-01 (Weekday: 0)[0m
+I BOD: Brownout detector was triggered
+
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375827
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+D (29) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (46) boot.esp32s3: magic e9[0m
+D (49) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (56) boot.esp32s3: spi_speed 0f[0m
+D (59) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (72) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (77) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (86) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (112) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (121) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (144) boot: load partition table entry 0x3c008020[0m
+D (149) boot: type=1 subtype=1[0m
+[0;32mI (152) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (186) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754f0[0m
+V (203) esp_image: loading segment header 0 at offset 0x10018[0m
+V (209) esp_image: segment data length 0xe06c data starts 0x10020[0m
+V (215) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e06ch ( 57452) map[0m
+D (232) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xe06c, will be mapped to vaddr=0x3c000000[0m
+V (247) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (268) esp_image: loading segment header 1 at offset 0x1e08c[0m
+D (268) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (270) esp_image: segment data length 0x1f84 data starts 0x1e094[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1e094 load_addr 0x3fc95b00[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001e094 vaddr=3fc95b00 size=01f84h (  8068) load[0m
+D (293) esp_image: free data page_count 0x00000200[0m
+D (564) boot: calling set_cache_and_start_app[0m
+D (568) boot: configure drom and irom and start[0m
+V (573) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xe06c[0m
+V (581) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (591) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (601) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x2104c[0m
+V (609) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (619) boot: start: 0x403754f0[0m
+[0;32mI (634) cpu_start: Multicore app[0m
+[0;32mI (643) cpu_start: Pro cpu start user code[0m
+[0;32mI (643) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (643) app_init: Application information:[0m
+[0;32mI (646) app_init: Project name:     hello_world[0m
+[0;32mI (651) app_init: App version:      1[0m
+[0;32mI (656) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (662) app_init: ELF file SHA256:  5fb3d52c3...[0m
+[0;32mI (667) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (672) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (676) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (681) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (686) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (693) heap_init: At 3FC9C018 len 0004D6F8 (309 KiB): RAM[0m
+[0;32mI (699) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (706) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (712) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (719) spi_flash: detected chip: gd[0m
+[0;32mI (722) spi_flash: flash io: dio[0m
+[0;33mW (726) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (739) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (750) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (757) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (764) main_task: Started on CPU0[0m
+[0;32mI (774) main_task: Calling app_main()[0m
+[0;32mI (794) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (794) main_task: Returned from app_main()[0m
+[0;32mI (814) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (834) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (854) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (874) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (894) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (914) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (934) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (954) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (974) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (994) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1014) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1034) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1054) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1074) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1094) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1114) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1134) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1154) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1174) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1194) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1214) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1234) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1254) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1274) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1294) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1314) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1334) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1354) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1374) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1394) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1414) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1434) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1454) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1474) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1494) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1514) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1534) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1554) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1574) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1594) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1614) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1634) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1654) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1674) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1694) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1714) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1734) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1754) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1774) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1794) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1814) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1834) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1854) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1874) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1894) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1914) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1934) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1954) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1974) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1994) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2014) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2034) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2054) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2074) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2094) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2114) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2134) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2154) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2174) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2194) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2214) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2234) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2254) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2274) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2294) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2314) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2334) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2354) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2374) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2394) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2414) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2434) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2454) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2474) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2494) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2514) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2534) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2554) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2574) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2594) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2614) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2634) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2654) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2674) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2694) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2714) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2734) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2754) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2774) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2794) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2814) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2834) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2854) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2874) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2894) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2914) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2934) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2954) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2974) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2994) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3014) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3034) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3054) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3074) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m

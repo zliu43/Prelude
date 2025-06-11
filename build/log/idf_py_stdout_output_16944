@@ -1,0 +1,287 @@
+V (96) bootloader_flash: after mapping, starting from paddr=0x00ge_count 0x000ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004883e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754b0[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xdd44 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0dd44h ( 56644) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xdd44, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1dd64[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x22ac data starts 0x1dd6c[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1dd6c load_addr 0x3fc95700[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001dd6c vaddr=3fc95700 size=022ach (  8876) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001dd6c, size=0x22ac, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (321) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x20b10 data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=20b10h (133904) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x20b10, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (405) esp_image: loading segment header 3 at offset 0x40b30[0m
+D (405) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (406) esp_image: segment data length 0x8b0 data starts 0x40b38[0m
+V (413) esp_image: segment 3 map_segment 0 segment_data_offs 0x40b38 load_addr 0x3fc979ac[0m
+[0;32mI (421) esp_image: segment 3: paddr=00040b38 vaddr=3fc979ac size=008b0h (  2224) load[0m
+D (429) esp_image: free data page_count 0x00000200[0m
+D (434) bootloader_flash: rodata starts from paddr=0x00040b38, size=0x8b0, will be mapped to vaddr=0x3c000000[0m
+V (444) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (455) esp_image: loading segment header 4 at offset 0x413e8[0m
+D (461) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (468) esp_image: segment data length 0x116ac data starts 0x413f0[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x413f0 load_addr 0x40374000[0m
+[0;32mI (482) esp_image: segment 4: paddr=000413f0 vaddr=40374000 size=116ach ( 71340) load[0m
+D (491) esp_image: free data page_count 0x00000200[0m
+D (495) bootloader_flash: rodata starts from paddr=0x000413f0, size=0x116ac, will be mapped to vaddr=0x3c000000[0m
+V (506) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (532) esp_image: image start 0x00010000 end of last section 0x00052a9c[0m
+D (533) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (535) boot: Calculated hash: ad25d38cf0141f85e33b09fdf5b8ccf6b7bb7d9e0490716a268dd92270ccb945[0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+D (555) boot: Mapping segment 0 as DROM[0m
+D (559) boot: Mapping segment 2 as IROM[0m
+D (563) boot: calling set_cache_and_start_app[0m
+D (567) boot: configure drom and irom and start[0m
+V (572) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xdd44[0m
+V (580) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (590) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (600) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x20b10[0m
+V (608) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (618) boot: start: 0x403754b0[0m
+[0;32mI (633) cpu_start: Multicore app[0m
+[0;32mI (642) cpu_start: Pro cpu start user code[0m
+[0;32mI (642) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (642) app_init: Application information:[0m
+[0;32mI (645) app_init: Project name:     hello_world[0m
+[0;32mI (650) app_init: App version:      1[0m
+[0;32mI (655) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (661) app_init: ELF file SHA256:  3e426c24b...[0m
+[0;32mI (666) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (671) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (675) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (680) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (692) heap_init: At 3FC9BBF0 len 0004DB20 (310 KiB): RAM[0m
+[0;32mI (698) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (705) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (711) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (718) spi_flash: detected chip: gd[0m
+[0;32mI (721) spi_flash: flash io: dio[0m
+[0;33mW (725) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (738) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (749) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (756) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (763) main_task: Started on CPU0[0m
+[0;32mI (773) main_task: Calling app_main()[0m
+[0;32mI (793) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (793) main_task: Returned from app_main()[0m
+[0;32mI (793) RTC: Time: 00:02:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (893) IMU: Accel mean: x=308 , y=-117 , z=956 | Gyro mean: x=-20025 , y=-7992 , z=15669 [0m
+[0;32mI (1183) IMU: Accel mean: x=236 , y=-183 , z=885 | Gyro mean: x=8055 , y=-990 , z=-2376 [0m
+[0;32mI (1273) IMU: Accel mean: x=260 , y=-199 , z=989 | Gyro mean: x=1287 , y=3510 , z=-873 [0m
+[0;32mI (1553) IMU: Accel mean: x=174 , y=-114 , z=938 | Gyro mean: x=8514 , y=1332 , z=-1503 [0m
+[0;32mI (1653) IMU: Accel mean: x=176 , y=-142 , z=1000 | Gyro mean: x=-1791 , y=3222 , z=-1674 [0m
+[0;32mI (1803) RTC: Time: 00:02:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1933) IMU: Accel mean: x=53 , y=-124 , z=948 | Gyro mean: x=10098 , y=1242 , z=-981 [0m
+[0;32mI (2023) IMU: Accel mean: x=58 , y=-132 , z=1024 | Gyro mean: x=180 , y=-351 , z=-360 [0m
+[0;32mI (2303) IMU: Accel mean: x=64 , y=-128 , z=952 | Gyro mean: x=9198 , y=90 , z=72 [0m
+[0;32mI (2403) IMU: Accel mean: x=103 , y=-118 , z=1000 | Gyro mean: x=1431 , y=-2313 , z=-1404 [0m
+[0;32mI (2683) IMU: Accel mean: x=138 , y=-73 , z=938 | Gyro mean: x=9909 , y=-657 , z=-900 [0m
+[0;32mI (2773) IMU: Accel mean: x=168 , y=-75 , z=1006 | Gyro mean: x=684 , y=-585 , z=-1116 [0m
+[0;32mI (2803) RTC: Time: 00:02:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3063) IMU: Accel mean: x=136 , y=-63 , z=951 | Gyro mean: x=8802 , y=-18 , z=-423 [0m
+[0;32mI (3153) IMU: Accel mean: x=172 , y=-74 , z=1020 | Gyro mean: x=-351 , y=-36 , z=-468 [0m
+[0;32mI (3433) IMU: Accel mean: x=105 , y=-123 , z=953 | Gyro mean: x=6291 , y=1926 , z=-738 [0m
+[0;32mI (3533) IMU: Accel mean: x=102 , y=-190 , z=1017 | Gyro mean: x=-2772 , y=2394 , z=-693 [0m
+[0;32mI (3803) RTC: Time: 00:02:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3813) IMU: Accel mean: x=41 , y=-213 , z=921 | Gyro mean: x=8595 , y=63 , z=432 [0m
+[0;32mI (3903) IMU: Accel mean: x=58 , y=-256 , z=1001 | Gyro mean: x=-459 , y=405 , z=81 [0m
+[0;32mI (4183) IMU: Accel mean: x=27 , y=-274 , z=918 | Gyro mean: x=7416 , y=837 , z=144 [0m
+[0;32mI (4283) IMU: Accel mean: x=28 , y=-293 , z=979 | Gyro mean: x=-1161 , y=486 , z=-180 [0m
+[0;32mI (4563) IMU: Accel mean: x=-9 , y=-304 , z=889 | Gyro mean: x=7101 , y=-360 , z=333 [0m
+[0;32mI (4653) IMU: Accel mean: x=45 , y=-353 , z=1009 | Gyro mean: x=-1674 , y=693 , z=585 [0m
+[0;32mI (4803) RTC: Time: 00:02:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4933) IMU: Accel mean: x=-8 , y=-381 , z=907 | Gyro mean: x=7308 , y=189 , z=468 [0m
+[0;32mI (5033) IMU: Accel mean: x=-25 , y=-391 , z=936 | Gyro mean: x=-1125 , y=-405 , z=27 [0m
+[0;32mI (5313) IMU: Accel mean: x=-56 , y=-393 , z=846 | Gyro mean: x=7020 , y=1575 , z=666 [0m
+[0;32mI (5403) IMU: Accel mean: x=-71 , y=-460 , z=922 | Gyro mean: x=-1827 , y=1611 , z=477 [0m
+[0;32mI (5693) IMU: Accel mean: x=-104 , y=-482 , z=817 | Gyro mean: x=7308 , y=387 , z=99 [0m
+[0;32mI (5783) IMU: Accel mean: x=-106 , y=-499 , z=892 | Gyro mean: x=-693 , y=639 , z=-54 [0m
+[0;32mI (5803) RTC: Time: 00:02:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6063) IMU: Accel mean: x=-109 , y=-443 , z=835 | Gyro mean: x=8073 , y=-261 , z=-333 [0m
+[0;32mI (6163) IMU: Accel mean: x=-80 , y=-467 , z=985 | Gyro mean: x=-405 , y=-279 , z=-558 [0m
+[0;32mI (6443) IMU: Accel mean: x=-41 , y=-446 , z=877 | Gyro mean: x=8415 , y=639 , z=45 [0m
+[0;32mI (6533) IMU: Accel mean: x=-74 , y=-440 , z=890 | Gyro mean: x=-9 , y=-54 , z=-90 [0m
+[0;32mI (6803) RTC: Time: 00:02:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6813) IMU: Accel mean: x=-42 , y=-400 , z=861 | Gyro mean: x=11601 , y=-2169 , z=-738 [0m
+[0;32mI (6913) IMU: Accel mean: x=19 , y=-401 , z=996 | Gyro mean: x=4059 , y=-7443 , z=-1935 [0m
+[0;32mI (7193) IMU: Accel mean: x=233 , y=-288 , z=840 | Gyro mean: x=13932 , y=-7155 , z=-792 [0m
+[0;32mI (7283) IMU: Accel mean: x=322 , y=-251 , z=948 | Gyro mean: x=3951 , y=-2475 , z=-7200 [0m
+[0;32mI (7573) IMU: Accel mean: x=294 , y=-109 , z=905 | Gyro mean: x=10656 , y=3204 , z=-5391 [0m
+[0;32mI (7663) IMU: Accel mean: x=317 , y=-138 , z=1028 | Gyro mean: x=-7029 , y=5400 , z=3384 [0m
+[0;32mI (7803) RTC: Time: 00:02:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7943) IMU: Accel mean: x=1 , y=-108 , z=936 | Gyro mean: x=720 , y=9558 , z=-378 [0m
+[0;32mI (8043) IMU: Accel mean: x=-140 , y=-284 , z=985 | Gyro mean: x=-1611 , y=7893 , z=189 [0m
+[0;32mI (8323) IMU: Accel mean: x=-202 , y=-357 , z=865 | Gyro mean: x=7515 , y=-3555 , z=1071 [0m
+[0;32mI (8413) IMU: Accel mean: x=-143 , y=-365 , z=949 | Gyro mean: x=-9 , y=-4851 , z=-729 [0m
+[0;32mI (8693) IMU: Accel mean: x=27 , y=-284 , z=978 | Gyro mean: x=15228 , y=9765 , z=-15012 [0m
+[0;32mI (8793) IMU: Accel mean: x=-141 , y=-338 , z=999 | Gyro mean: x=-279 , y=5877 , z=-3285 [0m
+[0;32mI (8803) RTC: Time: 00:02:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9073) IMU: Accel mean: x=-97 , y=-245 , z=949 | Gyro mean: x=8577 , y=-324 , z=-297 [0m
+[0;32mI (9163) IMU: Accel mean: x=-104 , y=-326 , z=965 | Gyro mean: x=-792 , y=-1692 , z=-1440 [0m
+[0;32mI (9453) IMU: Accel mean: x=17 , y=-263 , z=1016 | Gyro mean: x=22887 , y=-2061 , z=882 [0m
+[0;32mI (9543) IMU: Accel mean: x=142 , y=-235 , z=1216 | Gyro mean: x=-6525 , y=2925 , z=-135 [0m
+[0;32mI (9803) RTC: Time: 00:02:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9823) IMU: Accel mean: x=92 , y=-190 , z=1086 | Gyro mean: x=22941 , y=-9540 , z=1620 [0m
+[0;32mI (9923) IMU: Accel mean: x=135 , y=-275 , z=952 | Gyro mean: x=-8622 , y=10575 , z=2358 [0m
+[0;32mI (10203) IMU: Accel mean: x=-8 , y=-294 , z=767 | Gyro mean: x=11007 , y=5274 , z=369 [0m
+[0;32mI (10293) IMU: Accel mean: x=-4 , y=-261 , z=1012 | Gyro mean: x=3528 , y=-6480 , z=-342 [0m
+[0;32mI (10573) IMU: Accel mean: x=-102 , y=-295 , z=823 | Gyro mean: x=10323 , y=-63 , z=297 [0m
+[0;32mI (10673) IMU: Accel mean: x=-90 , y=-306 , z=1025 | Gyro mean: x=-1341 , y=243 , z=3537 [0m
+[0;32mI (10803) RTC: Time: 00:02:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10953) IMU: Accel mean: x=-117 , y=-244 , z=922 | Gyro mean: x=10881 , y=1107 , z=2385 [0m
+[0;32mI (11043) IMU: Accel mean: x=-187 , y=-242 , z=997 | Gyro mean: x=477 , y=1854 , z=5481 [0m
+[0;32mI (11333) IMU: Accel mean: x=-262 , y=-321 , z=900 | Gyro mean: x=1098 , y=3942 , z=17820 [0m
+[0;32mI (11423) IMU: Accel mean: x=-386 , y=-304 , z=969 | Gyro mean: x=-8433 , y=7452 , z=19503 [0m
+[0;32mI (11703) IMU: Accel mean: x=-615 , y=-135 , z=633 | Gyro mean: x=26820 , y=-13968 , z=2610 [0m
+[0;32mI (11803) IMU: Accel mean: x=-529 , y=-71 , z=948 | Gyro mean: x=16767 , y=-16992 , z=-3087 [0m
+[0;32mI (11803) RTC: Time: 00:02:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12083) IMU: Accel mean: x=-222 , y=54 , z=853 | Gyro mean: x=24156 , y=-13599 , z=-1548 [0m
+[0;32mI (12173) IMU: Accel mean: x=-110 , y=-16 , z=794 | Gyro mean: x=-5274 , y=13140 , z=-3321 [0m
+[0;32mI (12453) IMU: Accel mean: x=-471 , y=-308 , z=828 | Gyro mean: x=-108 , y=6138 , z=-3096 [0m
+[0;32mI (12553) IMU: Accel mean: x=-545 , y=-402 , z=812 | Gyro mean: x=2259 , y=-2007 , z=-3231 [0m
+[0;32mI (12803) RTC: Time: 00:02:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12833) IMU: Accel mean: x=-185 , y=-519 , z=804 | Gyro mean: x=6309 , y=-225 , z=-5049 [0m
+[0;32mI (12923) IMU: Accel mean: x=-99 , y=-491 , z=874 | Gyro mean: x=-2340 , y=162 , z=-5319 [0m
+[0;32mI (13203) IMU: Accel mean: x=-28 , y=-590 , z=776 | Gyro mean: x=7875 , y=540 , z=-2592 [0m
+[0;32mI (13303) IMU: Accel mean: x=-19 , y=-608 , z=837 | Gyro mean: x=-396 , y=1251 , z=99 [0m
+[0;32mI (13583) IMU: Accel mean: x=-171 , y=-543 , z=748 | Gyro mean: x=9090 , y=7641 , z=-549 [0m
+[0;32mI (13673) IMU: Accel mean: x=-219 , y=-580 , z=933 | Gyro mean: x=1413 , y=1521 , z=18 [0m
+[0;32mI (13803) RTC: Time: 00:02:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13963) IMU: Accel mean: x=-148 , y=-546 , z=765 | Gyro mean: x=7848 , y=-1557 , z=-828 [0m
+[0;32mI (14053) IMU: Accel mean: x=-145 , y=-593 , z=826 | Gyro mean: x=-576 , y=549 , z=-18 [0m
+[0;32mI (14333) IMU: Accel mean: x=-160 , y=-554 , z=744 | Gyro mean: x=7677 , y=189 , z=-27 [0m
+[0;32mI (14433) IMU: Accel mean: x=-148 , y=-582 , z=846 | Gyro mean: x=-9 , y=-9 , z=-99 [0m
+[0;32mI (14713) IMU: Accel mean: x=-155 , y=-562 , z=751 | Gyro mean: x=7569 , y=297 , z=-63 [0m
+[0;32mI (14803) RTC: Time: 00:02:49 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14803) IMU: Accel mean: x=-158 , y=-587 , z=839 | Gyro mean: x=108 , y=441 , z=207 [0m
+[0;32mI (15083) IMU: Accel mean: x=-168 , y=-556 , z=747 | Gyro mean: x=7821 , y=252 , z=-288 [0m
+[0;32mI (15183) IMU: Accel mean: x=-147 , y=-563 , z=917 | Gyro mean: x=-828 , y=-1161 , z=-954 [0m
+[0;32mI (15463) IMU: Accel mean: x=-102 , y=-550 , z=786 | Gyro mean: x=8082 , y=-585 , z=-270 [0m
+[0;32mI (15553) IMU: Accel mean: x=-120 , y=-487 , z=1015 | Gyro mean: x=2178 , y=-2853 , z=-891 [0m
+[0;32mI (15803) RTC: Time: 00:02:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15843) IMU: Accel mean: x=-67 , y=-482 , z=774 | Gyro mean: x=8100 , y=-513 , z=-162 [0m
+[0;32mI (15933) IMU: Accel mean: x=-39 , y=-545 , z=890 | Gyro mean: x=243 , y=-450 , z=-459 [0m
+[0;32mI (16213) IMU: Accel mean: x=-45 , y=-501 , z=794 | Gyro mean: x=8073 , y=-108 , z=-180 [0m
+[0;32mI (16313) IMU: Accel mean: x=-34 , y=-531 , z=880 | Gyro mean: x=-72 , y=-198 , z=-72 [0m
+[0;32mI (16593) IMU: Accel mean: x=-37 , y=-505 , z=797 | Gyro mean: x=8253 , y=-54 , z=-162 [0m
+[0;32mI (16683) IMU: Accel mean: x=-25 , y=-535 , z=886 | Gyro mean: x=288 , y=-9 , z=-117 [0m
+[0;32mI (16803) RTC: Time: 00:02:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16963) IMU: Accel mean: x=-35 , y=-497 , z=800 | Gyro mean: x=8082 , y=81 , z=-63 [0m
+[0;32mI (17063) IMU: Accel mean: x=-22 , y=-527 , z=889 | Gyro mean: x=216 , y=-27 , z=-72 [0m
+[0;32mI (17343) IMU: Accel mean: x=-30 , y=-493 , z=798 | Gyro mean: x=8046 , y=-99 , z=-162 [0m
+[0;32mI (17433) IMU: Accel mean: x=-16 , y=-525 , z=890 | Gyro mean: x=63 , y=-180 , z=-99 [0m
+[0;32mI (17723) IMU: Accel mean: x=-15 , y=-490 , z=798 | Gyro mean: x=8262 , y=-207 , z=54 [0m
+[0;32mI (17803) RTC: Time: 00:02:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (17813) IMU: Accel mean: x=0 , y=-516 , z=888 | Gyro mean: x=252 , y=-36 , z=-27 [0m
+[0;32mI (18093) IMU: Accel mean: x=-9 , y=-490 , z=807 | Gyro mean: x=7938 , y=-81 , z=-63 [0m
+[0;32mI (18193) IMU: Accel mean: x=5 , y=-519 , z=893 | Gyro mean: x=63 , y=-9 , z=-9 [0m
+[0;32mI (18473) IMU: Accel mean: x=-12 , y=-490 , z=798 | Gyro mean: x=8289 , y=-126 , z=-63 [0m
+[0;32mI (18563) IMU: Accel mean: x=11 , y=-519 , z=896 | Gyro mean: x=342 , y=-225 , z=-216 [0m
+[0;32mI (18803) RTC: Time: 00:02:53 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (18843) IMU: Accel mean: x=-1 , y=-485 , z=805 | Gyro mean: x=8118 , y=-90 , z=-45 [0m
+[0;32mI (18943) IMU: Accel mean: x=16 , y=-514 , z=893 | Gyro mean: x=189 , y=-144 , z=-81 [0m
+[0;32mI (19223) IMU: Accel mean: x=9 , y=-483 , z=810 | Gyro mean: x=8055 , y=-234 , z=-153 [0m
+[0;32mI (19313) IMU: Accel mean: x=32 , y=-521 , z=897 | Gyro mean: x=-198 , y=-387 , z=72 [0m
+[0;32mI (19593) IMU: Accel mean: x=11 , y=-485 , z=809 | Gyro mean: x=8091 , y=126 , z=45 [0m
+[0;32mI (19693) IMU: Accel mean: x=-31 , y=-502 , z=800 | Gyro mean: x=6228 , y=3231 , z=-45 [0m
+[0;32mI (19803) RTC: Time: 00:02:54 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (19973) IMU: Accel mean: x=17 , y=-422 , z=969 | Gyro mean: x=7974 , y=-1476 , z=-1296 [0m
+[0;32mI (20063) IMU: Accel mean: x=52 , y=-527 , z=924 | Gyro mean: x=90 , y=72 , z=594 [0m
+[0;32mI (20353) IMU: Accel mean: x=-5 , y=-446 , z=785 | Gyro mean: x=8613 , y=918 , z=1107 [0m
+[0;32mI (20443) IMU: Accel mean: x=41 , y=-451 , z=978 | Gyro mean: x=-2628 , y=-1233 , z=-1332 [0m
+[0;32mI (20723) IMU: Accel mean: x=33 , y=-481 , z=828 | Gyro mean: x=8892 , y=-333 , z=-459 [0m
+[0;32mI (20803) RTC: Time: 00:02:55 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (20823) IMU: Accel mean: x=36 , y=-520 , z=900 | Gyro mean: x=81 , y=270 , z=288 [0m
+[0;32mI (21103) IMU: Accel mean: x=15 , y=-430 , z=860 | Gyro mean: x=5472 , y=5742 , z=414 [0m
+[0;32mI (21193) IMU: Accel mean: x=-37 , y=-488 , z=976 | Gyro mean: x=-7776 , y=3222 , z=-1782 [0m
+[0;32mI (21473) IMU: Accel mean: x=96 , y=-519 , z=852 | Gyro mean: x=24129 , y=-8712 , z=-4248 [0m
+[0;32mI (21573) IMU: Accel mean: x=110 , y=-530 , z=750 | Gyro mean: x=-1899 , y=3573 , z=-198 [0m
+[0;32mI (21803) RTC: Time: 00:02:56 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (21853) IMU: Accel mean: x=86 , y=-552 , z=727 | Gyro mean: x=7569 , y=1458 , z=-747 [0m
+[0;32mI (21943) IMU: Accel mean: x=131 , y=-500 , z=852 | Gyro mean: x=6741 , y=-423 , z=-4986 [0m
+[0;32mI (22233) IMU: Accel mean: x=162 , y=-288 , z=820 | Gyro mean: x=11484 , y=1251 , z=-1791 [0m
+[0;32mI (22323) IMU: Accel mean: x=162 , y=-237 , z=939 | Gyro mean: x=4977 , y=297 , z=-1584 [0m
+[0;32mI (22603) IMU: Accel mean: x=220 , y=-277 , z=847 | Gyro mean: x=8964 , y=1683 , z=-3735 [0m
+[0;32mI (22703) IMU: Accel mean: x=188 , y=-231 , z=972 | Gyro mean: x=6534 , y=36 , z=-6264 [0m
+[0;32mI (22803) RTC: Time: 00:02:57 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (22983) IMU: Accel mean: x=172 , y=20 , z=930 | Gyro mean: x=11043 , y=1080 , z=-1512 [0m
+[0;32mI (23073) IMU: Accel mean: x=203 , y=112 , z=937 | Gyro mean: x=10566 , y=-6822 , z=-2106 [0m
+[0;32mI (23353) IMU: Accel mean: x=204 , y=194 , z=844 | Gyro mean: x=6885 , y=180 , z=-225 [0m
+[0;32mI (23453) IMU: Accel mean: x=240 , y=168 , z=968 | Gyro mean: x=-54 , y=-396 , z=-225 [0m
+[0;32mI (23733) IMU: Accel mean: x=224 , y=236 , z=947 | Gyro mean: x=3861 , y=1611 , z=-405 [0m
+[0;32mI (23803) RTC: Time: 00:02:58 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (23823) IMU: Accel mean: x=275 , y=144 , z=985 | Gyro mean: x=270 , y=18 , z=-54 [0m
+[0;32mI (24113) IMU: Accel mean: x=221 , y=141 , z=930 | Gyro mean: x=8487 , y=234 , z=504 [0m
+[0;32mI (24203) IMU: Accel mean: x=280 , y=184 , z=923 | Gyro mean: x=-2736 , y=1017 , z=-495 [0m
+[0;32mI (24483) IMU: Accel mean: x=276 , y=181 , z=929 | Gyro mean: x=7947 , y=612 , z=-72 [0m
+[0;32mI (24583) IMU: Accel mean: x=275 , y=207 , z=938 | Gyro mean: x=540 , y=-90 , z=423 [0m
+[0;32mI (24803) RTC: Time: 00:02:59 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (24863) IMU: Accel mean: x=116 , y=-24 , z=918 | Gyro mean: x=2475 , y=1026 , z=369 [0m
+[0;32mI (24953) IMU: Accel mean: x=244 , y=-198 , z=918 | Gyro mean: x=-7254 , y=-3159 , z=1440 [0m
+[0;32mI (25233) IMU: Accel mean: x=247 , y=-270 , z=884 | Gyro mean: x=4230 , y=-5652 , z=8703 [0m
+[0;32mI (25333) IMU: Accel mean: x=388 , y=-406 , z=1013 | Gyro mean: x=-6975 , y=-4293 , z=7083 [0m
+[0;32mI (25613) IMU: Accel mean: x=193 , y=-588 , z=637 | Gyro mean: x=5517 , y=-360 , z=-135 [0m
+[0;32mI (25703) IMU: Accel mean: x=237 , y=-745 , z=656 | Gyro mean: x=-4311 , y=-1134 , z=-450 [0m
+[0;32mI (25803) RTC: Time: 00:03:00 Date: 2000-01-01 (Weekday: 0)[0m

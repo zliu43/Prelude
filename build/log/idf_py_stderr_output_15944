@@ -1,0 +1,28 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200698f: uart_ll_get_txfifo_len at C:/Users/mikel/esp-adf/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:390
+---  (inlined by) uart_tx_char at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754f4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x4037582b: rtc_brownout_isr_handler at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/brownout.c:61
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754f4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

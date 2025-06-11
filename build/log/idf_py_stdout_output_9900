@@ -1,0 +1,657 @@
+V (96) bootloader_flash: after mapping, starting from paddr=0x000x00000200[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754b0[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xdd64 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0dd64h ( 56676) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xdd64, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1dd84[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x228c data starts 0x1dd8c[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1dd8c load_addr 0x3fc95700[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001dd8c vaddr=3fc95700 size=0228ch (  8844) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001dd8c, size=0x228c, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (321) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x20b30 data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=20b30h (133936) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x20b30, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (405) esp_image: loading segment header 3 at offset 0x40b50[0m
+D (405) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (406) esp_image: segment data length 0x8d0 data starts 0x40b58[0m
+V (413) esp_image: segment 3 map_segment 0 segment_data_offs 0x40b58 load_addr 0x3fc9798c[0m
+[0;32mI (421) esp_image: segment 3: paddr=00040b58 vaddr=3fc9798c size=008d0h (  2256) load[0m
+D (429) esp_image: free data page_count 0x00000200[0m
+D (434) bootloader_flash: rodata starts from paddr=0x00040b58, size=0x8d0, will be mapped to vaddr=0x3c000000[0m
+V (444) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (455) esp_image: loading segment header 4 at offset 0x41428[0m
+D (461) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (468) esp_image: segment data length 0x116ac data starts 0x41430[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x41430 load_addr 0x40374000[0m
+[0;32mI (482) esp_image: segment 4: paddr=00041430 vaddr=40374000 size=116ach ( 71340) load[0m
+D (491) esp_image: free data page_count 0x00000200[0m
+D (495) bootloader_flash: rodata starts from paddr=0x00041430, size=0x116ac, will be mapped to vaddr=0x3c000000[0m
+V (506) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (532) esp_image: image start 0x00010000 end of last section 0x00052adc[0m
+D (533) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (535) boot: Calculated hash: b08d6d5de92049539c0de5be8341ea9f1c8287505b758325569b7e213aa24f07[0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+D (555) boot: Mapping segment 0 as DROM[0m
+D (559) boot: Mapping segment 2 as IROM[0m
+D (563) boot: calling set_cache_and_start_app[0m
+D (567) boot: configure drom and irom and start[0m
+V (572) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xdd64[0m
+V (580) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (590) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (600) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x20b30[0m
+V (608) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (618) boot: start: 0x403754b0[0m
+[0;32mI (633) cpu_start: Multicore app[0m
+[0;32mI (642) cpu_start: Pro cpu start user code[0m
+[0;32mI (642) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (642) app_init: Application information:[0m
+[0;32mI (645) app_init: Project name:     hello_world[0m
+[0;32mI (650) app_init: App version:      1[0m
+[0;32mI (655) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (661) app_init: ELF file SHA256:  dc73d365d...[0m
+[0;32mI (666) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (671) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (675) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (680) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (692) heap_init: At 3FC9BBF0 len 0004DB20 (310 KiB): RAM[0m
+[0;32mI (698) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (705) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (711) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (718) spi_flash: detected chip: gd[0m
+[0;32mI (721) spi_flash: flash io: dio[0m
+[0;33mW (725) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (738) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (749) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (756) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (763) main_task: Started on CPU0[0m
+[0;32mI (773) main_task: Calling app_main()[0m
+[0;32mI (793) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (793) main_task: Returned from app_main()[0m
+[0;32mI (793) RTC: Time: 00:00:10 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (893) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-3 , y=-2 , z=1 [0m
+[0;32mI (893) IMU: sample_idx 256[0m
+[0;32mI (983) IMU: sample_idx 512[0m
+[0;32mI (1083) IMU: sample_idx 768[0m
+[0;32mI (1173) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-1 , y=0 , z=-2 [0m
+[0;32mI (1173) IMU: sample_idx 1024[0m
+[0;32mI (1263) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-1 , y=0 , z=-1 [0m
+[0;32mI (1263) IMU: sample_idx 256[0m
+[0;32mI (1363) IMU: sample_idx 512[0m
+[0;32mI (1453) IMU: sample_idx 768[0m
+[0;32mI (1553) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=-1 [0m
+[0;32mI (1553) IMU: sample_idx 1024[0m
+[0;32mI (1643) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-1 , y=0 , z=0 [0m
+[0;32mI (1643) IMU: sample_idx 256[0m
+[0;32mI (1743) IMU: sample_idx 512[0m
+[0;32mI (1803) RTC: Time: 00:00:11 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1833) IMU: sample_idx 768[0m
+[0;32mI (1923) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=-1 , z=-1 [0m
+[0;32mI (1923) IMU: sample_idx 1024[0m
+[0;32mI (2023) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=0 , z=-1 [0m
+[0;32mI (2023) IMU: sample_idx 256[0m
+[0;32mI (2113) IMU: sample_idx 512[0m
+[0;32mI (2213) IMU: sample_idx 768[0m
+[0;32mI (2303) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=-1 [0m
+[0;32mI (2303) IMU: sample_idx 1024[0m
+[0;32mI (2393) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=0 , z=-1 [0m
+[0;32mI (2393) IMU: sample_idx 256[0m
+[0;32mI (2493) IMU: sample_idx 512[0m
+[0;32mI (2583) IMU: sample_idx 768[0m
+[0;32mI (2683) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=-1 [0m
+[0;32mI (2683) IMU: sample_idx 1024[0m
+[0;32mI (2773) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=0 , z=-1 [0m
+[0;32mI (2773) IMU: sample_idx 256[0m
+[0;32mI (2803) RTC: Time: 00:00:12 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2863) IMU: sample_idx 512[0m
+[0;32mI (2963) IMU: sample_idx 768[0m
+[0;32mI (3053) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=-1 , z=-1 [0m
+[0;32mI (3053) IMU: sample_idx 1024[0m
+[0;32mI (3153) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-1 , y=0 , z=-1 [0m
+[0;32mI (3153) IMU: sample_idx 256[0m
+[0;32mI (3243) IMU: sample_idx 512[0m
+[0;32mI (3333) IMU: sample_idx 768[0m
+[0;32mI (3433) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=-1 [0m
+[0;32mI (3433) IMU: sample_idx 1024[0m
+[0;32mI (3523) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=0 , z=-1 [0m
+[0;32mI (3523) IMU: sample_idx 256[0m
+[0;32mI (3623) IMU: sample_idx 512[0m
+[0;32mI (3713) IMU: sample_idx 768[0m
+[0;32mI (3803) RTC: Time: 00:00:13 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3813) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=-1 [0m
+[0;32mI (3813) IMU: sample_idx 1024[0m
+[0;32mI (3903) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=0 , z=-1 [0m
+[0;32mI (3903) IMU: sample_idx 256[0m
+[0;32mI (3993) IMU: sample_idx 512[0m
+[0;32mI (4093) IMU: sample_idx 768[0m
+[0;32mI (4183) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=-1 [0m
+[0;32mI (4183) IMU: sample_idx 1024[0m
+[0;32mI (4283) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-1 , y=0 , z=-1 [0m
+[0;32mI (4283) IMU: sample_idx 256[0m
+[0;32mI (4373) IMU: sample_idx 512[0m
+[0;32mI (4463) IMU: sample_idx 768[0m
+[0;32mI (4563) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=7 , y=0 , z=1 [0m
+[0;32mI (4563) IMU: sample_idx 1024[0m
+[0;32mI (4653) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=0 , y=0 , z=3 [0m
+[0;32mI (4653) IMU: sample_idx 256[0m
+[0;32mI (4753) IMU: sample_idx 512[0m
+[0;32mI (4803) RTC: Time: 00:00:14 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4843) IMU: sample_idx 768[0m
+[0;32mI (4933) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=1 [0m
+[0;32mI (4943) IMU: sample_idx 1024[0m
+[0;32mI (5033) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=0 , y=0 , z=1 [0m
+[0;32mI (5033) IMU: sample_idx 256[0m
+[0;32mI (5123) IMU: sample_idx 512[0m
+[0;32mI (5223) IMU: sample_idx 768[0m
+[0;32mI (5313) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=9 , y=2 , z=-1 [0m
+[0;32mI (5313) IMU: sample_idx 1024[0m
+[0;32mI (5413) IMU: Accel mean: x=0 , y=0 , z=1 | Gyro mean: x=-1 , y=1 , z=-1 [0m
+[0;32mI (5413) IMU: sample_idx 256[0m
+[0;32mI (5503) IMU: sample_idx 512[0m
+[0;32mI (5593) IMU: sample_idx 768[0m
+[0;32mI (5693) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=8 , y=3 , z=0 [0m
+[0;32mI (5693) IMU: sample_idx 1024[0m
+[0;32mI (5783) IMU: Accel mean: x=-1 , y=-1 , z=1 | Gyro mean: x=-1 , y=1 , z=-1 [0m
+[0;32mI (5783) IMU: sample_idx 256[0m
+[0;32mI (5803) RTC: Time: 00:00:15 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5883) IMU: sample_idx 512[0m
+[0;32mI (5973) IMU: sample_idx 768[0m
+[0;32mI (6063) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=8 , y=1 , z=0 [0m
+[0;32mI (6063) IMU: sample_idx 1024[0m
+[0;32mI (6163) IMU: Accel mean: x=-1 , y=-1 , z=1 | Gyro mean: x=-1 , y=1 , z=-1 [0m
+[0;32mI (6163) IMU: sample_idx 256[0m
+[0;32mI (6253) IMU: sample_idx 512[0m
+[0;32mI (6353) IMU: sample_idx 768[0m
+[0;32mI (6443) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=9 , y=-1 , z=-1 [0m
+[0;32mI (6443) IMU: sample_idx 1024[0m
+[0;32mI (6543) IMU: Accel mean: x=-1 , y=-1 , z=1 | Gyro mean: x=0 , y=-1 , z=0 [0m
+[0;32mI (6543) IMU: sample_idx 256[0m
+[0;32mI (6633) IMU: sample_idx 512[0m
+[0;32mI (6723) IMU: sample_idx 768[0m
+[0;32mI (6803) RTC: Time: 00:00:16 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6823) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=9 , y=-3 , z=-1 [0m
+[0;32mI (6823) IMU: sample_idx 1024[0m
+[0;32mI (6913) IMU: Accel mean: x=0 , y=-1 , z=1 | Gyro mean: x=0 , y=-3 , z=-1 [0m
+[0;32mI (6913) IMU: sample_idx 256[0m
+[0;32mI (7013) IMU: sample_idx 512[0m
+[0;32mI (7103) IMU: sample_idx 768[0m
+[0;32mI (7193) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=7 , y=0 , z=-2 [0m
+[0;32mI (7193) IMU: sample_idx 1024[0m
+[0;32mI (7293) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-1 , y=0 , z=-1 [0m
+[0;32mI (7293) IMU: sample_idx 256[0m
+[0;32mI (7383) IMU: sample_idx 512[0m
+[0;32mI (7483) IMU: sample_idx 768[0m
+[0;32mI (7573) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=8 , y=-1 , z=-1 [0m
+[0;32mI (7573) IMU: sample_idx 1024[0m
+[0;32mI (7663) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=1 , y=-1 , z=-2 [0m
+[0;32mI (7663) IMU: sample_idx 256[0m
+[0;32mI (7763) IMU: sample_idx 512[0m
+[0;32mI (7803) RTC: Time: 00:00:17 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7853) IMU: sample_idx 768[0m
+[0;32mI (7953) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=-1 , z=0 [0m
+[0;32mI (7953) IMU: sample_idx 1024[0m
+[0;32mI (8043) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-1 , y=-1 , z=0 [0m
+[0;32mI (8043) IMU: sample_idx 256[0m
+[0;32mI (8133) IMU: sample_idx 512[0m
+[0;32mI (8233) IMU: sample_idx 768[0m
+[0;32mI (8323) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=5 , y=-4 , z=2 [0m
+[0;32mI (8323) IMU: sample_idx 1024[0m
+[0;32mI (8423) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-5 , y=-5 , z=5 [0m
+[0;32mI (8423) IMU: sample_idx 256[0m
+[0;32mI (8513) IMU: sample_idx 512[0m
+[0;32mI (8613) IMU: sample_idx 768[0m
+[0;32mI (8703) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-14 , y=3 , z=12 [0m
+[0;32mI (8703) IMU: sample_idx 1024[0m
+[0;32mI (8793) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-18 , y=12 , z=5 [0m
+[0;32mI (8793) IMU: sample_idx 256[0m
+[0;32mI (8803) RTC: Time: 00:00:18 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8893) IMU: sample_idx 512[0m
+[0;32mI (8993) IMU: sample_idx 768[0m
+[0;32mI (9083) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=1 , y=-1 , z=0 [0m
+[0;32mI (9083) IMU: sample_idx 1024[0m
+[0;32mI (9173) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=-6 , y=0 , z=1 [0m
+[0;32mI (9173) IMU: sample_idx 256[0m
+[0;32mI (9273) IMU: sample_idx 512[0m
+[0;32mI (9363) IMU: sample_idx 768[0m
+[0;32mI (9463) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=-1 , y=-1 , z=0 [0m
+[0;32mI (9463) IMU: sample_idx 1024[0m
+[0;32mI (9553) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=0 , y=-1 , z=0 [0m
+[0;32mI (9553) IMU: sample_idx 256[0m
+[0;32mI (9643) IMU: sample_idx 512[0m
+[0;32mI (9743) IMU: sample_idx 768[0m
+[0;32mI (9803) RTC: Time: 00:00:19 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9833) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=-2 , y=-1 , z=0 [0m
+[0;32mI (9833) IMU: sample_idx 1024[0m
+[0;32mI (9933) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=-1 , y=-1 , z=0 [0m
+[0;32mI (9933) IMU: sample_idx 256[0m
+[0;32mI (10023) IMU: sample_idx 512[0m
+[0;32mI (10123) IMU: sample_idx 768[0m
+[0;32mI (10213) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=-3 , y=-1 , z=0 [0m
+[0;32mI (10213) IMU: sample_idx 1024[0m
+[0;32mI (10303) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=0 , y=0 , z=-1 [0m
+[0;32mI (10303) IMU: sample_idx 256[0m
+[0;32mI (10403) IMU: sample_idx 512[0m
+[0;32mI (10493) IMU: sample_idx 768[0m
+[0;32mI (10593) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=-3 , y=0 , z=0 [0m
+[0;32mI (10593) IMU: sample_idx 1024[0m
+[0;32mI (10683) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=0 , y=0 , z=-1 [0m
+[0;32mI (10683) IMU: sample_idx 256[0m
+[0;32mI (10773) IMU: sample_idx 512[0m
+[0;32mI (10803) RTC: Time: 00:00:20 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10873) IMU: sample_idx 768[0m
+[0;32mI (10963) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=-2 , y=-1 , z=0 [0m
+[0;32mI (10963) IMU: sample_idx 1024[0m
+[0;32mI (11063) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=0 , y=-1 , z=0 [0m
+[0;32mI (11063) IMU: sample_idx 256[0m
+[0;32mI (11153) IMU: sample_idx 512[0m
+[0;32mI (11243) IMU: sample_idx 768[0m
+[0;32mI (11343) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=-1 , y=-1 , z=0 [0m
+[0;32mI (11343) IMU: sample_idx 1024[0m
+[0;32mI (11433) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=4 , y=-1 , z=1 [0m
+[0;32mI (11433) IMU: sample_idx 256[0m
+[0;32mI (11533) IMU: sample_idx 512[0m
+[0;32mI (11623) IMU: sample_idx 768[0m
+[0;32mI (11713) IMU: Accel mean: x=-1 , y=-1 , z=-1 | Gyro mean: x=2 , y=1 , z=0 [0m
+[0;32mI (11723) IMU: sample_idx 1024[0m
+[0;32mI (11803) RTC: Time: 00:00:21 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11813) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=4 , y=0 , z=3 [0m
+[0;32mI (11813) IMU: sample_idx 256[0m
+[0;32mI (11903) IMU: sample_idx 512[0m
+[0;32mI (12003) IMU: sample_idx 768[0m
+[0;32mI (12093) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=9 , y=-4 , z=0 [0m
+[0;32mI (12093) IMU: sample_idx 1024[0m
+[0;32mI (12193) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=10 , y=-10 , z=4 [0m
+[0;32mI (12193) IMU: sample_idx 256[0m
+[0;32mI (12283) IMU: sample_idx 512[0m
+[0;32mI (12373) IMU: sample_idx 768[0m
+[0;32mI (12473) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=5 , y=-10 , z=-1 [0m
+[0;32mI (12473) IMU: sample_idx 1024[0m
+[0;32mI (12563) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=7 , y=-9 , z=1 [0m
+[0;32mI (12563) IMU: sample_idx 256[0m
+[0;32mI (12663) IMU: sample_idx 512[0m
+[0;32mI (12753) IMU: sample_idx 768[0m
+[0;32mI (12803) RTC: Time: 00:00:22 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12853) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=13 , y=-2 , z=-2 [0m
+[0;32mI (12853) IMU: sample_idx 1024[0m
+[0;32mI (12943) IMU: Accel mean: x=-1 , y=-1 , z=1 | Gyro mean: x=3 , y=-1 , z=-1 [0m
+[0;32mI (12943) IMU: sample_idx 256[0m
+[0;32mI (13033) IMU: sample_idx 512[0m
+[0;32mI (13133) IMU: sample_idx 768[0m
+[0;32mI (13223) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=11 , y=1 , z=-1 [0m
+[0;32mI (13223) IMU: sample_idx 1024[0m
+[0;32mI (13323) IMU: Accel mean: x=-1 , y=-1 , z=1 | Gyro mean: x=0 , y=2 , z=0 [0m
+[0;32mI (13323) IMU: sample_idx 256[0m
+[0;32mI (13413) IMU: sample_idx 512[0m
+[0;32mI (13503) IMU: sample_idx 768[0m
+[0;32mI (13603) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=7 , y=-1 , z=-2 [0m
+[0;32mI (13603) IMU: sample_idx 1024[0m
+[0;32mI (13693) IMU: Accel mean: x=-1 , y=-1 , z=1 | Gyro mean: x=-1 , y=0 , z=-1 [0m
+[0;32mI (13693) IMU: sample_idx 256[0m
+[0;32mI (13793) IMU: sample_idx 512[0m
+[0;32mI (13803) RTC: Time: 00:00:23 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13883) IMU: sample_idx 768[0m
+[0;32mI (13973) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=5 , y=0 , z=-2 [0m
+[0;32mI (13973) IMU: sample_idx 1024[0m
+[0;32mI (14073) IMU: Accel mean: x=-1 , y=-1 , z=1 | Gyro mean: x=-4 , y=-1 , z=-1 [0m
+[0;32mI (14073) IMU: sample_idx 256[0m
+[0;32mI (14163) IMU: sample_idx 512[0m
+[0;32mI (14263) IMU: sample_idx 768[0m
+[0;32mI (14353) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=7 , y=-3 , z=-1 [0m
+[0;32mI (14353) IMU: sample_idx 1024[0m
+[0;32mI (14453) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=-1 , y=0 , z=-1 [0m
+[0;32mI (14453) IMU: sample_idx 256[0m
+[0;32mI (14543) IMU: sample_idx 512[0m
+[0;32mI (14633) IMU: sample_idx 768[0m
+[0;32mI (14733) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=5 , y=1 , z=-5 [0m
+[0;32mI (14733) IMU: sample_idx 1024[0m
+[0;32mI (14803) RTC: Time: 00:00:24 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14823) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=1 , y=2 , z=-3 [0m
+[0;32mI (14823) IMU: sample_idx 256[0m
+[0;32mI (14923) IMU: sample_idx 512[0m
+[0;32mI (15013) IMU: sample_idx 768[0m
+[0;32mI (15103) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=12 , y=0 , z=-1 [0m
+[0;32mI (15103) IMU: sample_idx 1024[0m
+[0;32mI (15203) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=2 , y=0 , z=-1 [0m
+[0;32mI (15203) IMU: sample_idx 256[0m
+[0;32mI (15293) IMU: sample_idx 512[0m
+[0;32mI (15393) IMU: sample_idx 768[0m
+[0;32mI (15483) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=9 , y=0 , z=0 [0m
+[0;32mI (15483) IMU: sample_idx 1024[0m
+[0;32mI (15573) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=-1 , y=-1 , z=0 [0m
+[0;32mI (15583) IMU: sample_idx 256[0m
+[0;32mI (15673) IMU: sample_idx 512[0m
+[0;32mI (15763) IMU: sample_idx 768[0m
+[0;32mI (15803) RTC: Time: 00:00:25 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15863) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=7 , y=0 , z=-1 [0m
+[0;32mI (15863) IMU: sample_idx 1024[0m
+[0;32mI (15953) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=0 , y=-1 , z=-1 [0m
+[0;32mI (15953) IMU: sample_idx 256[0m
+[0;32mI (16053) IMU: sample_idx 512[0m
+[0;32mI (16143) IMU: sample_idx 768[0m
+[0;32mI (16233) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=9 , y=-1 , z=-1 [0m
+[0;32mI (16233) IMU: sample_idx 1024[0m
+[0;32mI (16333) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=-1 , y=0 , z=0 [0m
+[0;32mI (16333) IMU: sample_idx 256[0m
+[0;32mI (16423) IMU: sample_idx 512[0m
+[0;32mI (16523) IMU: sample_idx 768[0m
+[0;32mI (16613) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=9 , y=-1 , z=0 [0m
+[0;32mI (16613) IMU: sample_idx 1024[0m
+[0;32mI (16703) IMU: Accel mean: x=-1 , y=-1 , z=1 | Gyro mean: x=1 , y=-1 , z=-1 [0m
+[0;32mI (16703) IMU: sample_idx 256[0m
+[0;32mI (16803) RTC: Time: 00:00:26 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16803) IMU: sample_idx 512[0m
+[0;32mI (16893) IMU: sample_idx 768[0m
+[0;32mI (16993) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=13 , y=-2 , z=0 [0m
+[0;32mI (16993) IMU: sample_idx 1024[0m
+[0;32mI (17083) IMU: Accel mean: x=-1 , y=0 , z=1 | Gyro mean: x=3 , y=-4 , z=2 [0m
+[0;32mI (17083) IMU: sample_idx 256[0m
+[0;32mI (17183) IMU: sample_idx 512[0m
+[0;32mI (17273) IMU: sample_idx 768[0m
+[0;32mI (17363) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=9 , y=-4 , z=0 [0m
+[0;32mI (17363) IMU: sample_idx 1024[0m
+[0;32mI (17463) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=-4 , z=0 [0m
+[0;32mI (17463) IMU: sample_idx 256[0m
+[0;32mI (17553) IMU: sample_idx 512[0m
+[0;32mI (17653) IMU: sample_idx 768[0m
+[0;32mI (17743) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=-3 , z=-1 [0m
+[0;32mI (17743) IMU: sample_idx 1024[0m
+[0;32mI (17803) RTC: Time: 00:00:27 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (17833) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-1 , y=-2 , z=-1 [0m
+[0;32mI (17833) IMU: sample_idx 256[0m
+[0;32mI (17933) IMU: sample_idx 512[0m
+[0;32mI (18023) IMU: sample_idx 768[0m
+[0;32mI (18123) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=10 , y=-2 , z=0 [0m
+[0;32mI (18123) IMU: sample_idx 1024[0m
+[0;32mI (18213) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=-2 , z=0 [0m
+[0;32mI (18213) IMU: sample_idx 256[0m
+[0;32mI (18303) IMU: sample_idx 512[0m
+[0;32mI (18403) IMU: sample_idx 768[0m
+[0;32mI (18493) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=5 , y=-2 , z=0 [0m
+[0;32mI (18493) IMU: sample_idx 1024[0m
+[0;32mI (18593) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-6 , y=0 , z=0 [0m
+[0;32mI (18593) IMU: sample_idx 256[0m
+[0;32mI (18683) IMU: sample_idx 512[0m
+[0;32mI (18773) IMU: sample_idx 768[0m
+[0;32mI (18803) RTC: Time: 00:00:28 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (18873) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=7 , y=-1 , z=-1 [0m
+[0;32mI (18873) IMU: sample_idx 1024[0m
+[0;32mI (18963) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=0 , y=0 , z=0 [0m
+[0;32mI (18963) IMU: sample_idx 256[0m
+[0;32mI (19063) IMU: sample_idx 512[0m
+[0;32mI (19153) IMU: sample_idx 768[0m
+[0;32mI (19253) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=10 , y=5 , z=-1 [0m
+[0;32mI (19253) IMU: sample_idx 1024[0m
+[0;32mI (19343) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-2 , y=7 , z=-2 [0m
+[0;32mI (19343) IMU: sample_idx 256[0m
+[0;32mI (19433) IMU: sample_idx 512[0m
+[0;32mI (19533) IMU: sample_idx 768[0m
+[0;32mI (19623) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=6 , y=7 , z=1 [0m
+[0;32mI (19623) IMU: sample_idx 1024[0m
+[0;32mI (19723) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=-2 , y=2 , z=0 [0m
+[0;32mI (19723) IMU: sample_idx 256[0m
+[0;32mI (19803) RTC: Time: 00:00:29 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (19813) IMU: sample_idx 512[0m
+[0;32mI (19903) IMU: sample_idx 768[0m
+[0;32mI (20003) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=8 , y=-2 , z=-1 [0m
+[0;32mI (20003) IMU: sample_idx 1024[0m
+[0;32mI (20093) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=0 , y=-3 , z=-1 [0m
+[0;32mI (20093) IMU: sample_idx 256[0m
+[0;32mI (20193) IMU: sample_idx 512[0m
+[0;32mI (20283) IMU: sample_idx 768[0m
+[0;32mI (20373) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=20 , y=-18 , z=1 [0m
+[0;32mI (20383) IMU: sample_idx 1024[0m
+[0;32mI (20473) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=7 , y=-10 , z=2 [0m
+[0;32mI (20473) IMU: sample_idx 256[0m
+[0;32mI (20563) IMU: sample_idx 512[0m
+[0;32mI (20663) IMU: sample_idx 768[0m
+[0;32mI (20753) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=-2 [0m
+[0;32mI (20753) IMU: sample_idx 1024[0m
+[0;32mI (20803) RTC: Time: 00:00:30 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (20853) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-1 , y=1 , z=-1 [0m
+[0;32mI (20853) IMU: sample_idx 256[0m
+[0;32mI (20943) IMU: sample_idx 512[0m
+[0;32mI (21033) IMU: sample_idx 768[0m
+[0;32mI (21133) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=-2 , y=18 , z=-1 [0m
+[0;32mI (21133) IMU: sample_idx 1024[0m
+[0;32mI (21223) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=-3 , y=5 , z=0 [0m
+[0;32mI (21223) IMU: sample_idx 256[0m
+[0;32mI (21323) IMU: sample_idx 512[0m
+[0;32mI (21413) IMU: sample_idx 768[0m
+[0;32mI (21503) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=18 , y=-15 , z=0 [0m
+[0;32mI (21503) IMU: sample_idx 1024[0m
+[0;32mI (21603) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=6 , y=-11 , z=-1 [0m
+[0;32mI (21603) IMU: sample_idx 256[0m
+[0;32mI (21693) IMU: sample_idx 512[0m
+[0;32mI (21793) IMU: sample_idx 768[0m
+[0;32mI (21803) RTC: Time: 00:00:31 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (21883) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=9 , y=-2 , z=-1 [0m
+[0;32mI (21883) IMU: sample_idx 1024[0m
+[0;32mI (21983) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=11 , y=-14 , z=-2 [0m
+[0;32mI (21983) IMU: sample_idx 256[0m
+[0;32mI (22073) IMU: sample_idx 512[0m
+[0;32mI (22163) IMU: sample_idx 768[0m
+[0;32mI (22263) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=11 , y=-5 , z=0 [0m
+[0;32mI (22263) IMU: sample_idx 1024[0m
+[0;32mI (22353) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=-11 , z=-2 [0m
+[0;32mI (22353) IMU: sample_idx 256[0m
+[0;32mI (22453) IMU: sample_idx 512[0m
+[0;32mI (22543) IMU: sample_idx 768[0m
+[0;32mI (22633) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=14 , y=-10 , z=-1 [0m
+[0;32mI (22633) IMU: sample_idx 1024[0m
+[0;32mI (22733) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=4 , y=-5 , z=-3 [0m
+[0;32mI (22733) IMU: sample_idx 256[0m
+[0;32mI (22803) RTC: Time: 00:00:32 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (22823) IMU: sample_idx 512[0m
+[0;32mI (22923) IMU: sample_idx 768[0m
+[0;32mI (23013) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=18 , y=-12 , z=-2 [0m
+[0;32mI (23013) IMU: sample_idx 1024[0m
+[0;32mI (23113) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-2 , y=1 , z=-3 [0m
+[0;32mI (23113) IMU: sample_idx 256[0m
+[0;32mI (23203) IMU: sample_idx 512[0m
+[0;32mI (23293) IMU: sample_idx 768[0m
+[0;32mI (23393) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=15 , y=-6 , z=-3 [0m
+[0;32mI (23393) IMU: sample_idx 1024[0m
+[0;32mI (23483) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=-8 , y=8 , z=-2 [0m
+[0;32mI (23483) IMU: sample_idx 256[0m
+[0;32mI (23583) IMU: sample_idx 512[0m
+[0;32mI (23673) IMU: sample_idx 768[0m
+[0;32mI (23763) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=8 , y=-1 , z=-2 [0m
+[0;32mI (23763) IMU: sample_idx 1024[0m
+[0;32mI (23803) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (23863) IMU: Accel mean: x=0 , y=0 , z=1 | Gyro mean: x=-11 , y=10 , z=1 [0m
+[0;32mI (23863) IMU: sample_idx 256[0m
+[0;32mI (23953) IMU: sample_idx 512[0m
+[0;32mI (24053) IMU: sample_idx 768[0m
+[0;32mI (24143) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=6 , y=0 , z=0 [0m
+[0;32mI (24143) IMU: sample_idx 1024[0m
+[0;32mI (24233) IMU: Accel mean: x=-1 , y=0 , z=1 | Gyro mean: x=-3 , y=1 , z=0 [0m
+[0;32mI (24233) IMU: sample_idx 256[0m
+[0;32mI (24333) IMU: sample_idx 512[0m
+[0;32mI (24423) IMU: sample_idx 768[0m
+[0;32mI (24523) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=11 , y=-3 , z=0 [0m
+[0;32mI (24523) IMU: sample_idx 1024[0m
+[0;32mI (24613) IMU: Accel mean: x=-1 , y=-1 , z=1 | Gyro mean: x=-2 , y=0 , z=-1 [0m
+[0;32mI (24613) IMU: sample_idx 256[0m
+[0;32mI (24713) IMU: sample_idx 512[0m
+[0;32mI (24803) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (24803) IMU: sample_idx 768[0m
+[0;32mI (24893) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=9 , y=-1 , z=-1 [0m
+[0;32mI (24893) IMU: sample_idx 1024[0m
+[0;32mI (24993) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=6 , y=-4 , z=0 [0m
+[0;32mI (24993) IMU: sample_idx 256[0m
+[0;32mI (25083) IMU: sample_idx 512[0m
+[0;32mI (25183) IMU: sample_idx 768[0m
+[0;32mI (25273) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=10 , y=-1 , z=0 [0m
+[0;32mI (25273) IMU: sample_idx 1024[0m
+[0;32mI (25363) IMU: Accel mean: x=-1 , y=0 , z=1 | Gyro mean: x=0 , y=-1 , z=-1 [0m
+[0;32mI (25363) IMU: sample_idx 256[0m
+[0;32mI (25463) IMU: sample_idx 512[0m
+[0;32mI (25553) IMU: sample_idx 768[0m
+[0;32mI (25653) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=9 , y=-1 , z=0 [0m
+[0;32mI (25653) IMU: sample_idx 1024[0m
+[0;32mI (25743) IMU: Accel mean: x=-1 , y=0 , z=1 | Gyro mean: x=-1 , y=0 , z=0 [0m
+[0;32mI (25743) IMU: sample_idx 256[0m
+[0;32mI (25803) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (25833) IMU: sample_idx 512[0m
+[0;32mI (25933) IMU: sample_idx 768[0m
+[0;32mI (26023) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=-1 [0m
+[0;32mI (26023) IMU: sample_idx 1024[0m
+[0;32mI (26123) IMU: Accel mean: x=-1 , y=0 , z=1 | Gyro mean: x=-1 , y=0 , z=0 [0m
+[0;32mI (26123) IMU: sample_idx 256[0m
+[0;32mI (26213) IMU: sample_idx 512[0m
+[0;32mI (26303) IMU: sample_idx 768[0m
+[0;32mI (26403) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=8 , y=0 , z=0 [0m
+[0;32mI (26403) IMU: sample_idx 1024[0m
+[0;32mI (26493) IMU: Accel mean: x=-1 , y=0 , z=1 | Gyro mean: x=-1 , y=0 , z=-1 [0m
+[0;32mI (26493) IMU: sample_idx 256[0m
+[0;32mI (26593) IMU: sample_idx 512[0m
+[0;32mI (26683) IMU: sample_idx 768[0m
+[0;32mI (26783) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=9 , y=-1 , z=0 [0m
+[0;32mI (26783) IMU: sample_idx 1024[0m
+[0;32mI (26803) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (26873) IMU: Accel mean: x=-1 , y=0 , z=1 | Gyro mean: x=0 , y=0 , z=0 [0m
+[0;32mI (26873) IMU: sample_idx 256[0m
+[0;32mI (26963) IMU: sample_idx 512[0m
+[0;32mI (27063) IMU: sample_idx 768[0m
+[0;32mI (27153) IMU: Accel mean: x=-1 , y=0 , z=0 | Gyro mean: x=8 , y=-1 , z=-1 [0m
+[0;32mI (27153) IMU: sample_idx 1024[0m
+[0;32mI (27253) IMU: Accel mean: x=-1 , y=0 , z=1 | Gyro mean: x=-1 , y=-1 , z=-1 [0m
+[0;32mI (27253) IMU: sample_idx 256[0m
+[0;32mI (27343) IMU: sample_idx 512[0m
+[0;32mI (27433) IMU: sample_idx 768[0m
+[0;32mI (27533) IMU: Accel mean: x=-1 , y=-1 , z=0 | Gyro mean: x=7 , y=-2 , z=1 [0m
+[0;32mI (27533) IMU: sample_idx 1024[0m
+[0;32mI (27623) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-5 , y=-3 , z=0 [0m
+[0;32mI (27623) IMU: sample_idx 256[0m
+[0;32mI (27723) IMU: sample_idx 512[0m
+[0;32mI (27803) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (27813) IMU: sample_idx 768[0m
+[0;32mI (27903) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=12 , y=-6 , z=5 [0m
+[0;32mI (27913) IMU: sample_idx 1024[0m
+[0;32mI (28003) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=5 , y=-5 , z=0 [0m
+[0;32mI (28003) IMU: sample_idx 256[0m
+[0;32mI (28093) IMU: sample_idx 512[0m
+[0;32mI (28193) IMU: sample_idx 768[0m
+[0;32mI (28283) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=10 , y=-2 , z=3 [0m
+[0;32mI (28283) IMU: sample_idx 1024[0m
+[0;32mI (28383) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=6 , y=-3 , z=4 [0m
+[0;32mI (28383) IMU: sample_idx 256[0m
+[0;32mI (28473) IMU: sample_idx 512[0m
+[0;32mI (28563) IMU: sample_idx 768[0m
+[0;32mI (28663) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=11 , y=-1 , z=-3 [0m
+[0;32mI (28663) IMU: sample_idx 1024[0m
+[0;32mI (28753) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-3 , y=1 , z=-6 [0m
+[0;32mI (28753) IMU: sample_idx 256[0m
+[0;32mI (28803) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (28853) IMU: sample_idx 512[0m
+[0;32mI (28943) IMU: sample_idx 768[0m
+[0;32mI (29033) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=11 , y=-3 , z=-3 [0m
+[0;32mI (29033) IMU: sample_idx 1024[0m
+[0;32mI (29133) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=0 , y=0 , z=-3 [0m
+[0;32mI (29133) IMU: sample_idx 256[0m
+[0;32mI (29223) IMU: sample_idx 512[0m
+[0;32mI (29323) IMU: sample_idx 768[0m
+[0;32mI (29413) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=6 , y=-1 , z=1 [0m
+[0;32mI (29413) IMU: sample_idx 1024[0m
+[0;32mI (29503) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-1 , y=-1 , z=0 [0m
+[0;32mI (29513) IMU: sample_idx 256[0m
+[0;32mI (29603) IMU: sample_idx 512[0m
+[0;32mI (29693) IMU: sample_idx 768[0m
+[0;32mI (29793) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=10 , y=-4 , z=3 [0m
+[0;32mI (29793) IMU: sample_idx 1024[0m
+[0;32mI (29803) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (29883) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=12 , y=-5 , z=1 [0m
+[0;32mI (29883) IMU: sample_idx 256[0m
+[0;32mI (29983) IMU: sample_idx 512[0m
+[0;32mI (30073) IMU: sample_idx 768[0m
+[0;32mI (30163) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-1 , y=-5 , z=-6 [0m
+[0;32mI (30163) IMU: sample_idx 1024[0m
+[0;32mI (30263) IMU: Accel mean: x=0 , y=-1 , z=0 | Gyro mean: x=-6 , y=-6 , z=-5 [0m
+[0;32mI (30263) IMU: sample_idx 256[0m
+[0;32mI (30353) IMU: sample_idx 512[0m
+[0;32mI (30453) IMU: sample_idx 768[0m
+[0;32mI (30543) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=7 , y=-2 , z=-1 [0m
+[0;32mI (30543) IMU: sample_idx 1024[0m
+[0;32mI (30633) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=-1 , z=-1 [0m
+[0;32mI (30633) IMU: sample_idx 256[0m
+[0;32mI (30733) IMU: sample_idx 512[0m
+[0;32mI (30803) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (30823) IMU: sample_idx 768[0m
+[0;32mI (30923) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=4 , y=0 , z=0 [0m
+[0;32mI (30923) IMU: sample_idx 1024[0m
+[0;32mI (31013) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=0 , z=0 [0m
+[0;32mI (31013) IMU: sample_idx 256[0m
+[0;32mI (31103) IMU: sample_idx 512[0m
+[0;32mI (31203) IMU: sample_idx 768[0m
+[0;32mI (31293) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=4 , y=0 , z=0 [0m
+[0;32mI (31293) IMU: sample_idx 1024[0m
+[0;32mI (31393) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=0 , z=-1 [0m
+[0;32mI (31393) IMU: sample_idx 256[0m
+[0;32mI (31483) IMU: sample_idx 512[0m
+[0;32mI (31583) IMU: sample_idx 768[0m
+[0;32mI (31673) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=4 , y=-1 , z=-1 [0m
+[0;32mI (31673) IMU: sample_idx 1024[0m
+[0;32mI (31763) IMU: Accel mean: x=0 , y=0 , z=0 | Gyro mean: x=0 , y=-1 , z=-1 [0m
+[0;32mI (31763) IMU: sample_idx 256[0m
+[0;32mI (31803) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (31863) IMU: sample_idx 512[0m
+[0;32mI (31953) IMU: sample_idx 768[0m

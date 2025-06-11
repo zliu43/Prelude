@@ -1,0 +1,15 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x42014e2f: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:945
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754f4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0m

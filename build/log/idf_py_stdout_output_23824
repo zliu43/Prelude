@@ -1,35 +1,296 @@
--- ccache will be used for faster recompilation
--- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
--- Could not use 'git describe' to determine PROJECT_VER.
--- Building ESP-IDF components for target esp32s3
--- Project sdkconfig file C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/sdkconfig
--- Compiler supported targets: xtensa-esp-elf
--- App "hello_world" version: 1
--- Adding linker script C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/esp_system/ld/memory.ld
--- Adding linker script C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/esp-idf/esp_system/ld/sections.ld.in
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
--- Adding linker script C:/Users/mikel/esp-adf/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
--- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos ft813 hal heap http_parser idf_test ieee802154 include json log lsm6dso lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
--- Component paths: C:/Users/mikel/esp-adf/esp-idf/components/app_trace C:/Users/mikel/esp-adf/esp-idf/components/app_update C:/Users/mikel/esp-adf/esp-idf/components/bootloader C:/Users/mikel/esp-adf/esp-idf/components/bootloader_support C:/Users/mikel/esp-adf/esp-idf/components/bt C:/Users/mikel/esp-adf/esp-idf/components/cmock C:/Users/mikel/esp-adf/esp-idf/components/console C:/Users/mikel/esp-adf/esp-idf/components/cxx C:/Users/mikel/esp-adf/esp-idf/components/driver C:/Users/mikel/esp-adf/esp-idf/components/efuse C:/Users/mikel/esp-adf/esp-idf/components/esp-tls C:/Users/mikel/esp-adf/esp-idf/components/esp_adc C:/Users/mikel/esp-adf/esp-idf/components/esp_app_format C:/Users/mikel/esp-adf/esp-idf/components/esp_bootloader_format C:/Users/mikel/esp-adf/esp-idf/components/esp_coex C:/Users/mikel/esp-adf/esp-idf/components/esp_common C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_ana_cmpr C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_cam C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_dac C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_gpio C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_gptimer C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_i2c C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_i2s C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_isp C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_jpeg C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_ledc C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_mcpwm C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_parlio C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_pcnt C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_ppa C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_rmt C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_sdio C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_sdm C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_sdmmc C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_sdspi C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_spi C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_touch_sens C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_tsens C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_uart C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_usb_serial_jtag C:/Users/mikel/esp-adf/esp-idf/components/esp_eth C:/Users/mikel/esp-adf/esp-idf/components/esp_event C:/Users/mikel/esp-adf/esp-idf/components/esp_gdbstub C:/Users/mikel/esp-adf/esp-idf/components/esp_hid C:/Users/mikel/esp-adf/esp-idf/components/esp_http_client C:/Users/mikel/esp-adf/esp-idf/components/esp_http_server C:/Users/mikel/esp-adf/esp-idf/components/esp_https_ota C:/Users/mikel/esp-adf/esp-idf/components/esp_https_server C:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support C:/Users/mikel/esp-adf/esp-idf/components/esp_lcd C:/Users/mikel/esp-adf/esp-idf/components/esp_local_ctrl C:/Users/mikel/esp-adf/esp-idf/components/esp_mm C:/Users/mikel/esp-adf/esp-idf/components/esp_netif C:/Users/mikel/esp-adf/esp-idf/components/esp_netif_stack C:/Users/mikel/esp-adf/esp-idf/components/esp_partition C:/Users/mikel/esp-adf/esp-idf/components/esp_phy C:/Users/mikel/esp-adf/esp-idf/components/esp_pm C:/Users/mikel/esp-adf/esp-idf/components/esp_psram C:/Users/mikel/esp-adf/esp-idf/components/esp_ringbuf C:/Users/mikel/esp-adf/esp-idf/components/esp_rom C:/Users/mikel/esp-adf/esp-idf/components/esp_system C:/Users/mikel/esp-adf/esp-idf/components/esp_timer C:/Users/mikel/esp-adf/esp-idf/components/esp_vfs_console C:/Users/mikel/esp-adf/esp-idf/components/esp_wifi C:/Users/mikel/esp-adf/esp-idf/components/espcoredump C:/Users/mikel/esp-adf/esp-idf/components/esptool_py C:/Users/mikel/esp-adf/esp-idf/components/fatfs C:/Users/mikel/esp-adf/esp-idf/components/freertos C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/components/ft813 C:/Users/mikel/esp-adf/esp-idf/components/hal C:/Users/mikel/esp-adf/esp-idf/components/heap C:/Users/mikel/esp-adf/esp-idf/components/http_parser C:/Users/mikel/esp-adf/esp-idf/components/idf_test C:/Users/mikel/esp-adf/esp-idf/components/ieee802154 C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/include C:/Users/mikel/esp-adf/esp-idf/components/json C:/Users/mikel/esp-adf/esp-idf/components/log C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/components/lsm6dso C:/Users/mikel/esp-adf/esp-idf/components/lwip C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main C:/Users/mikel/esp-adf/esp-idf/components/mbedtls C:/Users/mikel/esp-adf/esp-idf/components/mqtt C:/Users/mikel/esp-adf/esp-idf/components/newlib C:/Users/mikel/esp-adf/esp-idf/components/nvs_flash C:/Users/mikel/esp-adf/esp-idf/components/nvs_sec_provider C:/Users/mikel/esp-adf/esp-idf/components/openthread C:/Users/mikel/esp-adf/esp-idf/components/partition_table C:/Users/mikel/esp-adf/esp-idf/components/perfmon C:/Users/mikel/esp-adf/esp-idf/components/protobuf-c C:/Users/mikel/esp-adf/esp-idf/components/protocomm C:/Users/mikel/esp-adf/esp-idf/components/pthread C:/Users/mikel/esp-adf/esp-idf/components/sdmmc C:/Users/mikel/esp-adf/esp-idf/components/soc C:/Users/mikel/esp-adf/esp-idf/components/spi_flash C:/Users/mikel/esp-adf/esp-idf/components/spiffs C:/Users/mikel/esp-adf/esp-idf/components/tcp_transport C:/Users/mikel/esp-adf/esp-idf/components/touch_element C:/Users/mikel/esp-adf/esp-idf/components/ulp C:/Users/mikel/esp-adf/esp-idf/components/unity C:/Users/mikel/esp-adf/esp-idf/components/usb C:/Users/mikel/esp-adf/esp-idf/components/vfs C:/Users/mikel/esp-adf/esp-idf/components/wear_levelling C:/Users/mikel/esp-adf/esp-idf/components/wifi_provisioning C:/Users/mikel/esp-adf/esp-idf/components/wpa_supplicant C:/Users/mikel/esp-adf/esp-idf/components/xtensa
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build
-[0/1] Re-running CMake...
-[1/11] Linking C static library esp-idf\ft813\libft813.a
-[2/11] Performing build step for 'bootloader'
-[1/1] cmd.exe /C "cd /D C:\Users\mikel\OneDrive\Desktop\Prelude\Code\hello_world\build\bootloader\esp-idf\esptool_py && C:\Users\mikel\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/mikel/esp-adf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/bootloader/bootloader.bin"
-Bootloader binary size 0x6570 bytes. 0x1a90 bytes (21%) free.
-[3/9] Building C object esp-idf/include/CMakeFiles/__idf_include.dir/spi_task_manager.c.obj
-FAILED: esp-idf/include/CMakeFiles/__idf_include.dir/spi_task_manager.c.obj 
-ccache C:\Users\mikel\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.3.1\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/include -IC:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/config -IC:/Users/mikel/esp-adf/esp-idf/components/newlib/platform_include -IC:/Users/mikel/esp-adf/esp-idf/components/freertos/config/include -IC:/Users/mikel/esp-adf/esp-idf/components/freertos/config/include/freertos -IC:/Users/mikel/esp-adf/esp-idf/components/freertos/config/xtensa/include -IC:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Users/mikel/esp-adf/esp-idf/components/freertos/esp_additions/include -IC:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/include -IC:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/include/soc -IC:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/include/soc/esp32s3 -IC:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/dma/include -IC:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/ldo/include -IC:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/port/esp32s3/. -IC:/Users/mikel/esp-adf/esp-idf/components/esp_hw_support/port/esp32s3/include -IC:/Users/mikel/esp-adf/esp-idf/components/heap/include -IC:/Users/mikel/esp-adf/esp-idf/components/log/include -IC:/Users/mikel/esp-adf/esp-idf/components/soc/include -IC:/Users/mikel/esp-adf/esp-idf/components/soc/esp32s3 -IC:/Users/mikel/esp-adf/esp-idf/components/soc/esp32s3/include -IC:/Users/mikel/esp-adf/esp-idf/components/hal/platform_port/include -IC:/Users/mikel/esp-adf/esp-idf/components/hal/esp32s3/include -IC:/Users/mikel/esp-adf/esp-idf/components/hal/include -IC:/Users/mikel/esp-adf/esp-idf/components/esp_rom/include -IC:/Users/mikel/esp-adf/esp-idf/components/esp_rom/include/esp32s3 -IC:/Users/mikel/esp-adf/esp-idf/components/esp_rom/esp32s3 -IC:/Users/mikel/esp-adf/esp-idf/components/esp_common/include -IC:/Users/mikel/esp-adf/esp-idf/components/esp_system/include -IC:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/soc -IC:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/include/private -IC:/Users/mikel/esp-adf/esp-idf/components/xtensa/esp32s3/include -IC:/Users/mikel/esp-adf/esp-idf/components/xtensa/include -IC:/Users/mikel/esp-adf/esp-idf/components/xtensa/deprecated_include -IC:/Users/mikel/esp-adf/esp-idf/components/lwip/include -IC:/Users/mikel/esp-adf/esp-idf/components/lwip/include/apps -IC:/Users/mikel/esp-adf/esp-idf/components/lwip/include/apps/sntp -IC:/Users/mikel/esp-adf/esp-idf/components/lwip/lwip/src/include -IC:/Users/mikel/esp-adf/esp-idf/components/lwip/port/include -IC:/Users/mikel/esp-adf/esp-idf/components/lwip/port/freertos/include -IC:/Users/mikel/esp-adf/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/mikel/esp-adf/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/mikel/esp-adf/esp-idf/components/lwip/port/esp32xx/include/sys -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world=. -fmacro-prefix-map=C:/Users/mikel/esp-adf/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/include/CMakeFiles/__idf_include.dir/spi_task_manager.c.obj -MF esp-idf\include\CMakeFiles\__idf_include.dir\spi_task_manager.c.obj.d -o esp-idf/include/CMakeFiles/__idf_include.dir/spi_task_manager.c.obj -c C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/include/spi_task_manager.c
-In file included from C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/include/spi_task_manager.c:1:
-C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/include/spi_task_manager.h:7:10: fatal error: driver/spi_master.h: No such file or directory
-    7 | #include "driver/spi_master.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-ninja: build stopped: subcommand failed.
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42014e2f
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754f4[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xe0ec data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e0ech ( 57580) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xe0ec, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1e10c[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x1f04 data starts 0x1e114[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1e114 load_addr 0x3fc95b00[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001e114 vaddr=3fc95b00 size=01f04h (  7940) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001e114, size=0x1f04, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (321) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x210c4 data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=210c4h (135364) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x210c4, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (405) esp_image: loading segment header 3 at offset 0x410e4[0m
+D (406) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (407) esp_image: segment data length 0xc78 data starts 0x410ec[0m
+V (413) esp_image: segment 3 map_segment 0 segment_data_offs 0x410ec load_addr 0x3fc97a04[0m
+[0;32mI (421) esp_image: segment 3: paddr=000410ec vaddr=3fc97a04 size=00c78h (  3192) load[0m
+D (430) esp_image: free data page_count 0x00000200[0m
+D (434) bootloader_flash: rodata starts from paddr=0x000410ec, size=0xc78, will be mapped to vaddr=0x3c000000[0m
+V (444) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (456) esp_image: loading segment header 4 at offset 0x41d64[0m
+D (461) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (468) esp_image: segment data length 0x11a60 data starts 0x41d6c[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x41d6c load_addr 0x40374000[0m
+[0;32mI (482) esp_image: segment 4: paddr=00041d6c vaddr=40374000 size=11a60h ( 72288) load[0m
+D (491) esp_image: free data page_count 0x00000200[0m
+D (496) bootloader_flash: rodata starts from paddr=0x00041d6c, size=0x11a60, will be mapped to vaddr=0x3c000000[0m
+V (506) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (533) esp_image: image start 0x00010000 end of last section 0x000537cc[0m
+D (533) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (535) boot: Calculated hash: a4b785b3e97cad80b6199bf4ad8d47bbae2b253f3026049226296afd51f90197[0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+D (556) boot: Mapping segment 0 as DROM[0m
+D (560) boot: Mapping segment 2 as IROM[0m
+D (564) boot: calling set_cache_and_start_app[0m
+D (568) boot: configure drom and irom and start[0m
+V (573) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xe0ec[0m
+V (580) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (590) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (601) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x210c4[0m
+V (608) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (618) boot: start: 0x403754f4[0m
+[0;32mI (633) cpu_start: Multicore app[0m
+[0;32mI (642) cpu_start: Pro cpu start user code[0m
+[0;32mI (642) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (643) app_init: Application information:[0m
+[0;32mI (645) app_init: Project name:     hello_world[0m
+[0;32mI (651) app_init: App version:      1[0m
+[0;32mI (655) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (661) app_init: ELF file SHA256:  686d99008...[0m
+[0;32mI (666) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (671) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (676) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (681) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (686) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (693) heap_init: At 3FC9C018 len 0004D6F8 (309 KiB): RAM[0m
+[0;32mI (699) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (705) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (711) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (718) spi_flash: detected chip: gd[0m
+[0;32mI (722) spi_flash: flash io: dio[0m
+[0;33mW (726) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (739) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (750) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (756) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (764) main_task: Started on CPU0[0m
+[0;32mI (774) main_task: Calling app_main()[0m
+[0;32mI (794) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (794) main_task: Returned from app_main()[0m
+[0;32mI (894) IMU: Accel mean: x=-334 , y=176 , z=907 | Gyro mean: x=-3953 , y=-21863 , z=26291 [0m
+[0;32mI (984) IMU: Accel mean: x=-334 , y=156 , z=883 | Gyro mean: x=18068 , y=-7249 , z=16636 [0m
+[0;32mI (1084) IMU: Accel mean: x=-367 , y=162 , z=960 | Gyro mean: x=-10413 , y=-11727 , z=12951 [0m
+[0;32mI (1174) IMU: Accel mean: x=-367 , y=161 , z=962 | Gyro mean: x=-405 , y=171 , z=189 [0m
+[0;32mI (1274) IMU: Accel mean: x=-367 , y=160 , z=962 | Gyro mean: x=-162 , y=153 , z=144 [0m
+[0;32mI (1364) IMU: Accel mean: x=-368 , y=158 , z=957 | Gyro mean: x=-9 , y=171 , z=90 [0m
+[0;32mI (1464) IMU: Accel mean: x=-371 , y=157 , z=957 | Gyro mean: x=36 , y=108 , z=99 [0m
+[0;32mI (1554) IMU: Accel mean: x=-372 , y=156 , z=958 | Gyro mean: x=-45 , y=81 , z=81 [0m
+[0;32mI (1654) IMU: Accel mean: x=-374 , y=153 , z=952 | Gyro mean: x=-315 , y=189 , z=72 [0m
+[0;32mI (1744) IMU: Accel mean: x=-381 , y=142 , z=952 | Gyro mean: x=-684 , y=333 , z=45 [0m
+[0;32mI (1834) IMU: Accel mean: x=-389 , y=122 , z=953 | Gyro mean: x=-1197 , y=486 , z=279 [0m
+[0;32mI (1934) IMU: Accel mean: x=-401 , y=106 , z=966 | Gyro mean: x=-2205 , y=1017 , z=729 [0m
+[0;32mI (2024) IMU: Accel mean: x=-406 , y=97 , z=958 | Gyro mean: x=-2970 , y=1746 , z=675 [0m
+[0;32mI (2124) IMU: Accel mean: x=-432 , y=55 , z=942 | Gyro mean: x=-1935 , y=1431 , z=369 [0m
+[0;32mI (2214) IMU: Accel mean: x=-449 , y=34 , z=931 | Gyro mean: x=-1638 , y=1206 , z=540 [0m
+[0;32mI (2314) IMU: Accel mean: x=-448 , y=32 , z=925 | Gyro mean: x=-1341 , y=603 , z=999 [0m
+[0;32mI (2404) IMU: Accel mean: x=-447 , y=37 , z=941 | Gyro mean: x=-648 , y=-72 , z=900 [0m
+[0;32mI (2504) IMU: Accel mean: x=-466 , y=21 , z=937 | Gyro mean: x=-621 , y=585 , z=378 [0m
+[0;32mI (2594) IMU: Accel mean: x=-472 , y=-9 , z=910 | Gyro mean: x=-2385 , y=891 , z=477 [0m
+[0;32mI (2694) IMU: Accel mean: x=-472 , y=-24 , z=910 | Gyro mean: x=-3024 , y=531 , z=846 [0m
+[0;32mI (2784) IMU: Accel mean: x=-473 , y=-77 , z=894 | Gyro mean: x=-3024 , y=-504 , z=594 [0m
+[0;32mI (2884) IMU: Accel mean: x=-456 , y=-89 , z=935 | Gyro mean: x=-2511 , y=-1764 , z=1206 [0m
+[0;32mI (2974) IMU: Accel mean: x=-437 , y=-86 , z=955 | Gyro mean: x=-234 , y=-1764 , z=1323 [0m
+[0;32mI (3074) IMU: Accel mean: x=-421 , y=-80 , z=949 | Gyro mean: x=-297 , y=-1206 , z=1008 [0m
+[0;32mI (3164) IMU: Accel mean: x=-413 , y=-75 , z=968 | Gyro mean: x=-144 , y=-828 , z=936 [0m
+[0;32mI (3264) IMU: Accel mean: x=-406 , y=-69 , z=958 | Gyro mean: x=333 , y=-108 , z=684 [0m
+[0;32mI (3354) IMU: Accel mean: x=-409 , y=-74 , z=952 | Gyro mean: x=-153 , y=63 , z=171 [0m
+[0;32mI (3444) IMU: Accel mean: x=-414 , y=-81 , z=952 | Gyro mean: x=-630 , y=189 , z=81 [0m
+[0;32mI (3544) IMU: Accel mean: x=-413 , y=-94 , z=933 | Gyro mean: x=-360 , y=45 , z=135 [0m
+[0;32mI (3634) IMU: Accel mean: x=-403 , y=-116 , z=917 | Gyro mean: x=-351 , y=-1647 , z=729 [0m
+[0;32mI (3734) IMU: Accel mean: x=-379 , y=-67 , z=1005 | Gyro mean: x=-333 , y=-2358 , z=1287 [0m
+[0;32mI (3824) IMU: Accel mean: x=-360 , y=-73 , z=987 | Gyro mean: x=-1278 , y=441 , z=-18 [0m
+[0;32mI (3924) IMU: Accel mean: x=-390 , y=-124 , z=943 | Gyro mean: x=-1458 , y=1449 , z=-396 [0m
+[0;32mI (4014) IMU: Accel mean: x=-394 , y=-180 , z=879 | Gyro mean: x=-2484 , y=405 , z=-342 [0m
+[0;32mI (4114) IMU: Accel mean: x=-378 , y=-187 , z=922 | Gyro mean: x=-2097 , y=-4041 , z=1260 [0m
+[0;32mI (4204) IMU: Accel mean: x=-312 , y=-150 , z=987 | Gyro mean: x=-63 , y=-4329 , z=2178 [0m
+[0;32mI (4304) IMU: Accel mean: x=-244 , y=-138 , z=974 | Gyro mean: x=2376 , y=-4347 , z=1755 [0m
+[0;32mI (4394) IMU: Accel mean: x=-165 , y=-61 , z=1018 | Gyro mean: x=4770 , y=-5706 , z=2124 [0m
+[0;32mI (4494) IMU: Accel mean: x=-125 , y=7 , z=1053 | Gyro mean: x=3969 , y=-3357 , z=972 [0m
+[0;32mI (4584) IMU: Accel mean: x=-106 , y=4 , z=1072 | Gyro mean: x=423 , y=-1863 , z=-504 [0m
+[0;32mI (4684) IMU: Accel mean: x=-98 , y=-9 , z=1033 | Gyro mean: x=-243 , y=-621 , z=-702 [0m
+[0;32mI (4774) IMU: Accel mean: x=-90 , y=-16 , z=1033 | Gyro mean: x=-315 , y=-585 , z=-513 [0m
+[0;32mI (4874) IMU: Accel mean: x=-86 , y=-17 , z=1030 | Gyro mean: x=45 , y=-585 , z=-90 [0m
+[0;32mI (4964) IMU: Accel mean: x=-79 , y=-12 , z=1031 | Gyro mean: x=495 , y=-558 , z=-9 [0m
+[0;32mI (5054) IMU: Accel mean: x=-70 , y=14 , z=1009 | Gyro mean: x=1953 , y=-378 , z=72 [0m
+[0;32mI (5154) IMU: Accel mean: x=-67 , y=39 , z=1036 | Gyro mean: x=1746 , y=-171 , z=72 [0m
+[0;32mI (5244) IMU: Accel mean: x=-67 , y=43 , z=1032 | Gyro mean: x=279 , y=-45 , z=-18 [0m
+[0;32mI (5344) IMU: Accel mean: x=-66 , y=45 , z=1032 | Gyro mean: x=117 , y=-36 , z=0 [0m
+[0;32mI (5434) IMU: Accel mean: x=-65 , y=42 , z=1032 | Gyro mean: x=-360 , y=-117 , z=-45 [0m
+[0;32mI (5534) IMU: Accel mean: x=-63 , y=36 , z=1034 | Gyro mean: x=27 , y=9 , z=0 [0m
+[0;32mI (5624) IMU: Accel mean: x=-66 , y=45 , z=1036 | Gyro mean: x=1026 , y=522 , z=-198 [0m
+[0;32mI (5724) IMU: Accel mean: x=-88 , y=98 , z=1031 | Gyro mean: x=3627 , y=1800 , z=-513 [0m
+[0;32mI (5814) IMU: Accel mean: x=-127 , y=169 , z=1027 | Gyro mean: x=5661 , y=2430 , z=774 [0m
+[0;32mI (5914) IMU: Accel mean: x=-150 , y=206 , z=1034 | Gyro mean: x=1026 , y=2205 , z=-378 [0m
+[0;32mI (6004) IMU: Accel mean: x=-202 , y=159 , z=1020 | Gyro mean: x=-3159 , y=4266 , z=-2466 [0m
+[0;32mI (6104) IMU: Accel mean: x=-277 , y=90 , z=1023 | Gyro mean: x=-5148 , y=5805 , z=-2808 [0m
+[0;32mI (6194) IMU: Accel mean: x=-344 , y=22 , z=1011 | Gyro mean: x=-5715 , y=6633 , z=-3276 [0m
+[0;32mI (6294) IMU: Accel mean: x=-394 , y=-25 , z=920 | Gyro mean: x=-3438 , y=6453 , z=-2952 [0m
+[0;32mI (6384) IMU: Accel mean: x=-494 , y=-88 , z=877 | Gyro mean: x=54 , y=4131 , z=-891 [0m
+[0;32mI (6484) IMU: Accel mean: x=-550 , y=-137 , z=841 | Gyro mean: x=-1926 , y=3258 , z=-1197 [0m
+[0;32mI (6574) IMU: Accel mean: x=-550 , y=-169 , z=820 | Gyro mean: x=-4023 , y=765 , z=-1152 [0m
+[0;32mI (6664) IMU: Accel mean: x=-534 , y=-196 , z=859 | Gyro mean: x=-4473 , y=-1269 , z=-270 [0m
+[0;32mI (6764) IMU: Accel mean: x=-522 , y=-232 , z=867 | Gyro mean: x=-3249 , y=-900 , z=315 [0m
+[0;32mI (6854) IMU: Accel mean: x=-511 , y=-239 , z=871 | Gyro mean: x=-693 , y=-1035 , z=423 [0m
+[0;32mI (6954) IMU: Accel mean: x=-511 , y=-254 , z=872 | Gyro mean: x=-1152 , y=-288 , z=297 [0m
+[0;32mI (7044) IMU: Accel mean: x=-510 , y=-271 , z=869 | Gyro mean: x=-2367 , y=90 , z=9 [0m
+[0;32mI (7144) IMU: Accel mean: x=-511 , y=-287 , z=852 | Gyro mean: x=-1737 , y=612 , z=-342 [0m
+[0;32mI (7234) IMU: Accel mean: x=-525 , y=-336 , z=829 | Gyro mean: x=-2268 , y=585 , z=-684 [0m
+[0;32mI (7334) IMU: Accel mean: x=-531 , y=-374 , z=826 | Gyro mean: x=-4203 , y=1008 , z=-630 [0m
+[0;32mI (7424) IMU: Accel mean: x=-544 , y=-409 , z=797 | Gyro mean: x=-3573 , y=1953 , z=-333 [0m
+[0;32mI (7524) IMU: Accel mean: x=-571 , y=-446 , z=759 | Gyro mean: x=-3834 , y=3087 , z=-54 [0m
+[0;32mI (7614) IMU: Accel mean: x=-609 , y=-493 , z=670 | Gyro mean: x=-5571 , y=4608 , z=-495 [0m
+[0;32mI (7714) IMU: Accel mean: x=-637 , y=-542 , z=596 | Gyro mean: x=-3906 , y=3033 , z=-306 [0m
+[0;32mI (7804) IMU: Accel mean: x=-650 , y=-557 , z=587 | Gyro mean: x=-2160 , y=1602 , z=-81 [0m
+[0;32mI (7904) IMU: Accel mean: x=-662 , y=-569 , z=571 | Gyro mean: x=-1422 , y=1269 , z=-27 [0m
+[0;32mI (7994) IMU: Accel mean: x=-671 , y=-580 , z=557 | Gyro mean: x=-675 , y=873 , z=153 [0m
+[0;32mI (8094) IMU: Accel mean: x=-679 , y=-566 , z=561 | Gyro mean: x=-297 , y=909 , z=324 [0m
+[0;32mI (8184) IMU: Accel mean: x=-691 , y=-551 , z=580 | Gyro mean: x=1350 , y=1638 , z=198 [0m
+[0;32mI (8274) IMU: Accel mean: x=-702 , y=-536 , z=562 | Gyro mean: x=4599 , y=2682 , z=-468 [0m
+[0;32mI (8374) IMU: Accel mean: x=-712 , y=-493 , z=584 | Gyro mean: x=10827 , y=2556 , z=-801 [0m
+[0;32mI (8464) IMU: Accel mean: x=-730 , y=-364 , z=635 | Gyro mean: x=15273 , y=2970 , z=468 [0m
+[0;32mI (8564) IMU: Accel mean: x=-751 , y=-288 , z=645 | Gyro mean: x=9999 , y=1809 , z=-1431 [0m
+[0;32mI (8654) IMU: Accel mean: x=-737 , y=-253 , z=642 | Gyro mean: x=4212 , y=684 , z=-1980 [0m
+[0;32mI (8754) IMU: Accel mean: x=-736 , y=-240 , z=675 | Gyro mean: x=2781 , y=-729 , z=-270 [0m
+[0;32mI (8844) IMU: Accel mean: x=-733 , y=-190 , z=743 | Gyro mean: x=3636 , y=-2025 , z=882 [0m
+[0;32mI (8944) IMU: Accel mean: x=-704 , y=-154 , z=765 | Gyro mean: x=3807 , y=-2475 , z=522 [0m
+[0;32mI (9034) IMU: Accel mean: x=-687 , y=-118 , z=800 | Gyro mean: x=2790 , y=-2034 , z=225 [0m
+[0;32mI (9134) IMU: Accel mean: x=-673 , y=-86 , z=799 | Gyro mean: x=765 , y=207 , z=-45 [0m
+[0;32mI (9224) IMU: Accel mean: x=-690 , y=-84 , z=787 | Gyro mean: x=1800 , y=1062 , z=153 [0m
+[0;32mI (9324) IMU: Accel mean: x=-669 , y=-44 , z=754 | Gyro mean: x=3510 , y=54 , z=108 [0m
+[0;32mI (9414) IMU: Accel mean: x=-658 , y=15 , z=798 | Gyro mean: x=5175 , y=-1764 , z=-459 [0m
+[0;32mI (9514) IMU: Accel mean: x=-626 , y=62 , z=825 | Gyro mean: x=5157 , y=-3114 , z=-2106 [0m
+[0;32mI (9604) IMU: Accel mean: x=-623 , y=12 , z=850 | Gyro mean: x=4050 , y=-2943 , z=-2979 [0m
+[0;32mI (9704) IMU: Accel mean: x=-614 , y=35 , z=867 | Gyro mean: x=2853 , y=-1269 , z=-2745 [0m
+[0;32mI (9794) IMU: Accel mean: x=-520 , y=127 , z=825 | Gyro mean: x=5517 , y=-4347 , z=-207 [0m
+[0;32mI (9884) IMU: Accel mean: x=-476 , y=162 , z=861 | Gyro mean: x=6426 , y=-6381 , z=936 [0m
+[0;32mI (9984) IMU: Accel mean: x=-427 , y=189 , z=892 | Gyro mean: x=2304 , y=-4401 , z=441 [0m
+[0;32mI (10074) IMU: Accel mean: x=-369 , y=218 , z=963 | Gyro mean: x=405 , y=-5013 , z=756 [0m
+[0;32mI (10174) IMU: Accel mean: x=-299 , y=233 , z=950 | Gyro mean: x=117 , y=-4068 , z=774 [0m
+[0;32mI (10264) IMU: Accel mean: x=-227 , y=238 , z=967 | Gyro mean: x=396 , y=-5076 , z=1467 [0m
+[0;32mI (10364) IMU: Accel mean: x=-119 , y=268 , z=965 | Gyro mean: x=1386 , y=-7362 , z=2349 [0m
+[0;32mI (10454) IMU: Accel mean: x=-21 , y=280 , z=1017 | Gyro mean: x=1620 , y=-8748 , z=3843 [0m
+[0;32mI (10554) IMU: Accel mean: x=57 , y=278 , z=1036 | Gyro mean: x=-99 , y=-6084 , z=3645 [0m
+[0;32mI (10644) IMU: Accel mean: x=114 , y=260 , z=997 | Gyro mean: x=-1350 , y=-2925 , z=2070 [0m
+[0;32mI (10744) IMU: Accel mean: x=130 , y=226 , z=999 | Gyro mean: x=-1152 , y=-1926 , z=1332 [0m
+[0;32mI (10814) RTC: Time: 00:15:27 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10834) IMU: Accel mean: x=166 , y=219 , z=1003 | Gyro mean: x=-1764 , y=-1161 , z=1323 [0m
+[0;32mI (10934) IMU: Accel mean: x=186 , y=198 , z=1004 | Gyro mean: x=-1935 , y=-720 , z=1188 [0m
+[0;32mI (11024) IMU: Accel mean: x=190 , y=174 , z=1004 | Gyro mean: x=-1899 , y=-441 , z=873 [0m
+[0;32mI (11124) IMU: Accel mean: x=188 , y=143 , z=1012 | Gyro mean: x=-1584 , y=-45 , z=576 [0m
+[0;32mI (11214) IMU: Accel mean: x=179 , y=114 , z=1011 | Gyro mean: x=-1611 , y=441 , z=261 [0m
+[0;32mI (11314) IMU: Accel mean: x=172 , y=105 , z=1012 | Gyro mean: x=-2007 , y=1260 , z=261 [0m
+[0;32mI (11404) IMU: Accel mean: x=154 , y=74 , z=1012 | Gyro mean: x=-1404 , y=1413 , z=144 [0m
+[0;32mI (11494) IMU: Accel mean: x=139 , y=57 , z=1014 | Gyro mean: x=-1431 , y=1233 , z=459 [0m
+[0;32mI (11594) IMU: Accel mean: x=126 , y=43 , z=1031 | Gyro mean: x=-855 , y=891 , z=603 [0m
+[0;32mI (11684) IMU: Accel mean: x=111 , y=33 , z=1030 | Gyro mean: x=-666 , y=1260 , z=747 [0m
+[0;32mI (11784) IMU: Accel mean: x=94 , y=26 , z=1028 | Gyro mean: x=-342 , y=1332 , z=774 [0m
+[0;32mI (11874) IMU: Accel mean: x=33 , y=-13 , z=1042 | Gyro mean: x=-333 , y=1647 , z=1161 [0m
+[0;32mI (11974) IMU: Accel mean: x=-104 , y=-101 , z=1015 | Gyro mean: x=288 , y=4401 , z=4356 [0m
+[0;32mI (12064) IMU: Accel mean: x=-119 , y=-107 , z=931 | Gyro mean: x=-108 , y=6111 , z=9315 [0m
+[0;32mI (12164) IMU: Accel mean: x=-12 , y=23 , z=947 | Gyro mean: x=-1773 , y=2547 , z=9144 [0m
+[0;32mI (12254) IMU: Accel mean: x=46 , y=88 , z=1042 | Gyro mean: x=-1161 , y=-1350 , z=6696 [0m
+[0;32mI (12354) IMU: Accel mean: x=41 , y=87 , z=1115 | Gyro mean: x=837 , y=-2097 , z=3339 [0m
+[0;32mI (12444) IMU: Accel mean: x=-1 , y=64 , z=1089 | Gyro mean: x=3267 , y=-1332 , z=2124 [0m
+[0;32mI (12544) IMU: Accel mean: x=7 , y=96 , z=1068 | Gyro mean: x=2655 , y=-315 , z=1332 [0m
+[0;32mI (12634) IMU: Accel mean: x=-28 , y=83 , z=1037 | Gyro mean: x=-216 , y=1152 , z=72 [0m
+[0;32mI (12734) IMU: Accel mean: x=-36 , y=68 , z=1043 | Gyro mean: x=-2394 , y=306 , z=-387 [0m
+[0;32mI (12824) IMU: Accel mean: x=-38 , y=31 , z=1037 | Gyro mean: x=-1989 , y=-117 , z=-171 [0m
+[0;32mI (12924) IMU: Accel mean: x=-39 , y=19 , z=1034 | Gyro mean: x=-738 , y=-9 , z=18 [0m
+[0;32mI (13014) IMU: Accel mean: x=-39 , y=17 , z=1034 | Gyro mean: x=-90 , y=0 , z=-27 [0m
+[0;32mI (13114) IMU: Accel mean: x=-38 , y=19 , z=1034 | Gyro mean: x=198 , y=-18 , z=-63 [0m
+[0;32mI (13204) IMU: Accel mean: x=-39 , y=26 , z=1034 | Gyro mean: x=441 , y=0 , z=-90 [0m
+[0;32mI (13294) IMU: Accel mean: x=-38 , y=31 , z=1034 | Gyro mean: x=468 , y=-27 , z=-72 [0m
+[0;32mI (13394) IMU: Accel mean: x=-37 , y=38 , z=1033 | Gyro mean: x=450 , y=0 , z=-72 [0m
+[0;32mI (13484) IMU: Accel mean: x=-37 , y=42 , z=1033 | Gyro mean: x=198 , y=-18 , z=-27 [0m
+[0;32mI (13584) IMU: Accel mean: x=-37 , y=40 , z=1033 | Gyro mean: x=-99 , y=-27 , z=9 [0m
+[0;32mI (13674) IMU: Accel mean: x=-36 , y=38 , z=1033 | Gyro mean: x=-162 , y=-27 , z=18 [0m
+[0;32mI (13774) IMU: Accel mean: x=-36 , y=36 , z=1034 | Gyro mean: x=-108 , y=0 , z=36 [0m
+[0;32mI (13864) IMU: Accel mean: x=-36 , y=36 , z=1034 | Gyro mean: x=117 , y=27 , z=27 [0m
+[0;32mI (13964) IMU: Accel mean: x=-41 , y=51 , z=1034 | Gyro mean: x=702 , y=126 , z=-81 [0m
+[0;32mI (14054) IMU: Accel mean: x=-34 , y=39 , z=1032 | Gyro mean: x=-225 , y=9 , z=-18 [0m
+[0;32mI (14154) IMU: Accel mean: x=-39 , y=48 , z=1033 | Gyro mean: x=270 , y=72 , z=63 [0m
+[0;32mI (14244) IMU: Accel mean: x=-38 , y=49 , z=1033 | Gyro mean: x=81 , y=27 , z=18 [0m
+[0;32mI (14344) IMU: Accel mean: x=-39 , y=49 , z=1032 | Gyro mean: x=45 , y=27 , z=9 [0m
+[0;32mI (14434) IMU: Accel mean: x=-37 , y=49 , z=1033 | Gyro mean: x=72 , y=9 , z=9 [0m
+[0;32mI (14534) IMU: Accel mean: x=-34 , y=53 , z=1034 | Gyro mean: x=279 , y=-54 , z=9 [0m
+[0;32mI (14624) IMU: Accel mean: x=-42 , y=57 , z=1026 | Gyro mean: x=108 , y=9 , z=27 [0m
+[0;32mI (14714) IMU: Accel mean: x=-37 , y=58 , z=1031 | Gyro mean: x=171 , y=-45 , z=27 [0m
+[0;32mI (14814) IMU: Accel mean: x=-38 , y=57 , z=1033 | Gyro mean: x=-81 , y=54 , z=0 [0m
+[0;32mI (14904) IMU: Accel mean: x=-37 , y=57 , z=1033 | Gyro mean: x=-9 , y=27 , z=9 [0m
+[0;32mI (15004) IMU: Accel mean: x=-37 , y=57 , z=1033 | Gyro mean: x=9 , y=27 , z=9 [0m
+[0;32mI (15094) IMU: Accel mean: x=-37 , y=57 , z=1033 | Gyro mean: x=9 , y=27 , z=9 [0m
+[0;32mI (15194) IMU: Accel mean: x=-37 , y=57 , z=1032 | Gyro mean: x=18 , y=27 , z=9 [0m
+[0;32mI (15284) IMU: Accel mean: x=-38 , y=57 , z=1032 | Gyro mean: x=18 , y=27 , z=9 [0m
+[0;32mI (15384) IMU: Accel mean: x=-38 , y=57 , z=1032 | Gyro mean: x=18 , y=18 , z=9 [0m
+[0;32mI (15474) IMU: Accel mean: x=-38 , y=57 , z=1032 | Gyro mean: x=0 , y=18 , z=9 [0m
+[0;32mI (15574) IMU: Accel mean: x=-37 , y=57 , z=1032 | Gyro mean: x=9 , y=27 , z=9 [0m
+[0;32mI (15664) IMU: Accel mean: x=-38 , y=57 , z=1032 | Gyro mean: x=9 , y=18 , z=9 [0m
+[0;32mI (15764) IMU: Accel mean: x=-38 , y=57 , z=1031 | Gyro mean: x=-9 , y=18 , z=9 [0m
+[0;32mI (15854) IMU: Accel mean: x=-38 , y=57 , z=1031 | Gyro mean: x=-9 , y=18 , z=9 [0m
+[0;32mI (15954) IMU: Accel mean: x=-38 , y=57 , z=1031 | Gyro mean: x=-9 , y=18 , z=9 [0m
+[0;32mI (16044) IMU: Accel mean: x=-38 , y=57 , z=1031 | Gyro mean: x=-9 , y=18 , z=9 [0m
+[0;32mI (16144) IMU: Accel mean: x=-38 , y=57 , z=1031 | Gyro mean: x=0 , y=18 , z=9 [0m
+[0;32mI (16234) IMU: Accel mean: x=-38 , y=57 , z=1031 | Gyro mean: x=9 , y=18 , z=9 [0m
+[0;32mI (16324) IMU: Accel mean: x=-38 , y=57 , z=1031 | Gyro mean: x=18 , y=18 , z=9 [0m
+[0;32mI (16424) IMU: Accel mean: x=-38 , y=57 , z=1031 | Gyro mean: x=27 , y=27 , z=18 [0m
+[0;32mI (16514) IMU: Accel mean: x=-39 , y=58 , z=1030 | Gyro mean: x=45 , y=27 , z=9 [0m
+[0;32mI (16614) IMU: Accel mean: x=-38 , y=57 , z=1029 | Gyro mean: x=-9 , y=18 , z=-18 [0m

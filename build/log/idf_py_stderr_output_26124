@@ -1,0 +1,79 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40048836: uart_tx_one_char_uart in ROM
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754c4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x40375bb2: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037bf35: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x403837c5: __assert_func at C:/Users/mikel/esp-adf/esp-idf/components/newlib/assert.c:80
+--- 0x4037e61e: xTaskDelayUntil at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1476 (discriminator 1)
+--- 0x42009bcd: RTC_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/RTC.h:221
+--- 0x4037c9dd: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x420068c7: uart_ll_get_txfifo_len at C:/Users/mikel/esp-adf/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:390
+---  (inlined by) uart_tx_char at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754c4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x40375bb2: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037bf35: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x403837c5: __assert_func at C:/Users/mikel/esp-adf/esp-idf/components/newlib/assert.c:80
+--- 0x4037e61e: xTaskDelayUntil at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1476 (discriminator 1)
+--- 0x42009bcd: RTC_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/RTC.h:221
+--- 0x4037c9dd: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x420068c7: uart_ll_get_txfifo_len at C:/Users/mikel/esp-adf/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:390
+---  (inlined by) uart_tx_char at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754c4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x40375bb2: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037bf35: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x403837c5: __assert_func at C:/Users/mikel/esp-adf/esp-idf/components/newlib/assert.c:80
+--- 0x4037e61e: xTaskDelayUntil at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1476 (discriminator 1)
+--- 0x42009bcd: RTC_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/RTC.h:221
+--- 0x4037c9dd: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x420068c7: uart_ll_get_txfifo_len at C:/Users/mikel/esp-adf/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:390
+---  (inlined by) uart_tx_char at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x40374000: _WindowOverflow4 at C:/Users/mikel/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x42000020: _stext at ??:?
+[0m
+[0;33m--- 0x403754c4: call_start_cpu0 at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:380
+[0m
+[0;33m--- 0x40375bb2: panic_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/panic.c:463
+--- 0x4037bf35: esp_system_abort at C:/Users/mikel/esp-adf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x403837c5: __assert_func at C:/Users/mikel/esp-adf/esp-idf/components/newlib/assert.c:80
+--- 0x4037e61e: xTaskDelayUntil at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1476 (discriminator 1)
+--- 0x42009bcd: RTC_task at C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/RTC.h:221
+--- 0x4037c9dd: vPortTaskWrapper at C:/Users/mikel/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x420068c7: uart_ll_get_txfifo_len at C:/Users/mikel/esp-adf/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:390
+---  (inlined by) uart_tx_char at C:/Users/mikel/esp-adf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+[0m
+[0m

@@ -1,0 +1,609 @@
+V (96) bootloader_flash: after mapping, starting from paddr=0x00map_segment 0 segESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754b0[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xddd4 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ddd4h ( 56788) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xddd4, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1ddf4[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x221c data starts 0x1ddfc[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1ddfc load_addr 0x3fc95700[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001ddfc vaddr=3fc95700 size=0221ch (  8732) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001ddfc, size=0x221c, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (321) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x20cf0 data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=20cf0h (134384) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x20cf0, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (405) esp_image: loading segment header 3 at offset 0x40d10[0m
+D (405) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (407) esp_image: segment data length 0x940 data starts 0x40d18[0m
+V (413) esp_image: segment 3 map_segment 0 segment_data_offs 0x40d18 load_addr 0x3fc9791c[0m
+[0;32mI (421) esp_image: segment 3: paddr=00040d18 vaddr=3fc9791c size=00940h (  2368) load[0m
+D (429) esp_image: free data page_count 0x00000200[0m
+D (434) bootloader_flash: rodata starts from paddr=0x00040d18, size=0x940, will be mapped to vaddr=0x3c000000[0m
+V (444) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (456) esp_image: loading segment header 4 at offset 0x41658[0m
+D (461) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (468) esp_image: segment data length 0x116ac data starts 0x41660[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x41660 load_addr 0x40374000[0m
+[0;32mI (482) esp_image: segment 4: paddr=00041660 vaddr=40374000 size=116ach ( 71340) load[0m
+D (491) esp_image: free data page_count 0x00000200[0m
+D (496) bootloader_flash: rodata starts from paddr=0x00041660, size=0x116ac, will be mapped to vaddr=0x3c000000[0m
+V (506) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (533) esp_image: image start 0x00010000 end of last section 0x00052d0c[0m
+D (533) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (535) boot: Calculated hash: 89cb00e74b5397ab842ae426c30185f7fa30ce384f3c83c5c1a6eb3587ec4d45[0m
+[0;32mI (551) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+D (555) boot: Mapping segment 0 as DROM[0m
+D (559) boot: Mapping segment 2 as IROM[0m
+D (563) boot: calling set_cache_and_start_app[0m
+D (568) boot: configure drom and irom and start[0m
+V (572) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xddd4[0m
+V (580) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (590) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (600) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x20cf0[0m
+V (608) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (618) boot: start: 0x403754b0[0m
+[0;32mI (633) cpu_start: Multicore app[0m
+[0;32mI (642) cpu_start: Pro cpu start user code[0m
+[0;32mI (642) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (642) app_init: Application information:[0m
+[0;32mI (645) app_init: Project name:     hello_world[0m
+[0;32mI (650) app_init: App version:      1[0m
+[0;32mI (655) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (661) app_init: ELF file SHA256:  91c341b80...[0m
+[0;32mI (666) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (671) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (675) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (680) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (693) heap_init: At 3FC9BBF0 len 0004DB20 (310 KiB): RAM[0m
+[0;32mI (699) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (705) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (711) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (718) spi_flash: detected chip: gd[0m
+[0;32mI (721) spi_flash: flash io: dio[0m
+[0;33mW (725) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (738) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (749) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (756) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (763) main_task: Started on CPU0[0m
+[0;32mI (773) main_task: Calling app_main()[0m
+[0;32mI (793) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (793) ACC: X: 92	Y: -231	Z: 965[0m
+[0;32mI (793) RTC: Time: 00:22:25 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (803) main_task: Returned from app_main()[0m
+[0;32mI (893) IMU: Accel mean: x=1562 (95), y=-3874 (-237), z=15877 (969) | Gyro mean: x=-9377 (-573), y=-9720 (-594), z=10563 (644)[0m
+[0;32mI (1173) IMU: Accel mean: x=1285 (78), y=-3653 (-223), z=14664 (895) | Gyro mean: x=1010 (61), y=-5 (-1), z=-38 (-3)[0m
+[0;32mI (1273) IMU: Accel mean: x=1597 (97), y=-3971 (-243), z=15888 (969) | Gyro mean: x=8 (0), y=1 (0), z=1 (0)[0m
+[0;32mI (1293) ACC: X: 97	Y: -244	Z: 971[0m
+[0;32mI (1553) IMU: Accel mean: x=1160 (70), y=-3732 (-228), z=14621 (892) | Gyro mean: x=975 (59), y=9 (0), z=6 (0)[0m
+[0;32mI (1643) IMU: Accel mean: x=1475 (90), y=-4081 (-250), z=15890 (969) | Gyro mean: x=0 (0), y=45 (2), z=-13 (-1)[0m
+[0;32mI (1793) ACC: X: 92	Y: -260	Z: 967[0m
+[0;32mI (1803) RTC: Time: 00:22:26 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2293) ACC: X: 94	Y: -263	Z: 965[0m
+[0;32mI (2793) ACC: X: 93	Y: -246	Z: 973[0m
+[0;32mI (2803) RTC: Time: 00:22:27 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3293) ACC: X: 89	Y: -239	Z: 974[0m
+[0;32mI (3793) ACC: X: 91	Y: -236	Z: 974[0m
+[0;32mI (3803) RTC: Time: 00:22:28 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4293) ACC: X: 91	Y: -239	Z: 975[0m
+[0;32mI (4793) ACC: X: 95	Y: -249	Z: 969[0m
+[0;32mI (4803) RTC: Time: 00:22:29 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5293) ACC: X: 92	Y: -250	Z: 976[0m
+[0;32mI (5793) ACC: X: 84	Y: -237	Z: 969[0m
+[0;32mI (5803) RTC: Time: 00:22:30 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6293) ACC: X: 95	Y: -238	Z: 970[0m
+[0;32mI (6793) ACC: X: 93	Y: -240	Z: 973[0m
+[0;32mI (6803) RTC: Time: 00:22:31 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7293) ACC: X: 90	Y: -238	Z: 972[0m
+[0;32mI (7793) ACC: X: 90	Y: -242	Z: 972[0m
+[0;32mI (7803) RTC: Time: 00:22:32 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8293) ACC: X: 88	Y: -254	Z: 972[0m
+[0;32mI (8793) ACC: X: 85	Y: -257	Z: 972[0m
+[0;32mI (8803) RTC: Time: 00:22:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9293) ACC: X: 88	Y: -243	Z: 975[0m
+[0;32mI (9793) ACC: X: 89	Y: -248	Z: 966[0m
+[0;32mI (9803) RTC: Time: 00:22:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10293) ACC: X: 87	Y: -239	Z: 975[0m
+[0;32mI (10793) ACC: X: 88	Y: -239	Z: 973[0m
+[0;32mI (10803) RTC: Time: 00:22:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11293) ACC: X: 85	Y: -259	Z: 970[0m
+[0;32mI (11793) ACC: X: 87	Y: -250	Z: 973[0m
+[0;32mI (11803) RTC: Time: 00:22:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12293) ACC: X: 84	Y: -240	Z: 974[0m
+[0;32mI (12793) ACC: X: 87	Y: -237	Z: 976[0m
+[0;32mI (12803) RTC: Time: 00:22:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13293) ACC: X: 90	Y: -240	Z: 974[0m
+[0;32mI (13793) ACC: X: 83	Y: -241	Z: 976[0m
+[0;32mI (13803) RTC: Time: 00:22:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14293) ACC: X: 86	Y: -246	Z: 970[0m
+[0;32mI (14793) ACC: X: 85	Y: -248	Z: 973[0m
+[0;32mI (14803) RTC: Time: 00:22:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15293) ACC: X: 83	Y: -237	Z: 976[0m
+[0;32mI (15793) ACC: X: 76	Y: -225	Z: 981[0m
+[0;32mI (15803) RTC: Time: 00:22:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16293) ACC: X: 84	Y: -238	Z: 973[0m
+[0;32mI (16793) ACC: X: 84	Y: -240	Z: 975[0m
+[0;32mI (16803) RTC: Time: 00:22:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (17293) ACC: X: 83	Y: -241	Z: 974[0m
+[0;32mI (17793) ACC: X: 81	Y: -248	Z: 973[0m
+[0;32mI (17803) RTC: Time: 00:22:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (18293) ACC: X: 85	Y: -249	Z: 973[0m
+[0;32mI (18793) ACC: X: 87	Y: -239	Z: 976[0m
+[0;32mI (18803) RTC: Time: 00:22:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (19293) ACC: X: 86	Y: -257	Z: 963[0m
+[0;32mI (19793) ACC: X: 85	Y: -236	Z: 977[0m
+[0;32mI (19803) RTC: Time: 00:22:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (20293) ACC: X: 84	Y: -239	Z: 975[0m
+[0;32mI (20793) ACC: X: 85	Y: -249	Z: 972[0m
+[0;32mI (20803) RTC: Time: 00:22:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (21293) ACC: X: 84	Y: -242	Z: 973[0m
+[0;32mI (21793) ACC: X: 85	Y: -237	Z: 977[0m
+[0;32mI (21803) RTC: Time: 00:22:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (22293) ACC: X: 83	Y: -235	Z: 978[0m
+[0;32mI (22793) ACC: X: 80	Y: -233	Z: 965[0m
+[0;32mI (22803) RTC: Time: 00:22:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (23293) ACC: X: 85	Y: -232	Z: 977[0m
+[0;32mI (23793) ACC: X: 85	Y: -239	Z: 977[0m
+[0;32mI (23803) RTC: Time: 00:22:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (24293) ACC: X: 83	Y: -248	Z: 973[0m
+[0;32mI (24793) ACC: X: 90	Y: -249	Z: 968[0m
+[0;32mI (24803) RTC: Time: 00:22:49 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (25293) ACC: X: 86	Y: -239	Z: 975[0m
+[0;32mI (25793) ACC: X: 86	Y: -233	Z: 976[0m
+[0;32mI (25803) RTC: Time: 00:22:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (26293) ACC: X: 87	Y: -238	Z: 973[0m
+[0;32mI (26793) ACC: X: 83	Y: -234	Z: 975[0m
+[0;32mI (26803) RTC: Time: 00:22:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (27293) ACC: X: 86	Y: -241	Z: 976[0m
+[0;32mI (27793) ACC: X: 85	Y: -254	Z: 971[0m
+[0;32mI (27803) RTC: Time: 00:22:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (28293) ACC: X: 86	Y: -249	Z: 972[0m
+[0;32mI (28793) ACC: X: 86	Y: -239	Z: 974[0m
+[0;32mI (28803) RTC: Time: 00:22:53 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (29293) ACC: X: 85	Y: -236	Z: 973[0m
+[0;32mI (29793) ACC: X: 85	Y: -234	Z: 975[0m
+[0;32mI (29803) RTC: Time: 00:22:54 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (30293) ACC: X: 74	Y: -215	Z: 987[0m
+[0;32mI (30793) ACC: X: 83	Y: -264	Z: 969[0m
+[0;32mI (30803) RTC: Time: 00:22:55 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (31293) ACC: X: 83	Y: -255	Z: 968[0m
+[0;32mI (31793) ACC: X: 87	Y: -244	Z: 970[0m
+[0;32mI (31803) RTC: Time: 00:22:56 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (32293) ACC: X: 86	Y: -247	Z: 970[0m
+[0;32mI (32793) ACC: X: 85	Y: -252	Z: 970[0m
+[0;32mI (32803) RTC: Time: 00:22:57 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (33293) ACC: X: 87	Y: -257	Z: 964[0m
+[0;32mI (33793) ACC: X: 87	Y: -254	Z: 970[0m
+[0;32mI (33803) RTC: Time: 00:22:58 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (34293) ACC: X: 80	Y: -217	Z: 977[0m
+[0;32mI (34793) ACC: X: 95	Y: -212	Z: 970[0m
+[0;32mI (34803) RTC: Time: 00:22:59 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (35293) ACC: X: 93	Y: -200	Z: 981[0m
+[0;32mI (35793) ACC: X: 87	Y: -219	Z: 973[0m
+[0;32mI (35803) RTC: Time: 00:23:00 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (36293) ACC: X: 86	Y: -213	Z: 981[0m
+[0;32mI (36793) ACC: X: 79	Y: -217	Z: 970[0m
+[0;32mI (36803) RTC: Time: 00:23:01 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (37293) ACC: X: 108	Y: -219	Z: 985[0m
+[0;32mI (37793) ACC: X: 88	Y: -222	Z: 979[0m
+[0;32mI (37803) RTC: Time: 00:23:02 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (38293) ACC: X: 82	Y: -225	Z: 972[0m
+[0;32mI (38793) ACC: X: 80	Y: -213	Z: 980[0m
+[0;32mI (38803) RTC: Time: 00:23:03 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (39293) ACC: X: 83	Y: -204	Z: 985[0m
+[0;32mI (39793) ACC: X: 81	Y: -207	Z: 983[0m
+[0;32mI (39803) RTC: Time: 00:23:04 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (40293) ACC: X: 85	Y: -205	Z: 977[0m
+[0;32mI (40793) ACC: X: 78	Y: -208	Z: 980[0m
+[0;32mI (40803) RTC: Time: 00:23:05 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (41293) ACC: X: 80	Y: -204	Z: 984[0m
+[0;32mI (41793) ACC: X: 82	Y: -211	Z: 991[0m
+[0;32mI (41803) RTC: Time: 00:23:06 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (42293) ACC: X: 81	Y: -209	Z: 983[0m
+[0;32mI (42793) ACC: X: 83	Y: -203	Z: 982[0m
+[0;32mI (42803) RTC: Time: 00:23:07 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (43293) ACC: X: 82	Y: -203	Z: 974[0m
+[0;32mI (43793) ACC: X: 80	Y: -196	Z: 986[0m
+[0;32mI (43803) RTC: Time: 00:23:08 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (44293) ACC: X: 79	Y: -193	Z: 985[0m
+[0;32mI (44793) ACC: X: 77	Y: -192	Z: 986[0m
+[0;32mI (44803) RTC: Time: 00:23:09 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (45293) ACC: X: 85	Y: -200	Z: 983[0m
+[0;32mI (45793) ACC: X: 73	Y: -196	Z: 982[0m
+[0;32mI (45803) RTC: Time: 00:23:10 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (46293) ACC: X: 76	Y: -200	Z: 980[0m
+[0;32mI (46793) ACC: X: 80	Y: -198	Z: 988[0m
+[0;32mI (46803) RTC: Time: 00:23:11 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (47293) ACC: X: 76	Y: -197	Z: 981[0m
+[0;32mI (47793) ACC: X: 84	Y: -206	Z: 998[0m
+[0;32mI (47803) RTC: Time: 00:23:12 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (48293) ACC: X: 76	Y: -193	Z: 985[0m
+[0;32mI (48793) ACC: X: 75	Y: -194	Z: 984[0m
+[0;32mI (48803) RTC: Time: 00:23:13 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (49293) ACC: X: 78	Y: -194	Z: 980[0m
+[0;32mI (49793) ACC: X: 77	Y: -195	Z: 983[0m
+[0;32mI (49803) RTC: Time: 00:23:14 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (50293) ACC: X: 75	Y: -197	Z: 983[0m
+[0;32mI (50793) ACC: X: 76	Y: -204	Z: 983[0m
+[0;32mI (50803) RTC: Time: 00:23:15 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (51293) ACC: X: 72	Y: -205	Z: 978[0m
+[0;32mI (51793) ACC: X: 72	Y: -203	Z: 986[0m
+[0;32mI (51803) RTC: Time: 00:23:16 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (52293) ACC: X: 73	Y: -194	Z: 985[0m
+[0;32mI (52793) ACC: X: 72	Y: -198	Z: 984[0m
+[0;32mI (52803) RTC: Time: 00:23:17 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (53293) ACC: X: 72	Y: -212	Z: 982[0m
+[0;32mI (53793) ACC: X: 75	Y: -210	Z: 980[0m
+[0;32mI (53803) RTC: Time: 00:23:18 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (54293) ACC: X: 71	Y: -199	Z: 986[0m
+[0;32mI (54793) ACC: X: 73	Y: -200	Z: 983[0m
+[0;32mI (54803) RTC: Time: 00:23:19 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (55293) ACC: X: 70	Y: -206	Z: 976[0m
+[0;32mI (55793) ACC: X: 72	Y: -204	Z: 984[0m
+[0;32mI (55803) RTC: Time: 00:23:20 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (56293) ACC: X: 73	Y: -198	Z: 984[0m
+[0;32mI (56793) ACC: X: 74	Y: -201	Z: 983[0m
+[0;32mI (56803) RTC: Time: 00:23:21 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (57293) ACC: X: 72	Y: -195	Z: 984[0m
+[0;32mI (57793) ACC: X: 71	Y: -201	Z: 987[0m
+[0;32mI (57803) RTC: Time: 00:23:22 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (58293) ACC: X: 74	Y: -205	Z: 983[0m
+[0;32mI (58793) ACC: X: 74	Y: -207	Z: 983[0m
+[0;32mI (58803) RTC: Time: 00:23:23 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (59293) ACC: X: 74	Y: -203	Z: 973[0m
+[0;32mI (59793) ACC: X: 73	Y: -201	Z: 985[0m
+[0;32mI (59803) RTC: Time: 00:23:24 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (60293) ACC: X: 75	Y: -196	Z: 987[0m
+[0;32mI (60793) ACC: X: 70	Y: -199	Z: 983[0m
+[0;32mI (60803) RTC: Time: 00:23:25 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (61293) ACC: X: 74	Y: -203	Z: 985[0m
+[0;32mI (61793) ACC: X: 78	Y: -195	Z: 972[0m
+[0;32mI (61803) RTC: Time: 00:23:26 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (62293) ACC: X: 70	Y: -195	Z: 989[0m
+[0;32mI (62793) ACC: X: 71	Y: -194	Z: 987[0m
+[0;32mI (62803) RTC: Time: 00:23:27 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (63293) ACC: X: 73	Y: -187	Z: 983[0m
+[0;32mI (63793) ACC: X: 50	Y: -162	Z: 1003[0m
+[0;32mI (63803) RTC: Time: 00:23:28 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (64293) ACC: X: 139	Y: 284	Z: 1173[0m
+[0;32mI (64793) ACC: X: -220	Y: -35	Z: 930[0m
+[0;32mI (64803) RTC: Time: 00:23:29 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (65293) ACC: X: -277	Y: 18	Z: 932[0m
+[0;32mI (65503) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (65793) ACC: X: -279	Y: 25	Z: 1004[0m
+[0;32mI (65803) RTC: Time: 00:23:30 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (66293) ACC: X: -257	Y: 14	Z: 967[0m
+[0;32mI (66793) ACC: X: -256	Y: -4	Z: 963[0m
+[0;32mI (66803) RTC: Time: 00:23:31 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (67293) ACC: X: -176	Y: -208	Z: 1001[0m
+[0;32mI (67793) ACC: X: -259	Y: -636	Z: 745[0m
+[0;32mI (67803) RTC: Time: 00:23:32 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (68293) ACC: X: -283	Y: -188	Z: 918[0m
+[0;32mI (68793) ACC: X: -166	Y: 376	Z: 1022[0m
+[0;32mI (68803) RTC: Time: 00:23:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (69293) ACC: X: -272	Y: -201	Z: 881[0m
+[0;32mI (69793) ACC: X: -323	Y: -389	Z: 906[0m
+[0;32mI (69803) RTC: Time: 00:23:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (70293) ACC: X: -312	Y: -544	Z: 803[0m
+[0;32mI (70793) ACC: X: -273	Y: -639	Z: 677[0m
+[0;32mI (70803) RTC: Time: 00:23:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (71293) ACC: X: -246	Y: -747	Z: 626[0m
+[0;32mI (71793) ACC: X: -239	Y: -644	Z: 674[0m
+[0;32mI (71803) RTC: Time: 00:23:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (72293) ACC: X: 16	Y: -152	Z: 969[0m
+[0;32mI (72793) ACC: X: 95	Y: 188	Z: 971[0m
+[0;32mI (72803) RTC: Time: 00:23:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (73293) ACC: X: 56	Y: 593	Z: 826[0m
+[0;32mI (73793) ACC: X: -334	Y: 438	Z: 885[0m
+[0;32mI (73803) RTC: Time: 00:23:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (74293) ACC: X: -247	Y: -279	Z: 950[0m
+[0;32mI (74793) ACC: X: -159	Y: -379	Z: 914[0m
+[0;32mI (74803) RTC: Time: 00:23:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (75293) ACC: X: -182	Y: -343	Z: 982[0m
+[0;32mI (75793) ACC: X: -217	Y: -365	Z: 916[0m
+[0;32mI (75803) RTC: Time: 00:23:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (76293) ACC: X: -308	Y: -449	Z: 850[0m
+[0;32mI (76793) ACC: X: -306	Y: -472	Z: 838[0m
+[0;32mI (76803) RTC: Time: 00:23:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (77293) ACC: X: -269	Y: -494	Z: 865[0m
+[0;32mI (77793) ACC: X: -257	Y: -492	Z: 846[0m
+[0;32mI (77803) RTC: Time: 00:23:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (78293) ACC: X: -270	Y: -488	Z: 842[0m
+[0;32mI (78793) ACC: X: -299	Y: -490	Z: 839[0m
+[0;32mI (78803) RTC: Time: 00:23:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (79293) ACC: X: -294	Y: -490	Z: 848[0m
+[0;32mI (79793) ACC: X: -296	Y: -484	Z: 840[0m
+[0;32mI (79803) RTC: Time: 00:23:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (80293) ACC: X: -295	Y: -478	Z: 832[0m
+[0;32mI (80793) ACC: X: -320	Y: -331	Z: 898[0m
+[0;32mI (80803) RTC: Time: 00:23:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (81293) ACC: X: -352	Y: -227	Z: 906[0m
+[0;32mI (81793) ACC: X: -208	Y: 267	Z: 991[0m
+[0;32mI (81803) RTC: Time: 00:23:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (82293) ACC: X: -165	Y: 376	Z: 958[0m
+[0;32mI (82793) ACC: X: -189	Y: 401	Z: 907[0m
+[0;32mI (82803) RTC: Time: 00:23:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (83293) ACC: X: -110	Y: -86	Z: 965[0m
+[0;32mI (83793) ACC: X: 0	Y: -43	Z: 1096[0m
+[0;32mI (83803) RTC: Time: 00:23:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (84293) ACC: X: -87	Y: -33	Z: 1012[0m
+[0;32mI (84793) ACC: X: -152	Y: 28	Z: 998[0m
+[0;32mI (84803) RTC: Time: 00:23:49 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (85293) ACC: X: -197	Y: 37	Z: 977[0m
+[0;32mI (85793) ACC: X: -216	Y: -25	Z: 987[0m
+[0;32mI (85803) RTC: Time: 00:23:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (86293) ACC: X: -194	Y: 0	Z: 986[0m
+[0;32mI (86793) ACC: X: -125	Y: 21	Z: 997[0m
+[0;32mI (86803) RTC: Time: 00:23:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (87293) ACC: X: -125	Y: 35	Z: 1001[0m
+[0;32mI (87793) ACC: X: -146	Y: 33	Z: 1003[0m
+[0;32mI (87803) RTC: Time: 00:23:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (88293) ACC: X: -246	Y: 69	Z: 976[0m
+[0;32mI (88793) ACC: X: -298	Y: 89	Z: 980[0m
+[0;32mI (88803) RTC: Time: 00:23:53 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (89293) ACC: X: -279	Y: 95	Z: 965[0m
+[0;32mI (89793) ACC: X: -268	Y: 93	Z: 977[0m
+[0;32mI (89803) RTC: Time: 00:23:54 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (90293) ACC: X: -282	Y: 95	Z: 967[0m
+[0;32mI (90793) ACC: X: -124	Y: 73	Z: 1017[0m
+[0;32mI (90803) RTC: Time: 00:23:55 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (91293) ACC: X: -336	Y: 168	Z: 936[0m
+[0;32mI (91793) ACC: X: -285	Y: 238	Z: 931[0m
+[0;32mI (91803) RTC: Time: 00:23:56 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (92293) ACC: X: -239	Y: 227	Z: 931[0m
+[0;32mI (92793) ACC: X: -242	Y: 216	Z: 953[0m
+[0;32mI (92803) RTC: Time: 00:23:57 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (93293) ACC: X: -242	Y: 230	Z: 889[0m
+[0;32mI (93793) ACC: X: -254	Y: 153	Z: 965[0m
+[0;32mI (93803) RTC: Time: 00:23:58 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (94293) ACC: X: -244	Y: 107	Z: 997[0m
+[0;32mI (94793) ACC: X: -225	Y: 115	Z: 947[0m
+[0;32mI (94803) RTC: Time: 00:23:59 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (95293) ACC: X: -238	Y: 118	Z: 970[0m
+[0;32mI (95793) ACC: X: -239	Y: 102	Z: 979[0m
+[0;32mI (95803) RTC: Time: 00:24:00 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (96293) ACC: X: -244	Y: 148	Z: 971[0m
+[0;32mI (96793) ACC: X: -252	Y: 168	Z: 955[0m
+[0;32mI (96803) RTC: Time: 00:24:01 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (97293) ACC: X: -252	Y: 166	Z: 965[0m
+[0;32mI (97793) ACC: X: -275	Y: 239	Z: 926[0m
+[0;32mI (97803) RTC: Time: 00:24:02 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (98293) ACC: X: -297	Y: 346	Z: 929[0m
+[0;32mI (98793) ACC: X: -271	Y: 294	Z: 926[0m
+[0;32mI (98803) RTC: Time: 00:24:03 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (99293) ACC: X: -294	Y: 302	Z: 939[0m
+[0;32mI (99793) ACC: X: -288	Y: 345	Z: 885[0m
+[0;32mI (99803) RTC: Time: 00:24:04 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (100293) ACC: X: -283	Y: 363	Z: 897[0m
+[0;32mI (100793) ACC: X: -281	Y: 454	Z: 849[0m
+[0;32mI (100803) RTC: Time: 00:24:05 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (101293) ACC: X: -275	Y: 526	Z: 794[0m
+[0;32mI (101793) ACC: X: -354	Y: 530	Z: 775[0m
+[0;32mI (101803) RTC: Time: 00:24:06 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (102293) ACC: X: -368	Y: 473	Z: 778[0m
+[0;32mI (102793) ACC: X: -287	Y: 351	Z: 913[0m
+[0;32mI (102803) RTC: Time: 00:24:07 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (103293) ACC: X: -239	Y: 269	Z: 940[0m
+[0;32mI (103793) ACC: X: -221	Y: 216	Z: 971[0m
+[0;32mI (103803) RTC: Time: 00:24:08 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (104293) ACC: X: -220	Y: 207	Z: 968[0m
+[0;32mI (104793) ACC: X: -202	Y: 181	Z: 950[0m
+[0;32mI (104803) RTC: Time: 00:24:09 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (105293) ACC: X: -203	Y: 194	Z: 958[0m
+[0;32mI (105793) ACC: X: -220	Y: 193	Z: 974[0m
+[0;32mI (105803) RTC: Time: 00:24:10 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (106293) ACC: X: -207	Y: 244	Z: 941[0m
+[0;32mI (106793) ACC: X: -151	Y: 179	Z: 956[0m
+[0;32mI (106803) RTC: Time: 00:24:11 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (107293) ACC: X: -123	Y: 261	Z: 868[0m
+[0;32mI (107793) ACC: X: -200	Y: 187	Z: 1174[0m
+[0;32mI (107803) RTC: Time: 00:24:12 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (108293) ACC: X: -153	Y: 200	Z: 968[0m
+[0;32mI (108793) ACC: X: 9	Y: 0	Z: 1054[0m
+[0;32mI (108803) RTC: Time: 00:24:13 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (109293) ACC: X: -172	Y: 164	Z: 931[0m
+[0;32mI (109793) ACC: X: -158	Y: 133	Z: 983[0m
+[0;32mI (109803) RTC: Time: 00:24:14 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (110293) ACC: X: -174	Y: 156	Z: 983[0m
+[0;32mI (110793) ACC: X: -229	Y: 216	Z: 971[0m
+[0;32mI (110803) RTC: Time: 00:24:15 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (111293) ACC: X: -221	Y: 211	Z: 979[0m
+[0;32mI (111793) ACC: X: -162	Y: 155	Z: 1084[0m
+[0;32mI (111803) RTC: Time: 00:24:16 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (112293) ACC: X: -250	Y: 84	Z: 920[0m
+[0;32mI (112793) ACC: X: -222	Y: 205	Z: 1014[0m
+[0;32mI (112803) RTC: Time: 00:24:17 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (113293) ACC: X: -202	Y: 245	Z: 901[0m
+[0;32mI (113793) ACC: X: -637	Y: -94	Z: 1251[0m
+[0;32mI (113803) RTC: Time: 00:24:18 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (114293) ACC: X: -361	Y: 92	Z: 924[0m
+[0;32mI (114793) ACC: X: -362	Y: 139	Z: 988[0m
+[0;32mI (114803) RTC: Time: 00:24:19 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (115293) ACC: X: -358	Y: 320	Z: 770[0m
+[0;32mI (115793) ACC: X: -351	Y: 277	Z: 915[0m
+[0;32mI (115803) RTC: Time: 00:24:20 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (116293) ACC: X: -268	Y: 331	Z: 813[0m
+[0;32mI (116453) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (116703) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (116793) ACC: X: -320	Y: 264	Z: 982[0m
+[0;32mI (116803) RTC: Time: 00:24:21 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (117293) ACC: X: -310	Y: 168	Z: 952[0m
+[0;32mI (117793) ACC: X: -316	Y: 160	Z: 944[0m
+[0;32mI (117803) RTC: Time: 00:24:22 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (118293) ACC: X: -331	Y: 186	Z: 943[0m
+[0;32mI (118793) ACC: X: -341	Y: 205	Z: 942[0m
+[0;32mI (118803) RTC: Time: 00:24:23 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (119293) ACC: X: -399	Y: 245	Z: 892[0m
+[0;32mI (119793) ACC: X: -263	Y: 175	Z: 1084[0m
+[0;32mI (119803) RTC: Time: 00:24:24 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (120293) ACC: X: 211	Y: -247	Z: 988[0m
+[0;32mI (120793) ACC: X: 122	Y: -266	Z: 961[0m
+[0;32mI (120803) RTC: Time: 00:24:25 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (121293) ACC: X: 116	Y: -269	Z: 965[0m
+[0;32mI (121793) ACC: X: 112	Y: -285	Z: 961[0m
+[0;32mI (121803) RTC: Time: 00:24:26 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (122293) ACC: X: 107	Y: -295	Z: 956[0m
+[0;32mI (122793) ACC: X: 113	Y: -291	Z: 959[0m
+[0;32mI (122803) RTC: Time: 00:24:27 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (123293) ACC: X: 110	Y: -284	Z: 960[0m
+[0;32mI (123793) ACC: X: 113	Y: -279	Z: 958[0m
+[0;32mI (123803) RTC: Time: 00:24:28 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (124293) ACC: X: 109	Y: -277	Z: 958[0m
+[0;32mI (124793) ACC: X: 108	Y: -286	Z: 961[0m
+[0;32mI (124803) RTC: Time: 00:24:29 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (125293) ACC: X: 112	Y: -293	Z: 954[0m
+[0;32mI (125793) ACC: X: 106	Y: -280	Z: 960[0m
+[0;32mI (125803) RTC: Time: 00:24:30 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (126293) ACC: X: 109	Y: -278	Z: 963[0m
+[0;32mI (126793) ACC: X: 109	Y: -276	Z: 962[0m
+[0;32mI (126803) RTC: Time: 00:24:31 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (127293) ACC: X: 103	Y: -284	Z: 962[0m
+[0;32mI (127793) ACC: X: 111	Y: -274	Z: 964[0m
+[0;32mI (127803) RTC: Time: 00:24:32 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (128293) ACC: X: 107	Y: -292	Z: 956[0m
+[0;32mI (128793) ACC: X: 110	Y: -278	Z: 963[0m
+[0;32mI (128803) RTC: Time: 00:24:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (129293) ACC: X: 106	Y: -277	Z: 963[0m
+[0;32mI (129793) ACC: X: 109	Y: -276	Z: 964[0m
+[0;32mI (129803) RTC: Time: 00:24:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (130293) ACC: X: 111	Y: -275	Z: 964[0m
+[0;32mI (130793) ACC: X: 104	Y: -280	Z: 966[0m
+[0;32mI (130803) RTC: Time: 00:24:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (131293) ACC: X: 109	Y: -285	Z: 958[0m
+[0;32mI (131793) ACC: X: 109	Y: -288	Z: 962[0m
+[0;32mI (131803) RTC: Time: 00:24:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (132293) ACC: X: 110	Y: -281	Z: 955[0m
+[0;32mI (132793) ACC: X: 105	Y: -272	Z: 967[0m
+[0;32mI (132803) RTC: Time: 00:24:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (133293) ACC: X: 106	Y: -275	Z: 964[0m
+[0;32mI (133793) ACC: X: 109	Y: -269	Z: 966[0m
+[0;32mI (133803) RTC: Time: 00:24:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (134293) ACC: X: 110	Y: -281	Z: 960[0m
+[0;32mI (134793) ACC: X: 107	Y: -284	Z: 963[0m
+[0;32mI (134803) RTC: Time: 00:24:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (135293) ACC: X: 108	Y: -282	Z: 960[0m
+[0;32mI (135793) ACC: X: 108	Y: -276	Z: 964[0m
+[0;32mI (135803) RTC: Time: 00:24:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (136293) ACC: X: 107	Y: -274	Z: 962[0m
+[0;32mI (136793) ACC: X: 108	Y: -278	Z: 962[0m
+[0;32mI (136803) RTC: Time: 00:24:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (137293) ACC: X: 108	Y: -277	Z: 963[0m
+[0;32mI (137793) ACC: X: 108	Y: -287	Z: 958[0m
+[0;32mI (137803) RTC: Time: 00:24:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (138293) ACC: X: 109	Y: -289	Z: 960[0m
+[0;32mI (138793) ACC: X: 107	Y: -281	Z: 964[0m
+[0;32mI (138803) RTC: Time: 00:24:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (139293) ACC: X: 104	Y: -277	Z: 967[0m
+[0;32mI (139793) ACC: X: 105	Y: -275	Z: 963[0m
+[0;32mI (139803) RTC: Time: 00:24:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (140293) ACC: X: 103	Y: -277	Z: 961[0m
+[0;32mI (140793) ACC: X: 100	Y: -244	Z: 972[0m
+[0;32mI (140803) RTC: Time: 00:24:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (141293) ACC: X: 100	Y: -250	Z: 971[0m
+[0;32mI (141793) ACC: X: 101	Y: -252	Z: 972[0m
+[0;32mI (141803) RTC: Time: 00:24:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (142293) ACC: X: 101	Y: -245	Z: 974[0m
+[0;32mI (142793) ACC: X: 100	Y: -249	Z: 972[0m
+[0;32mI (142803) RTC: Time: 00:24:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (143293) ACC: X: 107	Y: -234	Z: 973[0m
+[0;32mI (143793) ACC: X: 105	Y: -228	Z: 972[0m
+[0;32mI (143803) RTC: Time: 00:24:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (144293) ACC: X: 96	Y: -236	Z: 979[0m
+[0;32mI (144793) ACC: X: 97	Y: -230	Z: 977[0m
+[0;32mI (144803) RTC: Time: 00:24:49 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (145293) ACC: X: 96	Y: -223	Z: 984[0m
+[0;32mI (145793) ACC: X: 101	Y: -219	Z: 977[0m
+[0;32mI (145803) RTC: Time: 00:24:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (146293) ACC: X: 101	Y: -217	Z: 978[0m
+[0;32mI (146793) ACC: X: 99	Y: -219	Z: 978[0m
+[0;32mI (146803) RTC: Time: 00:24:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (147293) ACC: X: 106	Y: -211	Z: 981[0m
+[0;32mI (147793) ACC: X: 104	Y: -219	Z: 979[0m
+[0;32mI (147803) RTC: Time: 00:24:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (148293) ACC: X: 99	Y: -225	Z: 977[0m
+[0;32mI (148793) ACC: X: 96	Y: -222	Z: 983[0m
+[0;32mI (148803) RTC: Time: 00:24:53 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (149293) ACC: X: 103	Y: -221	Z: 979[0m
+[0;32mI (149793) ACC: X: 102	Y: -216	Z: 976[0m
+[0;32mI (149803) RTC: Time: 00:24:54 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (150293) ACC: X: 103	Y: -215	Z: 973[0m
+[0;32mI (150793) ACC: X: 103	Y: -222	Z: 977[0m
+[0;32mI (150803) RTC: Time: 00:24:55 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (151293) ACC: X: 95	Y: -231	Z: 980[0m
+[0;32mI (151793) ACC: X: 99	Y: -226	Z: 976[0m
+[0;32mI (151803) RTC: Time: 00:24:56 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (152293) ACC: X: 95	Y: -232	Z: 964[0m
+[0;32mI (152793) ACC: X: 96	Y: -223	Z: 977[0m
+[0;32mI (152803) RTC: Time: 00:24:57 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (153293) ACC: X: 107	Y: -222	Z: 978[0m
+[0;32mI (153793) ACC: X: 102	Y: -225	Z: 974[0m
+[0;32mI (153803) RTC: Time: 00:24:58 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (154293) ACC: X: 98	Y: -238	Z: 978[0m
+[0;32mI (154793) ACC: X: 94	Y: -228	Z: 978[0m
+[0;32mI (154803) RTC: Time: 00:24:59 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (155293) ACC: X: 115	Y: -235	Z: 977[0m
+[0;32mI (155793) ACC: X: 103	Y: -200	Z: 979[0m
+[0;32mI (155803) RTC: Time: 00:25:00 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (156293) ACC: X: 121	Y: -272	Z: 946[0m
+[0;32mI (156793) ACC: X: 109	Y: -277	Z: 961[0m
+[0;32mI (156803) RTC: Time: 00:25:01 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (157293) ACC: X: 113	Y: -266	Z: 942[0m
+[0;32mI (157793) ACC: X: 98	Y: -307	Z: 986[0m
+[0;32mI (157803) RTC: Time: 00:25:02 Date: 2000-01-01 (Weekday: 0)[0m

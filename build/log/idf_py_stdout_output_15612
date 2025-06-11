@@ -1,0 +1,191 @@
+V (96) bootloader_flash: after mapping, starting from paddr=0x000h (  2208) loadESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004883e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754b0[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xdd34 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0dd34h ( 56628) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xdd34, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1dd54[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x22bc data starts 0x1dd5c[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1dd5c load_addr 0x3fc95700[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001dd5c vaddr=3fc95700 size=022bch (  8892) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001dd5c, size=0x22bc, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (321) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x205dc data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=205dch (132572) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x205dc, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (405) esp_image: loading segment header 3 at offset 0x405fc[0m
+D (405) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (406) esp_image: segment data length 0x8a0 data starts 0x40604[0m
+V (412) esp_image: segment 3 map_segment 0 segment_data_offs 0x40604 load_addr 0x3fc979bc[0m
+[0;32mI (421) esp_image: segment 3: paddr=00040604 vaddr=3fc979bc size=008a0h (  2208) load[0m
+D (429) esp_image: free data page_count 0x00000200[0m
+D (434) bootloader_flash: rodata starts from paddr=0x00040604, size=0x8a0, will be mapped to vaddr=0x3c000000[0m
+V (444) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (455) esp_image: loading segment header 4 at offset 0x40ea4[0m
+D (460) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (467) esp_image: segment data length 0x116ac data starts 0x40eac[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x40eac load_addr 0x40374000[0m
+[0;32mI (482) esp_image: segment 4: paddr=00040eac vaddr=40374000 size=116ach ( 71340) load[0m
+D (490) esp_image: free data page_count 0x00000200[0m
+D (495) bootloader_flash: rodata starts from paddr=0x00040eac, size=0x116ac, will be mapped to vaddr=0x3c000000[0m
+V (505) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (532) esp_image: image start 0x00010000 end of last section 0x00052558[0m
+D (533) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (535) boot: Calculated hash: e47ba67f663d91cd7d47980cd900df57e409f1ce0568d51c836cc0b5e8db2ac6[0m
+[0;32mI (550) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+D (555) boot: Mapping segment 0 as DROM[0m
+D (559) boot: Mapping segment 2 as IROM[0m
+D (563) boot: calling set_cache_and_start_app[0m
+D (567) boot: configure drom and irom and start[0m
+V (572) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xdd34[0m
+V (579) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (590) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (600) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x205dc[0m
+V (607) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (617) boot: start: 0x403754b0[0m
+[0;32mI (632) cpu_start: Multicore app[0m
+[0;32mI (642) cpu_start: Pro cpu start user code[0m
+[0;32mI (642) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (642) app_init: Application information:[0m
+[0;32mI (645) app_init: Project name:     hello_world[0m
+[0;32mI (650) app_init: App version:      1[0m
+[0;32mI (654) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (660) app_init: ELF file SHA256:  4e58235ea...[0m
+[0;32mI (666) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (670) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (675) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (680) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (692) heap_init: At 3FC98BD0 len 00050B40 (322 KiB): RAM[0m
+[0;32mI (698) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (704) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (710) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (718) spi_flash: detected chip: gd[0m
+[0;32mI (721) spi_flash: flash io: dio[0m
+[0;33mW (725) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (738) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (749) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (756) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (763) main_task: Started on CPU0[0m
+[0;32mI (773) main_task: Calling app_main()[0m
+[0;32mI (793) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (793) main_task: Returned from app_main()[0m
+[0;32mI (793) RTC: Time: 00:00:17 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (1803) RTC: Time: 00:00:18 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (2793) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (2803) RTC: Time: 00:00:19 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (3803) RTC: Time: 00:00:20 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (4803) RTC: Time: 00:00:21 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (5803) RTC: Time: 00:00:22 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (6803) RTC: Time: 00:00:23 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (7803) RTC: Time: 00:00:24 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (8803) RTC: Time: 00:00:25 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (9803) RTC: Time: 00:00:26 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (10693) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (10803) RTC: Time: 00:00:27 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (11803) RTC: Time: 00:00:28 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (12803) RTC: Time: 00:00:29 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (13803) RTC: Time: 00:00:30 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (14803) RTC: Time: 00:00:31 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (15803) RTC: Time: 00:00:32 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (16803) RTC: Time: 00:00:33 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (17803) RTC: Time: 00:00:34 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (18803) RTC: Time: 00:00:35 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (19803) RTC: Time: 00:00:36 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (20803) RTC: Time: 00:00:37 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (21803) RTC: Time: 00:00:38 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (22803) RTC: Time: 00:00:39 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (22843) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (23803) RTC: Time: 00:00:40 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (24803) RTC: Time: 00:00:41 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (25803) RTC: Time: 00:00:42 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (26803) RTC: Time: 00:00:43 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (27803) RTC: Time: 00:00:44 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (28803) RTC: Time: 00:00:45 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (29803) RTC: Time: 00:00:46 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (30803) RTC: Time: 00:00:47 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (31803) RTC: Time: 00:00:48 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (32803) RTC: Time: 00:00:49 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (33803) RTC: Time: 00:00:50 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (34803) RTC: Time: 00:00:51 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (35803) RTC: Time: 00:00:52 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (36143) MAIN: IMU_INT_DETECTED[0m
+[0;32mI (36803) RTC: Time: 00:00:53 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (37803) RTC: Time: 00:00:54 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (38803) RTC: Time: 00:00:55 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (39803) RTC: Time: 00:00:56 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (40803) RTC: Time: 00:00:57 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (41803) RTC: Time: 00:00:58 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (42803) RTC: Time: 00:00:59 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (43803) RTC: Time: 00:01:00 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (44803) RTC: Time: 00:01:01 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (45803) RTC: Time: 00:01:02 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (46803) RTC: Time: 00:01:03 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (47803) RTC: Time: 00:01:04 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (48803) RTC: Time: 00:01:05 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (49803) RTC: Time: 00:01:06 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (50803) RTC: Time: 00:01:07 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (51803) RTC: Time: 00:01:08 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (52803) RTC: Time: 00:01:09 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (53803) RTC: Time: 00:01:10 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (54803) RTC: Time: 00:01:11 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (55803) RTC: Time: 00:01:12 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (56803) RTC: Time: 00:01:13 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (57803) RTC: Time: 00:01:14 Date: 2000-01-01 (Weekday: 0)[0m
+[0;32mI (58803) RTC: Time: 00:01:15 Date: 2000-01-01 (Weekday: 0)[0m

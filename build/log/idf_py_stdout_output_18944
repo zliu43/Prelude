@@ -1,0 +1,257 @@
+V (96) bootloader_flash: after mapping, starting from paddr=0x00data length 0x1ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048c69
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x2420
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe50
+load:0x403cb700,len:0x329c
+entry 0x403c895c
+[0;32mI (26) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 27 2025 13:09:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+D (30) bootloader_flash: non-XMC chip detected by SFDP Read (C8), skip.[0m
+D (36) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)[0m
+[0;32mI (43) boot: chip revision: v0.2[0m
+D (47) boot.esp32s3: magic e9[0m
+D (50) boot.esp32s3: segments 04[0m
+D (53) boot.esp32s3: spi_mode 02[0m
+D (57) boot.esp32s3: spi_speed 0f[0m
+D (60) boot.esp32s3: spi_size 01[0m
+[0;32mI (63) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (68) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (73) boot.esp32s3: SPI Flash Size : 2MB[0m
+D (78) boot: Enabling RTCWDT(9000 ms)[0m
+[0;32mI (81) boot: Enabling RNG early entropy source...[0m
+D (87) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000[0m
+V (96) bootloader_flash: after mapping, starting from paddr=0x00000000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+D (107) boot: mapped partition table 0x8000 at 0x3c008000[0m
+D (113) flash_parts: partition table verified, 4 entries[0m
+[0;32mI (118) boot: Partition Table:[0m
+[0;32mI (122) boot: ## Label            Usage          Type ST Offset   Length[0m
+D (129) boot: load partition table entry 0x3c008000[0m
+D (134) boot: type=1 subtype=2[0m
+[0;32mI (137) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+D (145) boot: load partition table entry 0x3c008020[0m
+D (150) boot: type=1 subtype=1[0m
+[0;32mI (153) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+D (160) boot: load partition table entry 0x3c008040[0m
+D (165) boot: type=0 subtype=0[0m
+[0;32mI (168) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (176) boot: End of partition table[0m
+D (180) boot: Trying partition index -1 offs 0x10000 size 0x100000[0m
+D (187) esp_image: reading image header @ 0x10000[0m
+D (191) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+D (198) esp_image: image header: 0xe9 0x05 0x02 0x01 403754b0[0m
+V (204) esp_image: loading segment header 0 at offset 0x10018[0m
+V (210) esp_image: segment data length 0xdd14 data starts 0x10020[0m
+V (216) esp_image: segment 0 map_segment 1 segment_data_offs 0x10020 load_addr 0x3c030020[0m
+[0;32mI (224) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0dd14h ( 56596) map[0m
+D (233) esp_image: free data page_count 0x00000200[0m
+D (237) bootloader_flash: rodata starts from paddr=0x00010020, size=0xdd14, will be mapped to vaddr=0x3c000000[0m
+V (248) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (269) esp_image: loading segment header 1 at offset 0x1dd34[0m
+D (269) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)[0m
+V (271) esp_image: segment data length 0x22dc data starts 0x1dd3c[0m
+V (277) esp_image: segment 1 map_segment 0 segment_data_offs 0x1dd3c load_addr 0x3fc95700[0m
+[0;32mI (285) esp_image: segment 1: paddr=0001dd3c vaddr=3fc95700 size=022dch (  8924) load[0m
+D (294) esp_image: free data page_count 0x00000200[0m
+D (299) bootloader_flash: rodata starts from paddr=0x0001dd3c, size=0x22dc, will be mapped to vaddr=0x3c000000[0m
+V (309) bootloader_flash: after mapping, starting from paddr=0x00010000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (322) esp_image: loading segment header 2 at offset 0x20018[0m
+D (325) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)[0m
+V (332) esp_image: segment data length 0x2075c data starts 0x20020[0m
+V (338) esp_image: segment 2 map_segment 1 segment_data_offs 0x20020 load_addr 0x42000020[0m
+[0;32mI (347) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2075ch (132956) map[0m
+D (355) esp_image: free data page_count 0x00000200[0m
+D (360) bootloader_flash: rodata starts from paddr=0x00020020, size=0x2075c, will be mapped to vaddr=0x3c000000[0m
+V (370) bootloader_flash: after mapping, starting from paddr=0x00020000 and vaddr=0x3c000000, 0x30000 bytes are mapped[0m
+V (405) esp_image: loading segment header 3 at offset 0x4077c[0m
+D (405) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (406) esp_image: segment data length 0x880 data starts 0x40784[0m
+V (412) esp_image: segment 3 map_segment 0 segment_data_offs 0x40784 load_addr 0x3fc979dc[0m
+[0;32mI (421) esp_image: segment 3: paddr=00040784 vaddr=3fc979dc size=00880h (  2176) load[0m
+D (429) esp_image: free data page_count 0x00000200[0m
+D (434) bootloader_flash: rodata starts from paddr=0x00040784, size=0x880, will be mapped to vaddr=0x3c000000[0m
+V (444) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x10000 bytes are mapped[0m
+V (455) esp_image: loading segment header 4 at offset 0x41004[0m
+D (461) bootloader_flash: mmu set block paddr=0x00040000 (was 0xffffffff)[0m
+V (467) esp_image: segment data length 0x116ac data starts 0x4100c[0m
+V (474) esp_image: segment 4 map_segment 0 segment_data_offs 0x4100c load_addr 0x40374000[0m
+[0;32mI (482) esp_image: segment 4: paddr=0004100c vaddr=40374000 size=116ach ( 71340) load[0m
+D (490) esp_image: free data page_count 0x00000200[0m
+D (495) bootloader_flash: rodata starts from paddr=0x0004100c, size=0x116ac, will be mapped to vaddr=0x3c000000[0m
+V (505) bootloader_flash: after mapping, starting from paddr=0x00040000 and vaddr=0x3c000000, 0x20000 bytes are mapped[0m
+V (532) esp_image: image start 0x00010000 end of last section 0x000526b8[0m
+D (533) bootloader_flash: mmu set block paddr=0x00050000 (was 0xffffffff)[0m
+D (535) boot: Calculated hash: 1010196892afe7652fde63492c91126f80e0348fbf6eebe55ee8396fdf53a179[0m
+[0;32mI (550) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (551) boot: Disabling RNG early entropy source...[0m
+D (555) boot: Mapping segment 0 as DROM[0m
+D (559) boot: Mapping segment 2 as IROM[0m
+D (563) boot: calling set_cache_and_start_app[0m
+D (567) boot: configure drom and irom and start[0m
+V (572) boot: rodata starts from paddr=0x00010020, vaddr=0x3c030020, size=0xdd14[0m
+V (579) boot: after mapping rodata, starting from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (590) boot: mapped one page of the rodata, from paddr=0x00010000 and vaddr=0x3c030000, 0x10000 bytes are mapped[0m
+V (600) boot: text starts from paddr=0x00020020, vaddr=0x42000020, size=0x2075c[0m
+V (607) boot: after mapping text, starting from paddr=0x00020000 and vaddr=0x42000000, 0x30000 bytes are mapped[0m
+D (618) boot: start: 0x403754b0[0m
+[0;32mI (632) cpu_start: Multicore app[0m
+[0;32mI (642) cpu_start: Pro cpu start user code[0m
+[0;32mI (642) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (642) app_init: Application information:[0m
+[0;32mI (645) app_init: Project name:     hello_world[0m
+[0;32mI (650) app_init: App version:      1[0m
+[0;32mI (654) app_init: Compile time:     May 28 2025 17:06:56[0m
+[0;32mI (660) app_init: ELF file SHA256:  ec1d0b01d...[0m
+[0;32mI (666) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (670) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (675) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (680) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (685) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (692) heap_init: At 3FC98BD0 len 00050B40 (322 KiB): RAM[0m
+[0;32mI (698) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (704) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (710) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (718) spi_flash: detected chip: gd[0m
+[0;32mI (721) spi_flash: flash io: dio[0m
+[0;33mW (725) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (738) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (749) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (756) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (763) main_task: Started on CPU0[0m
+[0;32mI (773) main_task: Calling app_main()[0m
+[0;32mI (793) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (793) ACC: X: 69	Y: 0	Z: 1002[0m
+[0;31mE (793) RTC: Time: 00:00:00 Date: 2000-00-00 (Weekday: 0)[0m
+[0;32mI (793) main_task: Returned from app_main()[0m
+[0;32mI (1293) ACC: X: 71	Y: 0	Z: 1001[0m
+[0;32mI (1793) ACC: X: 71	Y: 0	Z: 1002[0m
+[0;32mI (2293) ACC: X: 70	Y: -1	Z: 1001[0m
+[0;32mI (2793) ACC: X: 69	Y: 1	Z: 1002[0m
+[0;32mI (3293) ACC: X: 70	Y: -1	Z: 1001[0m
+[0;32mI (3793) ACC: X: 70	Y: -2	Z: 1003[0m
+[0;32mI (4293) ACC: X: 68	Y: -1	Z: 1003[0m
+[0;32mI (4793) ACC: X: 68	Y: 0	Z: 1000[0m
+[0;32mI (5293) ACC: X: 68	Y: -1	Z: 1002[0m
+[0;32mI (5793) ACC: X: 68	Y: -1	Z: 1002[0m
+[0;32mI (6293) ACC: X: 71	Y: 0	Z: 1002[0m
+[0;32mI (6793) ACC: X: 72	Y: 0	Z: 1001[0m
+[0;32mI (7293) ACC: X: 69	Y: 0	Z: 1001[0m
+[0;32mI (7793) ACC: X: 70	Y: -2	Z: 1001[0m
+[0;32mI (8293) ACC: X: 71	Y: -3	Z: 1002[0m
+[0;32mI (8793) ACC: X: 70	Y: -1	Z: 999[0m
+[0;32mI (9293) ACC: X: 69	Y: -1	Z: 1001[0m
+[0;32mI (9793) ACC: X: 69	Y: -1	Z: 1002[0m
+[0;32mI (10293) ACC: X: 68	Y: -1	Z: 1000[0m
+[0;32mI (10793) ACC: X: 70	Y: 0	Z: 1004[0m
+[0;31mE (10803) RTC: Time: 37:129:112 Date: 2130-32-10 (Weekday: 0)[0m
+[0;32mI (11293) ACC: X: 68	Y: 0	Z: 1002[0m
+[0;32mI (11793) ACC: X: 69	Y: -1	Z: 1001[0m
+[0;32mI (12293) ACC: X: 70	Y: 0	Z: 1000[0m
+[0;32mI (12793) ACC: X: 70	Y: -1	Z: 1004[0m
+[0;32mI (13293) ACC: X: 68	Y: -3	Z: 1000[0m
+[0;32mI (13793) ACC: X: 69	Y: -1	Z: 1002[0m
+[0;32mI (14293) ACC: X: 69	Y: -1	Z: 1002[0m
+[0;32mI (14793) ACC: X: 68	Y: 0	Z: 1002[0m
+[0;32mI (15293) ACC: X: 70	Y: 0	Z: 1003[0m
+[0;32mI (15793) ACC: X: 71	Y: 0	Z: 998[0m
+[0;32mI (16293) ACC: X: 69	Y: -1	Z: 1002[0m
+[0;32mI (16793) ACC: X: 69	Y: -3	Z: 999[0m
+[0;32mI (17293) ACC: X: 71	Y: 1	Z: 1003[0m
+[0;32mI (17793) ACC: X: 67	Y: -1	Z: 1001[0m
+[0;32mI (18293) ACC: X: 71	Y: -4	Z: 1002[0m
+[0;32mI (18793) ACC: X: 70	Y: 1	Z: 998[0m
+[0;32mI (19293) ACC: X: 70	Y: -2	Z: 999[0m
+[0;32mI (19793) ACC: X: 72	Y: -2	Z: 1004[0m
+[0;32mI (20293) ACC: X: 64	Y: 7	Z: 1002[0m
+[0;32mI (20793) ACC: X: 70	Y: 0	Z: 1004[0m
+[0;31mE (20803) RTC: Time: 00:00:00 Date: 2000-00-25 (Weekday: 0)[0m
+[0;32mI (21293) ACC: X: 68	Y: -1	Z: 1001[0m
+[0;32mI (21793) ACC: X: 71	Y: 0	Z: 1003[0m
+[0;32mI (22293) ACC: X: 69	Y: 0	Z: 1000[0m
+[0;32mI (22793) ACC: X: 63	Y: -4	Z: 1010[0m
+[0;32mI (23293) ACC: X: 62	Y: -1	Z: 998[0m
+[0;32mI (23793) ACC: X: 73	Y: 0	Z: 1003[0m
+[0;32mI (24293) ACC: X: 73	Y: -1	Z: 1000[0m
+[0;32mI (24793) ACC: X: 73	Y: 2	Z: 1001[0m
+[0;32mI (25293) ACC: X: 72	Y: -3	Z: 1007[0m
+[0;32mI (25793) ACC: X: 68	Y: 0	Z: 1001[0m
+[0;32mI (26293) ACC: X: 71	Y: -1	Z: 1003[0m
+[0;32mI (26793) ACC: X: 68	Y: 0	Z: 1004[0m
+[0;32mI (27293) ACC: X: 67	Y: 2	Z: 1005[0m
+[0;32mI (27793) ACC: X: 71	Y: -2	Z: 1001[0m
+[0;32mI (28293) ACC: X: 68	Y: -1	Z: 1004[0m
+[0;32mI (28793) ACC: X: 69	Y: -3	Z: 999[0m
+[0;32mI (29293) ACC: X: 69	Y: 0	Z: 1003[0m
+[0;32mI (29793) ACC: X: 69	Y: 0	Z: 1001[0m
+[0;32mI (30293) ACC: X: 70	Y: -2	Z: 1003[0m
+[0;32mI (30793) ACC: X: 70	Y: -1	Z: 1000[0m
+[0;31mE (30803) RTC: Time: 00:00:00 Date: 2000-00-00 (Weekday: 0)[0m
+[0;32mI (31293) ACC: X: 70	Y: -3	Z: 1002[0m
+[0;32mI (31793) ACC: X: 70	Y: -3	Z: 1001[0m
+[0;32mI (32293) ACC: X: 69	Y: -4	Z: 1001[0m
+[0;32mI (32793) ACC: X: 71	Y: -1	Z: 1004[0m
+[0;32mI (33293) ACC: X: 70	Y: 0	Z: 1000[0m
+[0;32mI (33793) ACC: X: 71	Y: -1	Z: 1002[0m
+[0;32mI (34293) ACC: X: 71	Y: -4	Z: 1000[0m
+[0;32mI (34793) ACC: X: 68	Y: -1	Z: 1005[0m
+[0;32mI (35293) ACC: X: 71	Y: -1	Z: 1000[0m
+[0;32mI (35793) ACC: X: 69	Y: 0	Z: 1003[0m
+[0;32mI (36293) ACC: X: 71	Y: 2	Z: 1002[0m
+[0;32mI (36793) ACC: X: 69	Y: 0	Z: 1003[0m
+[0;32mI (37293) ACC: X: 68	Y: -1	Z: 1001[0m
+[0;32mI (37793) ACC: X: 68	Y: 0	Z: 1003[0m
+[0;32mI (38293) ACC: X: 70	Y: 0	Z: 999[0m
+[0;32mI (38793) ACC: X: 71	Y: -3	Z: 1001[0m
+[0;32mI (39293) ACC: X: 71	Y: 0	Z: 1003[0m
+[0;32mI (39793) ACC: X: 68	Y: -3	Z: 999[0m
+[0;32mI (40293) ACC: X: 71	Y: 5	Z: 1003[0m
+[0;32mI (40793) ACC: X: 62	Y: 3	Z: 1004[0m
+[0;31mE (40803) RTC: Time: 00:00:00 Date: 2000-00-00 (Weekday: 0)[0m
+[0;32mI (41293) ACC: X: 69	Y: 0	Z: 1003[0m
+[0;32mI (41793) ACC: X: 69	Y: -1	Z: 1000[0m
+[0;32mI (42293) ACC: X: 70	Y: 0	Z: 1001[0m
+[0;32mI (42793) ACC: X: 69	Y: -2	Z: 1000[0m
+[0;32mI (43293) ACC: X: 69	Y: 0	Z: 1002[0m
+[0;32mI (43793) ACC: X: 70	Y: 0	Z: 1000[0m
+[0;32mI (44293) ACC: X: 72	Y: -6	Z: 1003[0m
+[0;32mI (44793) ACC: X: 69	Y: 0	Z: 1000[0m
+[0;32mI (45293) ACC: X: 72	Y: -2	Z: 1003[0m
+[0;32mI (45793) ACC: X: 71	Y: -1	Z: 1002[0m
+[0;32mI (46293) ACC: X: 70	Y: 0	Z: 1004[0m
+[0;32mI (46793) ACC: X: 71	Y: 0	Z: 1000[0m
+[0;32mI (47293) ACC: X: 72	Y: 0	Z: 999[0m
+[0;32mI (47793) ACC: X: 72	Y: -1	Z: 1000[0m
+[0;32mI (48293) ACC: X: 70	Y: -1	Z: 1001[0m
+[0;32mI (48793) ACC: X: 70	Y: 0	Z: 1001[0m
+[0;32mI (49293) ACC: X: 68	Y: -1	Z: 1001[0m
+[0;32mI (49793) ACC: X: 69	Y: 2	Z: 1001[0m
+[0;32mI (50293) ACC: X: 69	Y: -1	Z: 999[0m
+[0;32mI (50793) ACC: X: 71	Y: -2	Z: 1002[0m
+[0;31mE (50803) RTC: Time: 00:00:00 Date: 2000-00-00 (Weekday: 0)[0m
+[0;32mI (51293) ACC: X: 69	Y: 0	Z: 1000[0m
+[0;32mI (51793) ACC: X: 70	Y: 0	Z: 1002[0m
+[0;32mI (52293) ACC: X: 69	Y: 0	Z: 998[0m
+[0;32mI (52793) ACC: X: 70	Y: -2	Z: 1003[0m
+[0;32mI (53293) ACC: X: 73	Y: 0	Z: 999[0m
+[0;32mI (53793) ACC: X: 69	Y: 2	Z: 1001[0m
+[0;32mI (54293) ACC: X: 69	Y: 1	Z: 1001[0m
+[0;32mI (54793) ACC: X: 68	Y: 0	Z: 1001[0m
+[0;32mI (55293) ACC: X: 70	Y: 0	Z: 999[0m
+[0;32mI (55793) ACC: X: 72	Y: -1	Z: 1002[0m
+[0;32mI (56293) ACC: X: 67	Y: -1	Z: 997[0m
+[0;32mI (56793) ACC: X: 69	Y: -1	Z: 1001[0m
+[0;32mI (57293) ACC: X: 70	Y: -2	Z: 1004[0m
+[0;32mI (57793) ACC: X: 71	Y: -2	Z: 1003[0m
+[0;32mI (58293) ACC: X: 71	Y: -1	Z: 1002[0m
+[0;32mI (58793) ACC: X: 59	Y: 15	Z: 1016[0m
+[0;32mI (59293) ACC: X: 70	Y: -1	Z: 1001[0m
+[0;32mI (59793) ACC: X: 72	Y: -1	Z: 996[0m
+[0;32mI (60293) ACC: X: 68	Y: -2	Z: 1003[0m
+[0;32mI (60793) ACC: X: 71	Y: 0	Z: 1000[0m
+[0;31mE (60803) RTC: Time: 00:00:00 Date: 2000-00-00 (Weekday: 0)[0m
+[0;32mI (61293) ACC: X: 68	Y: 0	Z: 1002[0m

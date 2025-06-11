@@ -1,0 +1,84 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\mikel\OneDrive\Desktop\Prelude\Code\hello_world\build\bootloader\esp-idf\esptool_py && C:\Users\mikel\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/mikel/esp-adf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6570 bytes. 0x1a90 bytes (21%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/main.c:9:
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h: In function 'imu_init':
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:141:22: warning: initialization of 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint16_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, short unsigned int,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+  141 |         .write_reg = lsm6dso_platform_write,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:141:22: note: (near initialization for 'dev_ctx.write_reg')
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:142:22: warning: initialization of 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint16_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, short unsigned int,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+  142 |         .read_reg  = lsm6dso_platform_read,
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:142:22: note: (near initialization for 'dev_ctx.read_reg')
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:151:21: warning: initialization of 'unsigned char' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  151 |         .Address  = NULL,
+      |                     ^~~~
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:151:21: note: (near initialization for '(anonymous).Address')
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:152:21: warning: initialization of 'int32_t (*)(uint16_t,  uint16_t,  uint8_t *, uint16_t)' {aka 'long int (*)(short unsigned int,  short unsigned int,  unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint16_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, short unsigned int,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+  152 |         .WriteReg = lsm6dso_platform_write,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:152:21: note: (near initialization for '(anonymous).WriteReg')
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:153:21: warning: initialization of 'int32_t (*)(uint16_t,  uint16_t,  uint8_t *, uint16_t)' {aka 'long int (*)(short unsigned int,  short unsigned int,  unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint16_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, short unsigned int,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+  153 |         .ReadReg  = lsm6dso_platform_read,
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/imu.h:153:21: note: (near initialization for '(anonymous).ReadReg')
+In file included from C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/main.c:15:
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/esp32_init.h: At top level:
+C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/main/esp32_init.h:11:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   11 | static const char *TAG = "GPIO_INIT";
+      |                    ^~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable hello_world.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/hello_world.bin
+[7/8] cmd.exe /C "cd /D C:\Users\mikel\OneDrive\Desktop\Prelude\Code\hello_world\build\esp-idf\esptool_py && C:\Users\mikel\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/mikel/esp-adf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/partition_table/partition-table.bin C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build/hello_world.bin"
+hello_world.bin binary size 0x43810 bytes. Smallest app partition is 0x100000 bytes. 0xbc7f0 bytes (74%) free.
+[7/8] cmd.exe /C "cd /D C:\Users\mikel\esp-adf\esp-idf\components\esptool_py && C:\Users\mikel\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/mikel/esp-adf/esp-idf -D SERIAL_TOOL=C:/Users/mikel/.espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Users/mikel/esp-adf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;espesptool.py --chip esp32s3 -p COM9 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM9
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 34:cd:b0:08:bd:e8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00006fff...
+Flash will be erased from 0x00010000 to 0x00053fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25968 bytes to 15055...
+Writing at 0x00000000... (100 %)
+Wrote 25968 bytes (15055 compressed) at 0x00000000 in 0.4 seconds (effective 591.7 kbit/s)...
+Hash of data verified.
+Compressed 276496 bytes to 144955...
+Writing at 0x00010000... (11 %)
+Writing at 0x0001ced2... (22 %)
+Writing at 0x00024f37... (33 %)
+Writing at 0x0002b9cf... (44 %)
+Writing at 0x000321f4... (55 %)
+Writing at 0x00039dfd... (66 %)
+Writing at 0x00041645... (77 %)
+Writing at 0x0004776a... (88 %)
+Writing at 0x0004dc8c... (100 %)
+Wrote 276496 bytes (144955 compressed) at 0x00010000 in 1.9 seconds (effective 1144.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 604.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/mikel/OneDrive/Desktop/Prelude/Code/hello_world/build -P C:/Users/mikel/esp-adf/esp-idf/components/esptool_py/run_serial_tool.cmake"
